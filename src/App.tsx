@@ -153,7 +153,7 @@ function App() {
               </div>
 
               {activeOverlay === 'system' && (
-                <div style={{ display: 'flex', flexDirection: 'column', gap: '16px', overflowY: 'auto' }}>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '16px', flex: 1, minHeight: 0, overflowY: 'auto' }}>
                   {saveList.map((save, i) => (
                     <div key={i} style={{ border: '1px solid #555', padding: '16px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                       <div>
@@ -208,7 +208,7 @@ function App() {
               )}
 
               {activeOverlay === 'status' && (
-                <div style={{ flex: 1, overflowY: 'auto' }}>
+                <div style={{ flex: 1, minHeight: 0, overflowY: 'auto' }}>
                   <div style={{ display: 'flex', gap: '32px', marginBottom: '24px' }}>
                     <div>
                       <h3 style={{ color: '#0f0', margin: '0 0 8px 0' }}>{t('status_title')}</h3>
@@ -284,7 +284,7 @@ function App() {
               )}
 
               {activeOverlay === 'priest' && (
-                <div style={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
+                <div style={{ display: 'flex', flexDirection: 'column', flex: 1, minHeight: 0 }}>
                   <div style={{ marginBottom: '16px', display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
                     <button 
                       className="cmd-btn" 
@@ -406,7 +406,7 @@ function App() {
                 const expandCost = getExpandCost(player.maxInventorySize);
 
                 return (
-                  <div style={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
+                  <div style={{ display: 'flex', flexDirection: 'column', flex: 1, minHeight: 0 }}>
                     <div style={{ marginBottom: '16px', display: 'flex', gap: '16px' }}>
                       <button 
                         className="cmd-btn" 
@@ -462,7 +462,7 @@ function App() {
               )}
 
               {activeOverlay === 'inn' && (
-                <div>
+                <div style={{ overflowY: 'auto', flex: 1, minHeight: 0 }}>
                   <h3 style={{ color: '#0f0' }}>{t('inn_title')}</h3>
                   <p>{t('inn_desc1')}</p>
                   <p>{t('inn_hp', { hp: player.currentHP, maxHp: player.maxHP })}</p>
@@ -477,7 +477,7 @@ function App() {
               )}
               
               {activeOverlay === 'magic' && (
-                <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', flex: 1, minHeight: 0, overflowY: 'auto' }}>
                   <h3 style={{ color: '#0f0', margin: '0 0 16px 0' }}>{t('mag_title')}</h3>
                   {player.installedMemories.filter(m => m.attachedSpell).map(mem => {
                     const spell = mem.attachedSpell!;
@@ -505,7 +505,7 @@ function App() {
                   checkpoints.push(d);
                 }
                 return (
-                  <div>
+                  <div style={{ overflowY: 'auto', flex: 1, minHeight: 0 }}>
                     <h3 style={{ color: '#0f0', margin: '0 0 16px 0' }}>{t('dung_title')}</h3>
                     <p style={{ marginBottom: '16px' }}>{t('dungeon_select')}</p>
                     <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(150px, 1fr))', gap: '8px' }}>
@@ -520,7 +520,7 @@ function App() {
               })()}
 
               {activeOverlay === 'stash' && (
-                <div>
+                <div style={{ overflowY: 'auto', flex: 1, minHeight: 0 }}>
                   <div style={{ fontSize: '1.2rem', marginBottom: '24px' }}>
                     <p>{t('stash_hand')} <span className="text-green">{player.currentEn} En</span></p>
                     <p>{t('stash_vault')} <span className="text-green">{player.stashedEn} En</span></p>
