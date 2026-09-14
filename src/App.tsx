@@ -631,11 +631,11 @@ function App() {
         {/* 4. Text Log */}
         <div className="pane text-log">
           <h3 style={{ margin: '0 0 8px 0', position: 'sticky', top: '0', background: '#000', borderBottom: '1px solid #aaa', paddingBottom: '8px' }}>{t('log_title')}</h3>
-          {logMessages.map((msg, i) => (
-            <div key={i} style={{ marginBottom: '8px', fontSize: '0.95rem' }}>
-              <span style={{ color: '#555' }}>&gt;</span> {msg}
-            </div>
-          ))}
+            {logMessages.map((msg, i) => (
+              <div key={i} style={{ marginBottom: '8px', fontSize: '0.95rem' }}>
+                <span style={{ color: '#555' }}>&gt;</span> {typeof msg === 'string' ? msg : t(msg.key as any, msg.params as Record<string, string | number>)}
+              </div>
+            ))}
           <div ref={logEndRef} />
         </div>
       </div>

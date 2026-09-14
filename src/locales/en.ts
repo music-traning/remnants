@@ -186,4 +186,6 @@ export const en = {
   gl_continue: "Catching your breath, you resume exploring.",
   ui_depth: "[ Depth: {depth} ]",
   sys_no_data: "NO DATA",
+  empty_select: "Please select an item from the list.",
+  empty_no_items: "No items available.",
 };

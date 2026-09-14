@@ -186,4 +186,6 @@ export const ja = {
   gl_continue: "息を整え、再び探索を続ける。",
   sys_confirm_load: "SLOT {slot} からロードしますか？\n（現在の進行状況は失われます）",
   ui_depth: "【 深度: {depth} 】",
+  empty_select: "リストからアイテムを選択してください",
+  empty_no_items: "アイテムがありません。",
 };

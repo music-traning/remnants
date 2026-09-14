@@ -30,7 +30,7 @@ export const I18nProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
 
     if (params) {
       Object.keys(params).forEach((paramKey) => {
-        str = str.replace(new RegExp(`{{${paramKey}}}`, 'g'), String(params[paramKey]));
+        str = str.replace(new RegExp(`\\{\\{?${paramKey}\\}\\}?`, 'g'), String(params[paramKey]));
       });
     }
 

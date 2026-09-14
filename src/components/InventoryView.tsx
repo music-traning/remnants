@@ -19,7 +19,7 @@ export const InventoryView: React.FC<Props> = ({ items, selectedItem, onSelect, 
     <div style={{ display: 'grid', gridTemplateColumns: 'minmax(120px, 1fr) minmax(150px, 1fr)', gap: '16px', height: 'calc(100% - 64px)' }}>
       {/* 左側: カテゴリ別リスト */}
       <div style={{ borderRight: '1px solid #aaa', paddingRight: '16px', overflowY: 'auto' }}>
-        {items.length === 0 && <p style={{ color: '#aaa' }}>アイテムがありません。</p>}
+        {items.length === 0 && <p style={{ color: '#aaa' }}>{t('empty_no_items')}</p>}
         {categories.map(cat => {
           const catItems = items.filter(m => m.category === cat);
           if (catItems.length === 0) return null;
@@ -68,7 +68,7 @@ export const InventoryView: React.FC<Props> = ({ items, selectedItem, onSelect, 
           </>
         ) : (
           <div style={{ color: '#555', textAlign: 'center', marginTop: '32px' }}>
-            リストからアイテムを選択してください
+            {t('empty_select')}
           </div>
         )}
       </div>
