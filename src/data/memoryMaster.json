@@ -508,9 +508,9 @@
       "itemName": "真理を暴いた舌",
       "originText": "世界の理を記述する神の言語を解読し、その一節を口にした途端に全身の穴から光を噴いて消滅した賢者。",
       "priestMemo": "神の秘密を覗き見た対価としては安いものだ。まあ、語るべき口はもう残っていないがね。",
-      "itemNameEn": "Lost Memory of Sorcery",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange magic energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "Tongue That Bared the Truth",
+      "originTextEn": "A sage who deciphered the language of God to rewrite the world's logic, only to disintegrate while spewing light from every orifice the moment he spoke a single verse.",
+      "priestMemoEn": "\"A cheap price to glimpse God's secret. Well, not that he has a mouth left to speak of it.\""
     },
     {
       "rarity": "Legendary",
@@ -518,9 +518,9 @@
       "itemName": "虚空を掴む隻眼",
       "originText": "並行世界の自分を殺して魔力を奪う術式を完成させ、最後は自分自身を認識できなくなり発狂した魔女。",
       "priestMemo": "他者の命を奪うより効率的だ。自分が消えるという些細な副作用に目を瞑れば、だがな。",
-      "itemNameEn": "Fading Memory of Spell",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange magic energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "One Eye Grasping the Void",
+      "originTextEn": "A witch who perfected a formula to murder her parallel selves and steal their mana. Ultimately, she lost the ability to recognize herself and descended into raving madness.",
+      "priestMemoEn": "\"More efficient than stealing from strangers. Assuming, of course, you can turn a blind eye to the trivial side effect of erasing your own existence.\""
     },
     {
       "rarity": "Legendary",
@@ -528,9 +528,9 @@
       "itemName": "星を降らす頭蓋",
       "originText": "頭蓋骨に直接星座の軌道を彫り込み、隕石を降らせる大魔術を行使して自らの国ごと滅ぼした王。",
       "priestMemo": "頭の中の星空はさぞ美しかっただろう。国一つを燃やした花火の代償としては悪くない。",
-      "itemNameEn": "Abyssal Memory of Flame",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange magic energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "Skull of the Meteor",
+      "originTextEn": "A king who carved astral orbits directly into his skull to invoke a grand spell of meteor showers, annihilating his entire kingdom along with his enemies.",
+      "priestMemoEn": "\"The starry sky inside his head must have been beautiful. Not a bad price for a firework show that burned a nation to ash.\""
     },
     {
       "rarity": "Legendary",
@@ -538,9 +538,9 @@
       "itemName": "因果を喰らう胎児",
       "originText": "時間を逆行する呪文を詠唱し続け、ついに自らが生まれる前の胎児の姿にまで退行した大魔導士。",
       "priestMemo": "人生のやり直しを求めた結果がこれだ。無に還る方がよほど幸せだったのではないかね。",
-      "itemNameEn": "Shattered Memory of Void",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange magic energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "Karma-Devouring Fetus",
+      "originTextEn": "An archmage who endlessly chanted a time-reversal incantation, eventually regressing all the way back into a fetus before he was even born.",
+      "priestMemoEn": "\"This is what happens when you beg for a do-over in life. Wouldn't returning to nothingness have been far happier?\""
     },
     {
       "rarity": "Legendary",
@@ -548,9 +548,9 @@
       "itemName": "神を灼く灰",
       "originText": "天使を捕獲して解剖し、その内臓を燃やして不老不死の秘薬を錬成しようとした異端審問官の末路。",
       "priestMemo": "神の使いの味はどうだった？永遠の命を得る前に、自分が永遠の灰になってしまったが。",
-      "itemNameEn": "Echoing Memory of Rune",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange magic energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "God-Scorching Ash",
+      "originTextEn": "An inquisitor who captured an angel, dissected it, and burned its internal organs to synthesize an elixir of immortality. He was reduced to eternal ash before he could taste it.",
+      "priestMemoEn": "\"How did the messenger of God taste? Pity he became immortal ash before securing an immortal life.\""
     },
     {
       "rarity": "Epic",
@@ -558,9 +558,9 @@
       "itemName": "禁忌を綴る血文字",
       "originText": "紙もインクも尽きたため、自らの血液と骨の髄液で魔導書を書き上げ、完成と同時に干からびた狂人。",
       "priestMemo": "そこまでして残した本も、今ではただの焚き付けだ。情熱の行き着く先などそんなものさ。",
-      "itemNameEn": "Cursed Memory of Soul",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange magic energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "Bloodscript of Taboos",
+      "originTextEn": "A madman who, having run out of ink and parchment, finished writing his grimoire using his own blood and bone marrow, drying into a husk upon its completion.",
+      "priestMemoEn": "\"All that effort for a book that's now just kindling. That is the ultimate destination of all passion.\""
     },
     {
       "rarity": "Epic",
@@ -568,9 +568,9 @@
       "itemName": "次元を裂く咆哮",
       "originText": "喉仏に転送魔法陣を埋め込み、声を発するたびに空間を歪ませて敵を切り刻んだ暗殺者。",
       "priestMemo": "歌一つ歌えなくなる人生に何の意味がある？殺しの道具に成り下がった肉体は哀れだな。",
-      "itemNameEn": "Sacred Memory of Storm",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange magic energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "Dimension-Rending Roar",
+      "originTextEn": "An assassin who embedded a teleportation magic circle in his vocal cords. With every word he spoke, he warped space and shredded his enemies.",
+      "priestMemoEn": "\"What is the point of a life where you can't even sing a song? A body reduced to a mere killing tool is a pitiful thing.\""
     },
     {
       "rarity": "Epic",
@@ -578,9 +578,9 @@
       "itemName": "思考を溶かす杯",
       "originText": "他者の脳味噌を溶かしてすする事で、一瞬にして数十年分の知識を己の脳裏に焼き付けた学者。",
       "priestMemo": "他人の知恵を借りても、結局お前の脳の容量は変わらん。溢れ出た狂気は拭いておけよ。",
-      "itemNameEn": "Dim Memory of Wisdom",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange magic energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "Mind-Melting Chalice",
+      "originTextEn": "A scholar who seared decades of knowledge into his own mind in an instant by dissolving and drinking the brains of others.",
+      "priestMemoEn": "\"Borrowing the wisdom of others doesn't change the capacity of your own skull. Make sure to wipe up the madness leaking from your ears.\""
     },
     {
       "rarity": "Epic",
@@ -588,9 +588,9 @@
       "itemName": "夢魔の抜け殻",
       "originText": "夢の中でしか生きられない魔術を自身にかけ、現実の肉体が腐敗していくのを放置した引きこもり。",
       "priestMemo": "現実逃避もそこまで行けば立派な芸術だ。腐った肉の匂いさえ我慢すればだが。",
-      "itemNameEn": "Forgotten Memory of Aura",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange magic energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "Succubus Husk",
+      "originTextEn": "A shut-in who cast a spell to live exclusively inside dreams, allowing his physical body to rot away unattended.",
+      "priestMemoEn": "\"Escapism taken to the level of high art. Assuming, of course, you can tolerate the stench of your own rotting flesh.\""
     },
     {
       "rarity": "Epic",
@@ -598,9 +598,9 @@
       "itemName": "記憶を喰む蟲",
       "originText": "愛する者を失った悲しみを消すため、自らの記憶を貪り食う使い魔を脳内に飼い、全てを忘却した女。",
       "priestMemo": "悲しみを忘れるためなら、自分自身を忘れてもいいのか。人間の感情は本当に非効率的だ。",
-      "itemNameEn": "Eternal Memory of Frost",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange magic energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "Memory-Devouring Worm",
+      "originTextEn": "A woman who harbored a familiar in her brain to devour her memories, erasing the grief of losing her beloved, until she forgot everything.",
+      "priestMemoEn": "\"Erasing yourself just to erase your sorrow? Human emotions are truly inefficient.\""
     },
     {
       "rarity": "Epic",
@@ -608,9 +608,9 @@
       "itemName": "狂乱のタクト",
       "originText": "空気中のマナを旋律に変える指揮棒を振り続け、観客全員の鼓膜と内臓を破裂させた狂気の音楽家。",
       "priestMemo": "音楽は爆発だと言うが、物理的に爆発させてどうする。最高のフィナーレだったことは認めるがね。",
-      "itemNameEn": "Lost Memory of Sorcery",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange magic energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "Baton of Frenzy",
+      "originTextEn": "A mad musician who turned ambient mana into a melody, waving his baton until the eardrums and internal organs of every audience member ruptured.",
+      "priestMemoEn": "\"They say music is an explosion, but what good is causing physical detonations? Still, I admit it was the ultimate finale.\""
     },
     {
       "rarity": "Epic",
@@ -618,9 +618,9 @@
       "itemName": "死霊を束ねる指輪",
       "originText": "死者の魂を無理やり繋ぎ合わせて巨大な魔力源としたが、怨念の重みで指ごと引きちぎられた死霊術師。",
       "priestMemo": "死者を道具扱いすれば、しっぺ返しが来るのは当然だ。重力という物理法則を忘れたのかね。",
-      "itemNameEn": "Fading Memory of Spell",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange magic energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "Ring of Bound Wraiths",
+      "originTextEn": "A necromancer who forcibly stitched together the souls of the dead as a massive mana source, only to have his finger torn off by the weight of their grudges.",
+      "priestMemoEn": "\"Treat the dead as tools and they will bite back. Did you forget the physical laws of gravity?\""
     },
     {
       "rarity": "Epic",
@@ -628,9 +628,9 @@
       "itemName": "概念を燃やす炎",
       "originText": "物質ではなく「悲しみ」や「痛み」といった概念そのものを燃料にする黒炎を生み出し、自らの精神を焼いた魔術師。",
       "priestMemo": "感情を燃やせば何も感じなくなる。平和なことだ。ただの肉人形になっただけの話だがな。",
-      "itemNameEn": "Abyssal Memory of Flame",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange magic energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "Concept-Burning Flame",
+      "originTextEn": "A sorcerer who created a black flame fueled not by matter, but by concepts like 'sorrow' and 'pain,' incinerating his own psyche in the process.",
+      "priestMemoEn": "\"Burn your emotions and you feel nothing. Very peaceful. It just means you're now a meat puppet, that's all.\""
     },
     {
       "rarity": "Epic",
@@ -638,9 +638,9 @@
       "itemName": "未来を映す瞳",
       "originText": "一秒先の未来を視るために、眼球の網膜に直接魔方陣を焼き付け、激痛に耐えながら戦った剣士。",
       "priestMemo": "未来が見えたところで、避けられなければ意味がない。激痛のせいで動きが鈍っては本末転倒だ。",
-      "itemNameEn": "Shattered Memory of Void",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange magic energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "Eye Reflecting the Future",
+      "originTextEn": "A swordsman who branded a magic circle directly onto his retinas to see one second into the future, fighting through agonizing pain.",
+      "priestMemoEn": "\"Seeing the future is useless if you can't dodge it. Slowing down because of the sheer agony completely defeats the purpose.\""
     },
     {
       "rarity": "Epic",
@@ -648,9 +648,9 @@
       "itemName": "空虚を満たす泥",
       "originText": "魔力を使い果たし、それでも呪文を唱え続けた結果、魔力の代わりに自らの内臓を吐き出し続けた老婆。",
       "priestMemo": "そこまでして誰を呪いたかったのか。執念深さは老婆の特権だが、少しは身の程を知れ。",
-      "itemNameEn": "Echoing Memory of Rune",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange magic energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "Void-Filling Sludge",
+      "originTextEn": "An old hag who depleted all her mana but kept chanting anyway, vomiting up her own internal organs as substitute fuel.",
+      "priestMemoEn": "\"Who was she trying to curse that badly? Vindictiveness is an old woman's privilege, but she should have known her limits.\""
     },
     {
       "rarity": "Rare",
@@ -658,9 +658,9 @@
       "itemName": "『頭が割れる』",
       "originText": "許容量を超える知識を一度に脳へ注入され、頭蓋骨の縫合線から脳髄が漏れ出しながら死んだ書記官。",
       "priestMemo": "知識は力だが、頭の器が小さすぎたな。知恵熱というには少しばかり物理的すぎるが。",
-      "itemNameEn": "Cursed Memory of Soul",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange magic energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "\"My Head Is Splitting\"",
+      "originTextEn": "A scribe whose brain was injected with knowledge beyond capacity, dying as cerebrospinal fluid leaked from the sutures of his skull.",
+      "priestMemoEn": "\"Knowledge is power, but his vessel was far too small. A bit too physical for a mere headache.\""
     },
     {
       "rarity": "Rare",
@@ -668,9 +668,9 @@
       "itemName": "『数字が這い回る』",
       "originText": "宇宙の真理を数式で解き明かそうとし、壁一面に血で数式を書きなぐったまま餓死した数学者。",
       "priestMemo": "計算が合わなかったのか、食費を計算に入れ忘れたのか。天才の考えることは分からんな。",
-      "itemNameEn": "Sacred Memory of Storm",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange magic energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "\"Crawling Numbers\"",
+      "originTextEn": "A mathematician who tried to unravel the universe's truth, starving to death while scribbling bloody equations all over his walls.",
+      "priestMemoEn": "\"Did the calculations not add up, or did he just forget to budget for food? The thoughts of a genius are beyond me.\""
     },
     {
       "rarity": "Rare",
@@ -678,9 +678,9 @@
       "itemName": "『声が止まない』",
       "originText": "他人の思考を読み取る魔眼を手に入れたが、周囲の悪意を全て受信してしまい、自ら耳を削ぎ落とした男。",
       "priestMemo": "耳を削いでも頭の中に直接響くだろうに。人間の悪意を舐めてはいけないよ。",
-      "itemNameEn": "Dim Memory of Wisdom",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange magic energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "\"The Voices Won't Stop\"",
+      "originTextEn": "A man who acquired a mystic eye to read minds, only to receive every drop of ambient malice, driving him to slice off his own ears.",
+      "priestMemoEn": "\"Slicing off your ears won't stop the voices echoing directly into your brain. Never underestimate human malice.\""
     },
     {
       "rarity": "Rare",
@@ -688,9 +688,9 @@
       "itemName": "『色が見えない』",
       "originText": "魔力で視力を強化しすぎた結果、物質の構成粒子しか見えなくなり、色彩と人の顔を失った芸術家。",
       "priestMemo": "究極のリアリズムを追求した結果がこれだ。美しい絵を描くには、適度な盲目が必要なのだよ。",
-      "itemNameEn": "Forgotten Memory of Aura",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange magic energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "\"I Can't See Colors\"",
+      "originTextEn": "An artist who over-enhanced his vision with mana until he could only see the constituent particles of matter, losing colors and human faces forever.",
+      "priestMemoEn": "\"The result of pursuing ultimate realism. You need a little bit of blindness to paint a beautiful picture.\""
     },
     {
       "rarity": "Rare",
@@ -698,9 +698,9 @@
       "itemName": "『魔法陣が歪む』",
       "originText": "幾何学的な完璧さを求めるあまり、コンパスの針を自らの掌に突き立てて円を描き続けた修行僧。",
       "priestMemo": "痛みに耐えながら引いた線は、微妙に震えているぞ。完璧主義者の末路としては三流だな。",
-      "itemNameEn": "Eternal Memory of Frost",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange magic energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "\"The Magic Circle is Warped\"",
+      "originTextEn": "An ascetic monk who sought geometric perfection, stabbing the needle of a compass through his own palm to draw endless circles.",
+      "priestMemoEn": "\"The lines drawn through all that pain are still slightly trembling. A third-rate end for a perfectionist.\""
     },
     {
       "rarity": "Rare",
@@ -708,9 +708,9 @@
       "itemName": "『詠唱が噛み合わない』",
       "originText": "複雑すぎる呪文を舌を噛まずに唱えるため、自らの舌を三つに切り裂いた魔術見習い。",
       "priestMemo": "努力の方向性が間違っている典型だな。黙って杖を振る練習でもしていればよかったものを。",
-      "itemNameEn": "Lost Memory of Sorcery",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange magic energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "\"Flubbed Incantation\"",
+      "originTextEn": "An apprentice mage who slit his own tongue into three pieces just to chant overly complex spells without biting his tongue.",
+      "priestMemoEn": "\"A textbook example of misdirected effort. You should have just shut up and practiced waving your staff.\""
     },
     {
       "rarity": "Rare",
@@ -718,9 +718,9 @@
       "itemName": "『影が笑う』",
       "originText": "自分の影に魔力を与えて使い魔にしたが、影に乗っ取られ、暗闇の中で己の影に絞殺された男。",
       "priestMemo": "自分の暗部を実体化させればこうなる。お前の影は、お前よりよほど優秀だったようだな。",
-      "itemNameEn": "Fading Memory of Spell",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange magic energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "\"The Shadow Laughs\"",
+      "originTextEn": "A man who imbued his own shadow with mana to make it a familiar, only to be strangled by it in the pitch darkness.",
+      "priestMemoEn": "\"This is what happens when you materialize your own dark side. Seems your shadow was far more competent than you.\""
     },
     {
       "rarity": "Rare",
@@ -728,9 +728,9 @@
       "itemName": "『炎が冷たい』",
       "originText": "極低温の炎を生み出す実験の最中、誤って自らを燃やし、凍えながら炭化していった錬金術師。",
       "priestMemo": "矛盾した事象を追求するのは学者の性だが、自らの命で証明しなくてもよかろうに。",
-      "itemNameEn": "Abyssal Memory of Flame",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange magic energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "\"The Flame is Cold\"",
+      "originTextEn": "An alchemist who accidentally ignited himself during an experiment to create a cryogenic flame, carbonizing as he froze to death.",
+      "priestMemoEn": "\"Pursuing paradoxes is the nature of a scholar, but there was no need to prove it with your own life.\""
     },
     {
       "rarity": "Rare",
@@ -738,9 +738,9 @@
       "itemName": "『鏡の中の他人』",
       "originText": "分身の術を使いすぎた結果、本体がどれか分からなくなり、互いに殺し合いを始めた分身たち。",
       "priestMemo": "自分自身が一番信用ならないという真理を、身を以て証明してくれたな。",
-      "itemNameEn": "Shattered Memory of Void",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange magic energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "\"Stranger in the Mirror\"",
+      "originTextEn": "A sorcerer who used cloning spells too many times, losing track of the original and engaging in a battle to the death with his own copies.",
+      "priestMemoEn": "\"Proving with your own body the truth that you are the one you can trust the least. Splendid.\""
     },
     {
       "rarity": "Rare",
@@ -748,9 +748,9 @@
       "itemName": "『時間が遅い』",
       "originText": "思考を加速させる魔薬を飲み、体感時間が数千倍になった結果、一瞬の苦痛を永遠に感じ続けた戦士。",
       "priestMemo": "死ぬ瞬間の痛みが数百年続く気分はどうだ？時間操作は素人が手を出すべきではないな。",
-      "itemNameEn": "Echoing Memory of Rune",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange magic energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "\"Time is Slow\"",
+      "originTextEn": "A warrior who drank a potion to accelerate his thoughts by thousands of times, experiencing the momentary agony of his death for an eternity.",
+      "priestMemoEn": "\"How does it feel to experience the moment of death for centuries? Amateurs shouldn't dabble in time manipulation.\""
     },
     {
       "rarity": "Rare",
@@ -758,9 +758,9 @@
       "itemName": "『空間が裏返る』",
       "originText": "テレポートの座標計算を誤り、内臓と皮膚が完全に裏返しになって出現した空間魔術師。",
       "priestMemo": "内臓の配置は美しいが、それでは少し風邪を引きやすいだろう。次からは慎重に計算したまえ。",
-      "itemNameEn": "Cursed Memory of Soul",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange magic energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "\"Space Inside Out\"",
+      "originTextEn": "A spatial mage who botched a teleportation coordinate calculation, arriving at his destination with his skin and internal organs completely inverted.",
+      "priestMemoEn": "\"The arrangement of your organs is beautiful, but you might catch a cold like that. Calculate more carefully next time.\""
     },
     {
       "rarity": "Rare",
@@ -768,9 +768,9 @@
       "itemName": "『雷が落ちない』",
       "originText": "天候を操る儀式に失敗し、周囲の雷をすべて自らの避雷針の如き杖に集めてしまい黒焦げになった祈祷師。",
       "priestMemo": "神の怒りを一身に引き受けたのだから、祈祷師としては本望だろう。丸焦げの死体だがな。",
-      "itemNameEn": "Sacred Memory of Storm",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange magic energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "\"The Lightning Won't Strike\"",
+      "originTextEn": "A shaman who failed a weather-manipulation ritual, turning his own staff into a lightning rod and reducing himself to a charred corpse.",
+      "priestMemoEn": "\"Taking on the wrath of the gods single-handedly... a shaman's ultimate honor. You're just a crispy corpse, though.\""
     },
     {
       "rarity": "Rare",
@@ -778,9 +778,9 @@
       "itemName": "『呪文を忘れた』",
       "originText": "魔法を放つ直前に記憶障害を起こす呪いを受け、杖を構えたまま敵に殴り殺された哀れな老魔導士。",
       "priestMemo": "ボケる前に引退すべきだったな。杖は殴るための棒ではないのだよ。",
-      "itemNameEn": "Dim Memory of Wisdom",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange magic energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "\"Forgot the Spell\"",
+      "originTextEn": "A pitiful old mage who was cursed with memory loss just before casting a spell, beaten to death by an enemy while merely holding his staff up.",
+      "priestMemoEn": "\"Should have retired before senility set in. A staff is not a club, you know.\""
     },
     {
       "rarity": "Rare",
@@ -788,9 +788,9 @@
       "itemName": "『血が沸騰する』",
       "originText": "魔力を血液に直接変換する術式を暴走させ、全身の血が沸騰して蒸気となって破裂した吸血鬼。",
       "priestMemo": "エコな動力源だが、排熱処理を怠ればこうなる。吸血鬼が火傷で死ぬとは笑い話にもならん。",
-      "itemNameEn": "Forgotten Memory of Aura",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange magic energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "\"Blood Boiling\"",
+      "originTextEn": "A vampire who mismanaged a spell converting mana directly into blood, boiling all his blood into steam until he violently burst.",
+      "priestMemoEn": "\"An eco-friendly power source, but this is what happens when you neglect heat dissipation. A vampire dying of burns isn't even funny.\""
     },
     {
       "rarity": "Rare",
@@ -798,9 +798,9 @@
       "itemName": "『重力が上に向かう』",
       "originText": "重力反転の呪文を自分自身にかけてしまい、空の彼方へ落ちていった浮遊魔術師の最後の絶望。",
       "priestMemo": "星になった男、か。ロマンチックだが、酸素がなくなってからの苦しみは想像を絶するだろうな。",
-      "itemNameEn": "Eternal Memory of Frost",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange magic energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "\"Gravity Goes Up\"",
+      "originTextEn": "The final despair of a levitation mage who accidentally cast a gravity-inversion spell on himself, falling upwards into the endless sky.",
+      "priestMemoEn": "\"The man who became a star. Romantic, but suffocating in the void must have been unimaginable torture.\""
     },
     {
       "rarity": "Uncommon",
@@ -808,9 +808,9 @@
       "itemName": "『字が読めない』",
       "originText": "魔導書のインクの毒性にやられ、視力と知能を徐々に失いながらもページをめくり続けた学徒。",
       "priestMemo": "読書も命懸けとなると立派なものだが、毒入りインクを使う著者の悪趣味を恨むんだな。",
-      "itemNameEn": "Lost Memory of Sorcery",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange magic energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "\"Can't Read the Words\"",
+      "originTextEn": "A scholar who succumbed to the toxic ink of a grimoire, continuing to turn the pages even as he slowly lost his sight and intellect.",
+      "priestMemoEn": "\"Risking your life to read is admirable, but you should curse the author's twisted taste in poisonous ink.\""
     },
     {
       "rarity": "Uncommon",
@@ -818,9 +818,9 @@
       "itemName": "『杖が重い』",
       "originText": "魔力を吸い取る呪いの杖を握ってしまい、手を離すこともできずミイラ化した見習い。",
       "priestMemo": "他人のものを勝手に触るからそうなる。良い教訓になっただろう。",
-      "itemNameEn": "Fading Memory of Spell",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange magic energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "\"The Staff is Heavy\"",
+      "originTextEn": "An apprentice who grabbed a cursed staff that drains mana, unable to let go until he was completely mummified.",
+      "priestMemoEn": "\"That's what you get for touching things that aren't yours. Let this be a good lesson to you.\""
     },
     {
       "rarity": "Uncommon",
@@ -828,9 +828,9 @@
       "itemName": "『火の粉が熱い』",
       "originText": "初めて成功した火の玉魔法の美しさに見とれ、回避を忘れて自らの顔面を焼いた新米魔術師。",
       "priestMemo": "自らの才能に見惚れて死ぬ。ある意味で、最も幸福な最期と言えるかもしれないな。",
-      "itemNameEn": "Abyssal Memory of Flame",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange magic energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "\"The Embers Are Hot\"",
+      "originTextEn": "A novice mage who was so mesmerized by the beauty of his first successful fireball that he forgot to dodge, burning off his own face.",
+      "priestMemoEn": "\"Dying mesmerized by your own talent. In a way, perhaps the happiest end one could ask for.\""
     },
     {
       "rarity": "Uncommon",
@@ -838,9 +838,9 @@
       "itemName": "『水に溺れる幻覚』",
       "originText": "水責めの幻術をかけられ、陸にいながらにして肺を水で満たされたと錯覚し、窒息死した兵士。",
       "priestMemo": "人間の脳は簡単に騙される。実際には一滴の水もないのに溺れ死ぬとは、滑稽な生き物だ。",
-      "itemNameEn": "Shattered Memory of Void",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange magic energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "\"Hallucination of Drowning\"",
+      "originTextEn": "A soldier subjected to a water-torture illusion, dying of asphyxiation while completely dry on land, convinced his lungs were full of water.",
+      "priestMemoEn": "\"The human brain is so easily fooled. Drowning to death without a single drop of water... what ridiculous creatures.\""
     },
     {
       "rarity": "Uncommon",
@@ -848,9 +848,9 @@
       "itemName": "『砂が目に入る』",
       "originText": "砂嵐を起こす魔法の制御に失敗し、自らの目と肺を砂で満たしてしまった三流の風使い。",
       "priestMemo": "風を読む前に自分の立ち位置を読むべきだったな。自業自得という言葉がよく似合う。",
-      "itemNameEn": "Echoing Memory of Rune",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange magic energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "\"Sand in My Eyes\"",
+      "originTextEn": "A third-rate wind user who failed to control a sandstorm spell, filling his own eyes and lungs with sand.",
+      "priestMemoEn": "\"You should have read where you were standing before you tried reading the wind. 'Reaping what you sow' suits you perfectly.\""
     },
     {
       "rarity": "Uncommon",
@@ -858,9 +858,9 @@
       "itemName": "『石に変わる足』",
       "originText": "石化の呪いの進行を遅らせるため、自分の足を自分で切り落とそうとして失血死した男。",
       "priestMemo": "石になるか、血を流し尽くすか。究極の選択だったな。どちらにせよ死ぬ運命だったが。",
-      "itemNameEn": "Cursed Memory of Soul",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange magic energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "\"Feet Turning to Stone\"",
+      "originTextEn": "A man who bled to death trying to chop off his own legs to slow the progression of a petrification curse.",
+      "priestMemoEn": "\"Turn to stone or bleed dry. The ultimate choice. You were destined to die either way, though.\""
     },
     {
       "rarity": "Uncommon",
@@ -868,9 +868,9 @@
       "itemName": "『呪符が剥がれない』",
       "originText": "悪霊除けの呪符を全身に糊付けし、皮膚呼吸ができなくなって死んだ妄想狂。",
       "priestMemo": "悪霊からは守られたかもしれないが、窒息からは守ってくれなかったようだな。",
-      "itemNameEn": "Sacred Memory of Storm",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange magic energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "\"The Talisman Won't Peel Off\"",
+      "originTextEn": "A paranoiac who glued anti-spirit talismans over his entire body, suffocating to death because his skin could no longer breathe.",
+      "priestMemoEn": "\"Protected from evil spirits, maybe. Not protected from suffocation, it seems.\""
     },
     {
       "rarity": "Uncommon",
@@ -878,9 +878,9 @@
       "itemName": "『幻の金貨』",
       "originText": "鉛を金に変える錬金術が成功したと錯覚し、鉛の塊を飲み込んで重金属中毒で死んだ詐欺師。",
       "priestMemo": "自らの嘘に騙される詐欺師。才能がないのか、ある意味で天才なのか。判断に迷うところだ。",
-      "itemNameEn": "Dim Memory of Wisdom",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange magic energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "\"Phantom Gold Coin\"",
+      "originTextEn": "A con artist who died of heavy metal poisoning after swallowing a lump of lead, convinced his alchemy had successfully turned it into gold.",
+      "priestMemoEn": "\"A con artist fooled by his own lie. Talentless, or a genius in a twisted way? Hard to say.\""
     },
     {
       "rarity": "Uncommon",
@@ -888,9 +888,9 @@
       "itemName": "『星が囁く』",
       "originText": "宇宙のノイズをテレパシーと勘違いし、アルミ箔で頭を包んだまま衰弱死した隠遁者。",
       "priestMemo": "星は何も語らない。お前の頭の中の虫が鳴いていただけであろうよ。",
-      "itemNameEn": "Forgotten Memory of Aura",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange magic energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "\"The Stars Whisper\"",
+      "originTextEn": "A hermit who starved to death with his head wrapped in aluminum foil, mistaking the cosmic noise of the universe for telepathy.",
+      "priestMemoEn": "\"The stars speak to no one. It was just the worms in your brain making all that noise.\""
     },
     {
       "rarity": "Uncommon",
@@ -898,9 +898,9 @@
       "itemName": "『闇が怖い』",
       "originText": "光を生み出す魔法しか使えず、暗闇の恐怖から永遠に魔法を放ち続けて餓死した臆病者。",
       "priestMemo": "暗闇より怖いのは、飢えと孤独だということに気づけなかったようだな。",
-      "itemNameEn": "Eternal Memory of Frost",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange magic energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "\"Afraid of the Dark\"",
+      "originTextEn": "A coward who could only use light magic, starving to death because he constantly cast spells out of an absolute terror of the dark.",
+      "priestMemoEn": "\"Seems you failed to realize that starvation and loneliness are far scarier than the dark.\""
     },
     {
       "rarity": "Common",
@@ -908,9 +908,9 @@
       "itemName": "『火が点かない』",
       "originText": "凍える冬の夜、指先の火起こし魔法すら失敗し続け、絶望の中で凍死した浮浪者。",
       "priestMemo": "マッチ一本あれば助かった命だ。魔法などという不確かなものに頼るからそうなる。",
-      "itemNameEn": "Lost Memory of Sorcery",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange magic energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "\"The Fire Won't Light\"",
+      "originTextEn": "A vagrant who froze to death on a bitter winter night, falling into despair after repeatedly failing even a basic fire-starting spell.",
+      "priestMemoEn": "\"A single match could have saved your life. This is what you get for relying on something as fickle as magic.\""
     },
     {
       "rarity": "Common",
@@ -918,9 +918,9 @@
       "itemName": "『杖の破片が刺さる』",
       "originText": "安物の魔導杖に過剰な魔力を込めて暴発させ、木片が眼球に突き刺さって死んだ馬鹿。",
       "priestMemo": "道具は正しく使えと教わらなかったか？安物買いの銭失い、いや命失いだな。",
-      "itemNameEn": "Fading Memory of Spell",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange magic energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "\"Staff Splinters Pierce\"",
+      "originTextEn": "An idiot who pumped too much mana into a cheap staff causing it to explode, dying when a wooden splinter pierced his eyeball.",
+      "priestMemoEn": "\"Didn't anyone teach you how to use your tools? You get what you pay for—in this case, death.\""
     },
     {
       "rarity": "Common",
@@ -928,9 +928,9 @@
       "itemName": "『計算が合わない』",
       "originText": "簡単なポーションの調合分量を間違え、鍋ごと爆発に巻き込まれた見習い錬金術師。",
       "priestMemo": "算数からやり直してこい。まあ、やり直す命はもう残っていないがね。",
-      "itemNameEn": "Abyssal Memory of Flame",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange magic energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "\"The Math is Wrong\"",
+      "originTextEn": "An apprentice alchemist who messed up the measurements for a simple potion and was caught in the exploding cauldron.",
+      "priestMemoEn": "\"Go back and learn basic arithmetic. Well, I suppose you don't have an extra life for that.\""
     },
     {
       "rarity": "Common",
@@ -938,9 +938,9 @@
       "itemName": "『文字が滲む』",
       "originText": "徹夜で魔導書を読み漁り、過労で心臓が停止して本の上に突っ伏した学生。",
       "priestMemo": "勉強熱心なのは良いことだが、死んでしまっては学位は取れんぞ。",
-      "itemNameEn": "Shattered Memory of Void",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange magic energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "\"The Letters Are Blurring\"",
+      "originTextEn": "A student who read grimoires all through the night, his heart stopping from overwork as he collapsed face-first onto his book.",
+      "priestMemoEn": "\"It's good to be studious, but you can't get a degree if you're dead.\""
     },
     {
       "rarity": "Common",
@@ -948,9 +948,9 @@
       "itemName": "『水晶球が割れる』",
       "originText": "自分の悲惨な未来を水晶球に視てしまい、絶望のあまり水晶球に頭を叩きつけて死んだ占い師。",
       "priestMemo": "未来を変える努力をする前に諦めるとは。占い師としては三流、人間としても底辺だな。",
-      "itemNameEn": "Echoing Memory of Rune",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange magic energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "\"The Crystal Ball Shatters\"",
+      "originTextEn": "A fortune teller who foresaw his own miserable future in a crystal ball and smashed his head against it in sheer despair, dying instantly.",
+      "priestMemoEn": "\"Giving up before you even try to change the future? A third-rate seer and bottom-tier trash of a human.\""
     },
     {
       "rarity": "Common",
@@ -958,9 +958,9 @@
       "itemName": "『呪文を噛む』",
       "originText": "敵を前にして詠唱を噛み、恥ずかしさで硬直している隙に首を刎ねられた魔術師。",
       "priestMemo": "滑舌の悪さが命取りになるとは。早口言葉の練習を怠った報いだな。",
-      "itemNameEn": "Cursed Memory of Soul",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange magic energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "\"Biting the Incantation\"",
+      "originTextEn": "A mage who fumbled his chant in front of an enemy and got his head chopped off while frozen in embarrassment.",
+      "priestMemoEn": "\"Sluggish speech proved fatal. The price for slacking on your tongue-twister practice.\""
     },
     {
       "rarity": "Common",
@@ -968,9 +968,9 @@
       "itemName": "『帽子が風で飛ぶ』",
       "originText": "強風を操ろうとして失敗し、大切な三角帽子が飛ばされたショックで心不全を起こした老人。",
       "priestMemo": "帽子一つで死ぬとは。どれだけ薄っぺらいプライドを持っていたのだ？",
-      "itemNameEn": "Sacred Memory of Storm",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange magic energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "\"The Hat Blows Away\"",
+      "originTextEn": "An old man who suffered a fatal heart attack from the shock of losing his precious pointed hat while failing to manipulate strong winds.",
+      "priestMemoEn": "\"Dying over a hat? Just how fragile was that paper-thin pride of yours?\""
     },
     {
       "rarity": "Common",
@@ -978,9 +978,9 @@
       "itemName": "『指がつる』",
       "originText": "複雑な印を結ぼうとして指がつり、激痛でのたうち回っている間に野犬に食われた男。",
       "priestMemo": "準備運動を怠るからそうなる。野犬の餌になるために印を結んだようなものだ。",
-      "itemNameEn": "Dim Memory of Wisdom",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange magic energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "\"Cramping Fingers\"",
+      "originTextEn": "A man whose fingers cramped while attempting complex hand seals, eaten alive by wild dogs while writhing in agony.",
+      "priestMemoEn": "\"That's what you get for skipping your warm-ups. You basically hand-signed your way into becoming dog food.\""
     },
     {
       "rarity": "Common",
@@ -988,9 +988,9 @@
       "itemName": "『マントが引っかかる』",
       "originText": "逃走中に長すぎるマントが木の枝に引っかかり、そのまま追手に串刺しにされた魔法使い。",
       "priestMemo": "見栄を張って長いマントを着るからだ。実用性を重んじない愚か者の末路だな。",
-      "itemNameEn": "Forgotten Memory of Aura",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange magic energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "\"Caught Cloak\"",
+      "originTextEn": "A wizard whose obnoxiously long cloak caught on a tree branch while fleeing, getting him instantly skewered by his pursuers.",
+      "priestMemoEn": "\"This is why you don't wear pointlessly long cloaks for fashion. The demise of a fool who ignores practicality.\""
     },
     {
       "rarity": "Common",
@@ -998,9 +998,9 @@
       "itemName": "『何も起こらない』",
       "originText": "自分には隠された魔力があると信じ込み、一生涯呪文を叫び続けたが、ただの一般人だった男。",
       "priestMemo": "狂気の中では幸せだったのだろう。現実を見ずに死ねたのだからな。",
-      "itemNameEn": "Eternal Memory of Frost",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange magic energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "\"Nothing Happens\"",
+      "originTextEn": "A completely ordinary man who spent his entire life screaming incantations, utterly convinced he possessed hidden magical powers.",
+      "priestMemoEn": "\"I suppose he was happy in his madness. Dying without ever facing reality.\""
     }
   ],
   "Healing": [
@@ -1010,9 +1010,9 @@
       "itemName": "万物を産む肉壺",
       "originText": "疫病に苦しむ民を救うため、自らの肉を無限に増殖させ切り分けさせた聖女のなれの果て。",
       "priestMemo": "無限の肉とは便利なものだ。だが、民は病が治った後もその肉の味が忘れられなかったらしいぞ。",
-      "itemNameEn": "Lost Memory of Light",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange healing energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "Fleshen Urn of Genesis",
+      "originTextEn": "The remains of a saint who infinitely multiplied and distributed her own flesh to save the plague-stricken masses.",
+      "priestMemoEn": "\"Infinite meat is quite convenient. Though I hear the villagers never forgot the taste, even after the plague was cured.\""
     },
     {
       "rarity": "Legendary",
@@ -1020,9 +1020,9 @@
       "itemName": "血を分かつ聖杯",
       "originText": "干ばつの村で、自らの血液を水に変える奇跡を起こし、干からびて死んだ神父の記憶。",
       "priestMemo": "血を水に変える奇跡か。村人はその後、ただの水を飲んでも鉄の味がすると嘆いたそうだ。",
-      "itemNameEn": "Fading Memory of Breath",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange healing energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "Chalice of Parted Blood",
+      "originTextEn": "Memory of a priest who dried up and died after performing a miracle to turn his own blood into water for a drought-stricken village.",
+      "priestMemoEn": "\"A miracle turning blood to water? I heard the villagers later complained that even plain water tasted like iron.\""
     },
     {
       "rarity": "Legendary",
@@ -1030,9 +1030,9 @@
       "itemName": "永遠を縛る産声",
       "originText": "死産した我が子を蘇らせるため、自分の寿命を完全に逆転させ、赤子の代わりに土へ還った母。",
       "priestMemo": "等価交換の法則だよ。だが蘇った赤子が、その後どう育ったかはお前も知るまい。",
-      "itemNameEn": "Abyssal Memory of Hope",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange healing energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "First Cry Binding Eternity",
+      "originTextEn": "A mother who completely inverted her own lifespan to resurrect her stillborn child, returning to the soil in the infant's place.",
+      "priestMemoEn": "\"The law of equivalent exchange. Though neither you nor I know how that resurrected child ended up turning out.\""
     },
     {
       "rarity": "Legendary",
@@ -1040,9 +1040,9 @@
       "itemName": "慈悲深き断頭台",
       "originText": "苦痛に満ちた生を送る患者たちを救うため、苦しみを感じる前に全てを斬首して回った狂医。",
       "priestMemo": "死ねば病気の苦しみからは解放される。ある意味で最高の特効薬だ。倫理は死ぬがね。",
-      "itemNameEn": "Shattered Memory of Solace",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange healing energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "Guillotine of Mercy",
+      "originTextEn": "A deranged doctor who went around beheading his suffering patients so they wouldn't have to feel the agony of their diseases.",
+      "priestMemoEn": "\"Death frees one from the suffering of illness. In a way, it's the ultimate panacea. Too bad ethics had to die first.\""
     },
     {
       "rarity": "Legendary",
@@ -1050,9 +1050,9 @@
       "itemName": "神を食らう胃袋",
       "originText": "世界中の毒を自らの体内に納めるため、猛毒の沼を飲み干して内臓から溶け落ちた救世主。",
       "priestMemo": "毒を飲み干したところで、人間の心に湧く毒までは飲み込めなかったようだな。",
-      "itemNameEn": "Echoing Memory of Life",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange healing energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "Stomach that Devoured God",
+      "originTextEn": "A savior who drank an entire swamp of deadly poison to harbor all the world's toxins within, his internal organs melting away.",
+      "priestMemoEn": "\"You drank the swamp, but it seems you couldn't swallow the poison welling up in the hearts of humanity.\""
     },
     {
       "rarity": "Epic",
@@ -1060,9 +1060,9 @@
       "itemName": "痛みを喰らう面",
       "originText": "他者の傷口を舐めることで、その傷を自らの肉体へ転移させ、全身腐爛して死んだ修行僧。",
       "priestMemo": "他人の痛みなど背負うものではない。自分の痛みすら処理できないのが人間という生き物だ。",
-      "itemNameEn": "Cursed Memory of Mercy",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange healing energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "Mask of Pain-Eating",
+      "originTextEn": "An ascetic monk who licked the wounds of others to transfer the injuries to his own body, dying entirely rotted and festering.",
+      "priestMemoEn": "\"You shouldn't shoulder the pain of others. Humans are creatures who can't even process their own agonies.\""
     },
     {
       "rarity": "Epic",
@@ -1070,9 +1070,9 @@
       "itemName": "涙を編む糸",
       "originText": "戦死した息子を思い泣き続け、その涙腺から血が枯れるまで涙を流し続けて石化した老婆。",
       "priestMemo": "石になればもう泣かずに済む。悲しみを物理的に克服した素晴らしい事例だな。",
-      "itemNameEn": "Sacred Memory of Relief",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange healing energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "Thread Woven of Tears",
+      "originTextEn": "An old woman who cried endlessly over her son killed in war, shedding tears until her tear ducts bled dry and she petrified into stone.",
+      "priestMemoEn": "\"Turn to stone and you never have to cry again. A brilliant case study in physically overcoming grief.\""
     },
     {
       "rarity": "Epic",
@@ -1080,9 +1080,9 @@
       "itemName": "祈りを釘打つ手",
       "originText": "祈りが天に届かぬ絶望から、両手を合わせて太い鉄釘で貫き、永遠の祈りの姿勢を保った教徒。",
       "priestMemo": "手が離れなくなっただけで、心が神に向かっているわけではない。滑稽なパフォーマンスだ。",
-      "itemNameEn": "Dim Memory of Tears",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange healing energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "Hands Nailed in Prayer",
+      "originTextEn": "A zealot in despair that his prayers wouldn't reach heaven, who drove a thick iron spike through his pressed palms to hold the pose forever.",
+      "priestMemoEn": "\"Just because your hands are stuck together doesn't mean your heart is facing God. A comical performance.\""
     },
     {
       "rarity": "Epic",
@@ -1090,9 +1090,9 @@
       "itemName": "骨を砕く子守唄",
       "originText": "凍死寸前の赤子を温めるため、自らの骨を砕いて摩擦熱を起こし、抱きしめたまま事切れた男。",
       "priestMemo": "摩擦熱で温まる前に内出血で死ぬ。理科の成績が悪かった男の哀れな末路だ。",
-      "itemNameEn": "Forgotten Memory of Grace",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange healing energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "Bone-Crushing Lullaby",
+      "originTextEn": "A man who crushed his own bones to generate friction heat to warm a freezing infant, dying with the child held tight.",
+      "priestMemoEn": "\"Dying of internal bleeding before the friction could warm anything. The pitiful end of a man who failed basic physics.\""
     },
     {
       "rarity": "Epic",
@@ -1100,9 +1100,9 @@
       "itemName": "太陽を盗む眼",
       "originText": "地下の民に光を与えるため、地上で太陽を直視し続け、両目に光を宿したまま盲目となった娘。",
       "priestMemo": "眼球を光らせても地下は照らせない。ただの不気味な照明器具に成り下がっただけだ。",
-      "itemNameEn": "Eternal Memory of Sanctuary",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange healing energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "Eyes that Stole the Sun",
+      "originTextEn": "A girl who stared directly into the sun to bring light to the subterranean people, going blind while trapping the light in her eyes.",
+      "priestMemoEn": "\"Glowing eyeballs won't light up the underground. You've just reduced yourself to a very creepy light fixture.\""
     },
     {
       "rarity": "Epic",
@@ -1110,9 +1110,9 @@
       "itemName": "肉を紡ぐ縫い針",
       "originText": "引き裂かれた恋人の死体を縫い合わせるため、自分の髪の毛を糸にして命を編み込んだ少女。",
       "priestMemo": "フランケンシュタインも真っ青の執念だが、縫い合わせた肉はただ腐るだけだと知るべきだった。",
-      "itemNameEn": "Lost Memory of Light",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange healing energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "Needle Spinning Flesh",
+      "originTextEn": "A girl who used her own hair as thread to stitch together the torn corpse of her lover, trying to weave life back into him.",
+      "priestMemoEn": "\"A tenacity that would make Frankenstein pale, but you should have known that stitched meat only rots.\""
     },
     {
       "rarity": "Epic",
@@ -1120,9 +1120,9 @@
       "itemName": "罪を洗う酸",
       "originText": "己の罪の意識に耐えきれず、皮膚を溶かす強酸の川で身を清めようとして骨だけになった罪人。",
       "priestMemo": "確かに皮膚ごと罪は消え去ったな。骨まで綺麗になったのだから、神も許してくださるだろう。",
-      "itemNameEn": "Fading Memory of Breath",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange healing energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "Sin-Washing Acid",
+      "originTextEn": "A sinner unable to bear the guilt, who tried to cleanse himself in a river of skin-melting acid, reduced to nothing but bones.",
+      "priestMemoEn": "\"The sins certainly washed away with the skin. Now that your bones are sparkling clean, surely God will forgive you.\""
     },
     {
       "rarity": "Epic",
@@ -1130,9 +1130,9 @@
       "itemName": "夢を喰らう獏",
       "originText": "悪夢にうなされる子供を救うため、自らの脳を悪夢の苗床にして発狂死した父親。",
       "priestMemo": "子供の夢は守られたが、父親が狂人になる現実の方がよほど子供にとっては悪夢だろうに。",
-      "itemNameEn": "Abyssal Memory of Hope",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange healing energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "Dream-Devouring Baku",
+      "originTextEn": "A father who turned his own brain into a seedbed for nightmares to save his child from night terrors, dying in utter madness.",
+      "priestMemoEn": "\"The child's dreams were saved, but having a raving lunatic for a father is a much worse nightmare in reality.\""
     },
     {
       "rarity": "Epic",
@@ -1140,9 +1140,9 @@
       "itemName": "心臓を捧げる祭壇",
       "originText": "豊穣の神を呼び寄せるため、自らの胸を裂いて心臓を取り出し、脈打つ間に大地に埋めた神官。",
       "priestMemo": "肥料としては優秀かもしれないが、豊穣の神とやらが肉食だとは聞いたことがないな。",
-      "itemNameEn": "Shattered Memory of Solace",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange healing energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "Altar of the Offered Heart",
+      "originTextEn": "A priest who tore open his own chest and buried his still-beating heart in the soil to summon the god of fertility.",
+      "priestMemoEn": "\"Might make for excellent fertilizer, but I've never heard of this fertility god being a carnivore.\""
     },
     {
       "rarity": "Epic",
@@ -1150,9 +1150,9 @@
       "itemName": "泥を練る息吹",
       "originText": "壊れた土人形に命を吹き込もうと、三日三晩息を吹き込み続け、過呼吸で肺が破裂した魔術師。",
       "priestMemo": "肺活量を鍛えてから出直すべきだったな。土人形は今も冷たいままだよ。",
-      "itemNameEn": "Echoing Memory of Life",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange healing energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "Breath Kneading Mud",
+      "originTextEn": "A mage who blew breath into a broken clay doll for three days and three nights to revive it, rupturing his lungs from hyperventilation.",
+      "priestMemoEn": "\"Should have trained your lung capacity first. The clay doll is still as cold as ever, you know.\""
     },
     {
       "rarity": "Rare",
@@ -1160,9 +1160,9 @@
       "itemName": "『傷口が痒い』",
       "originText": "治りかけの傷の痒みに耐えきれず、自らの肉を骨が見えるまで掻き毟って出血死した男。",
       "priestMemo": "治りかけが一番痒いと言うからな。少しの我慢が足りなかっただけで命を落とすとは。",
-      "itemNameEn": "Cursed Memory of Mercy",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange healing energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "\"My Wounds Itch\"",
+      "originTextEn": "A man unable to endure the itching of a healing wound, scratching his own flesh until the bone showed, bleeding to death.",
+      "priestMemoEn": "\"They say it itches most when it's healing. To lose your life just because you couldn't be a little patient...\""
     },
     {
       "rarity": "Rare",
@@ -1170,9 +1170,9 @@
       "itemName": "『包帯が足りない』",
       "originText": "全身の火傷を隠すため、家中の布を巻きつけ、最後はシーツに包まったままミイラ化した女。",
       "priestMemo": "見られたくないという自意識が命を奪った。美意識とは時に毒より厄介だ。",
-      "itemNameEn": "Sacred Memory of Relief",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange healing energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "\"Not Enough Bandages\"",
+      "originTextEn": "A woman who wrapped herself in every piece of cloth in her house to hide her full-body burns, ultimately mummifying inside her bedsheets.",
+      "priestMemoEn": "\"The self-consciousness of not wanting to be seen killed you. A sense of beauty is sometimes more troublesome than poison.\""
     },
     {
       "rarity": "Rare",
@@ -1180,9 +1180,9 @@
       "itemName": "『薬が苦い』",
       "originText": "特効薬の苦味に耐えられず、砂糖を大量に混ぜて飲んだ結果、薬効が失われて病死した子供。",
       "priestMemo": "良薬口に苦し。甘いだけの人生など存在しないという真理を、身をもって学んだようだな。",
-      "itemNameEn": "Dim Memory of Tears",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange healing energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "\"The Medicine is Bitter\"",
+      "originTextEn": "A child who couldn't stand the bitterness of a cure-all, mixing in a massive amount of sugar that destroyed its efficacy, dying of illness.",
+      "priestMemoEn": "\"Good medicine tastes bitter. It seems you learned the hard way that a life of only sweetness does not exist.\""
     },
     {
       "rarity": "Rare",
@@ -1190,9 +1190,9 @@
       "itemName": "『血が止まらない』",
       "originText": "小さな切り傷から血が止まらず、一滴残らず体内の血液が流れ出ていくのを静かに見つめた貴族。",
       "priestMemo": "血友病の家系か。青き血の貴族様も、流れる血は赤かったようで何よりだ。",
-      "itemNameEn": "Forgotten Memory of Grace",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange healing energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "\"The Bleeding Won't Stop\"",
+      "originTextEn": "A noble who quietly watched as every last drop of blood drained from his body through a tiny, unstopping cut.",
+      "priestMemoEn": "\"A lineage of hemophilia? Good to see the 'blue blood' of the nobility runs just as red as ours.\""
     },
     {
       "rarity": "Rare",
@@ -1200,9 +1200,9 @@
       "itemName": "『眠りが浅い』",
       "originText": "不眠症に悩み、睡眠薬の代わりに致死量の毒をあおり、ついに永遠の眠りを手に入れた商人。",
       "priestMemo": "最高の睡眠薬だな。二度と起きる心配がないのだから、不眠症は完全に治ったと言える。",
-      "itemNameEn": "Eternal Memory of Sanctuary",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange healing energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "\"Light Sleeper\"",
+      "originTextEn": "A merchant suffering from insomnia who downed a lethal dose of poison instead of sleeping pills, finally obtaining eternal rest.",
+      "priestMemoEn": "\"The ultimate sleeping pill. You never have to worry about waking up again, so I'd say the insomnia is perfectly cured.\""
     },
     {
       "rarity": "Rare",
@@ -1210,9 +1210,9 @@
       "itemName": "『体温が下がる』",
       "originText": "雪山で遭難し、凍える体を温めようと自分の衣服を燃やし、最後は素っ裸で凍死した登山家。",
       "priestMemo": "火の温もりは一瞬、凍える時間は永遠。先を読む力が少しばかり足りなかったな。",
-      "itemNameEn": "Lost Memory of Light",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange healing energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "\"Dropping Body Temp\"",
+      "originTextEn": "A mountaineer lost in the snowy peaks who burned his own clothes to warm his freezing body, eventually freezing to death completely naked.",
+      "priestMemoEn": "\"The warmth of the fire is fleeting; the freezing cold is eternal. Seems you lacked a bit of foresight.\""
     },
     {
       "rarity": "Rare",
@@ -1220,9 +1220,9 @@
       "itemName": "『息がくさい』",
       "originText": "内臓の腐敗による口臭を気にして、香水をがぶ飲みし、アルコール中毒で胃が破裂した娼婦。",
       "priestMemo": "香水は外から振るものだ。内面まで美しくなろうという心意気だけは買ってやろう。",
-      "itemNameEn": "Fading Memory of Breath",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange healing energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "\"My Breath Stinks\"",
+      "originTextEn": "A prostitute obsessed with the bad breath caused by her rotting internal organs, chugging perfume until her stomach ruptured from alcohol poisoning.",
+      "priestMemoEn": "\"Perfume is meant to be sprayed on the outside. I'll give you points for wanting to be beautiful on the inside, though.\""
     },
     {
       "rarity": "Rare",
@@ -1230,9 +1230,9 @@
       "itemName": "『心臓がうるさい』",
       "originText": "静寂を求めるあまり、自らの鼓動が煩わしくなり、胸に杭を打ち込んで沈黙を得た修道士。",
       "priestMemo": "生きている証を騒音と感じるとは。お前の神も、さぞ呆れていることだろう。",
-      "itemNameEn": "Abyssal Memory of Hope",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange healing energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "\"My Heart is Too Loud\"",
+      "originTextEn": "A monk who sought absolute silence, growing so annoyed by the sound of his own heartbeat that he drove a stake through his chest to silence it.",
+      "priestMemoEn": "\"To consider the proof of your own life as mere 'noise'... I'm sure your God is absolutely appalled.\""
     },
     {
       "rarity": "Rare",
@@ -1240,9 +1240,9 @@
       "itemName": "『髪が抜ける』",
       "originText": "病の進行で髪が抜ける恐怖から、自分の頭皮を接着剤で固め、皮膚呼吸ができず死んだ女優。",
       "priestMemo": "美しさへの執着が醜い死を生む。皮肉な喜劇のヒロインとしては満点だ。",
-      "itemNameEn": "Shattered Memory of Solace",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange healing energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "\"My Hair is Falling Out\"",
+      "originTextEn": "An actress terrified of losing her hair to disease, gluing her scalp solid until she died because her skin could no longer breathe.",
+      "priestMemoEn": "\"An obsession with beauty births a hideous death. A perfect score as the heroine of a cynical comedy.\""
     },
     {
       "rarity": "Rare",
@@ -1250,9 +1250,9 @@
       "itemName": "『爪が伸びる』",
       "originText": "新陳代謝が異常に早まる奇病にかかり、伸び続ける爪が自らの肉を貫いて死んだ労働者。",
       "priestMemo": "爪切りを買う金すら無かったのか。労働の対価としては安すぎるな。",
-      "itemNameEn": "Echoing Memory of Life",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange healing energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "\"My Nails Are Growing\"",
+      "originTextEn": "A laborer afflicted with a disease of abnormal metabolism, dying as his endlessly growing nails pierced through his own flesh.",
+      "priestMemoEn": "\"Couldn't even afford nail clippers? That's far too cheap a reward for a life of hard labor.\""
     },
     {
       "rarity": "Rare",
@@ -1260,9 +1260,9 @@
       "itemName": "『喉が渇く』",
       "originText": "砂漠でオアシスの幻影を追いかけ、最後は砂を水だと思い込んで腹一杯に詰め込んだ旅人。",
       "priestMemo": "砂は水分を吸うからな。余計に喉が渇いたまま死んでいったのだろう。",
-      "itemNameEn": "Cursed Memory of Mercy",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange healing energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "\"I'm Thirsty\"",
+      "originTextEn": "A traveler who chased the illusion of an oasis in the desert, ultimately stuffing his stomach full of sand, believing it was water.",
+      "priestMemoEn": "\"Sand absorbs moisture, you know. He must have died even thirstier than before.\""
     },
     {
       "rarity": "Rare",
@@ -1270,9 +1270,9 @@
       "itemName": "『光が眩しい』",
       "originText": "長年の地下牢生活の後、解放された日に太陽の光を浴びてショック死した囚人。",
       "priestMemo": "自由の光は強すぎたか。暗闇でしか生きられない虫もいるのだよ。",
-      "itemNameEn": "Sacred Memory of Relief",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange healing energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "\"The Light is Blinding\"",
+      "originTextEn": "A prisoner freed after years in a subterranean dungeon, dying of systemic shock the moment the blazing sun touched his skin.",
+      "priestMemoEn": "\"The light of freedom was too strong for him. Some insects are simply meant to live in the dark.\""
     },
     {
       "rarity": "Rare",
@@ -1280,9 +1280,9 @@
       "itemName": "『音が消えない』",
       "originText": "耳鳴りを消すため、大砲の銃口に頭を突っ込み、轟音と共に頭を吹き飛ばした砲兵。",
       "priestMemo": "確かに耳鳴りは消えた。頭ごと物理的にな。見事な問題解決能力だ。",
-      "itemNameEn": "Dim Memory of Tears",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange healing energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "\"The Ringing Won't Stop\"",
+      "originTextEn": "An artilleryman who shoved his head into a cannon's muzzle to cure his tinnitus, blowing his own head off with a thunderous roar.",
+      "priestMemoEn": "\"Well, the ringing certainly stopped. Along with his entire head. A spectacular display of problem-solving.\""
     },
     {
       "rarity": "Rare",
@@ -1290,9 +1290,9 @@
       "itemName": "『肉が腐る』",
       "originText": "不治の病により自分の体が少しずつ腐っていくのを、毎日鏡の前で記録し続けた学者。",
       "priestMemo": "死の観察記録としては一級品だが、最後に自分の目玉が腐り落ちる瞬間はどう記録したのかな？",
-      "itemNameEn": "Forgotten Memory of Grace",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange healing energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "\"Rotting Flesh\"",
+      "originTextEn": "A scholar afflicted with an incurable disease who stood before a mirror every day, meticulously recording his own body slowly rotting away.",
+      "priestMemoEn": "\"Top-tier clinical observation. But I wonder how he recorded the exact moment his own eyeballs rotted and fell out?\""
     },
     {
       "rarity": "Rare",
@@ -1300,9 +1300,9 @@
       "itemName": "『祈りが届かない』",
       "originText": "神像の前で百日間絶食して祈り続けたが、結局神は現れず、餓死した狂信者。",
       "priestMemo": "神はお前のダイエットに興味は無い。飯を食ってから祈ればよかったものを。",
-      "itemNameEn": "Eternal Memory of Sanctuary",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange healing energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "\"Unanswered Prayers\"",
+      "originTextEn": "A fanatic who fasted and prayed before a divine statue for a hundred days. No god appeared, and he starved to death.",
+      "priestMemoEn": "\"God isn't interested in your extreme diet plan. You should have eaten a proper meal before praying.\""
     },
     {
       "rarity": "Uncommon",
@@ -1310,9 +1310,9 @@
       "itemName": "『絆創膏が剥がれない』",
       "originText": "傷が治った後も絆創膏を剥がすのを極度に恐れ、その下で肉が壊死して敗血症で死んだ子供。",
       "priestMemo": "過保護の末路だな。小さな痛みを避けた結果、最大の苦痛を迎えるとは。",
-      "itemNameEn": "Lost Memory of Light",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange healing energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "\"The Bandage Won't Come Off\"",
+      "originTextEn": "A child terrified of peeling off a bandage long after the wound had healed, dying of sepsis as the flesh necrotized underneath.",
+      "priestMemoEn": "\"The tragedy of overprotection. Avoiding a tiny pinch of pain only to invite the ultimate agony.\""
     },
     {
       "rarity": "Uncommon",
@@ -1320,9 +1320,9 @@
       "itemName": "『うがい薬を飲む』",
       "originText": "体内のバイ菌を消毒しようと、大量のうがい薬を飲み干して胃粘膜を破壊された潔癖症。",
       "priestMemo": "体内は綺麗になっただろうが、生き物としての機能も一緒に消毒されてしまったな。",
-      "itemNameEn": "Fading Memory of Breath",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange healing energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "\"Drinking Mouthwash\"",
+      "originTextEn": "A germaphobe who chugged gallons of antiseptic mouthwash to sanitize the bacteria inside his body, destroying his stomach lining.",
+      "priestMemoEn": "\"His insides must be spotless now. Pity his biological functions were sterilized along with the germs.\""
     },
     {
       "rarity": "Uncommon",
@@ -1330,9 +1330,9 @@
       "itemName": "『湿布が冷たい』",
       "originText": "全身の筋肉痛を治すため、体に百枚の湿布を貼り付け、低体温症で凍死した肉体労働者。",
       "priestMemo": "筋肉の熱は引いたが、命の炎まで消してしまっては意味がない。",
-      "itemNameEn": "Abyssal Memory of Hope",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange healing energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "\"The Compress is Cold\"",
+      "originTextEn": "A manual laborer who slapped a hundred cooling pain-relief patches all over his body, freezing to death from hypothermia.",
+      "priestMemoEn": "\"The muscle inflammation cooled down, sure. But extinguishing the flame of your own life in the process defeats the purpose.\""
     },
     {
       "rarity": "Uncommon",
@@ -1340,9 +1340,9 @@
       "itemName": "『松葉杖が折れる』",
       "originText": "折れた松葉杖の破片が動脈に刺さり、病院の目の前で失血死した不運な怪我人。",
       "priestMemo": "運が悪いとしか言いようがない。神も時折、こういう悪趣味なイタズラをする。",
-      "itemNameEn": "Shattered Memory of Solace",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange healing energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "\"Broken Crutch\"",
+      "originTextEn": "An unlucky patient who bled to death right in front of the hospital when his wooden crutch splintered and severed his artery.",
+      "priestMemoEn": "\"Just pure, unadulterated bad luck. Even God occasionally indulges in tasteless pranks.\""
     },
     {
       "rarity": "Uncommon",
@@ -1350,9 +1350,9 @@
       "itemName": "『ギプスが重い』",
       "originText": "骨折を治すため全身を石膏で固められ、重みで呼吸ができず窒息死した患者。",
       "priestMemo": "骨は完璧に固定されただろうが、肺まで固定されては生きられない。",
-      "itemNameEn": "Echoing Memory of Life",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange healing energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "\"Heavy Cast\"",
+      "originTextEn": "A patient whose entire body was encased in plaster to fix a fracture, suffocating under the sheer weight of the cast.",
+      "priestMemoEn": "\"The bones were perfectly immobilized, I'm sure. But you can't live if your lungs are immobilized too.\""
     },
     {
       "rarity": "Uncommon",
@@ -1360,9 +1360,9 @@
       "itemName": "『点滴が漏れる』",
       "originText": "栄養剤の点滴が血管から漏れ、腕が風船のように膨れ上がった恐怖で心臓麻痺を起こした男。",
       "priestMemo": "栄養の摂りすぎだな。ビビりすぎて死ぬとは、栄養剤も形無しだ。",
-      "itemNameEn": "Cursed Memory of Mercy",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange healing energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "\"Leaking IV\"",
+      "originTextEn": "A man who died of a heart attack from sheer terror as his IV fluid leaked out of his vein, ballooning his arm to a grotesque size.",
+      "priestMemoEn": "\"An overdose of nutrition. Dying because you were too scared of an IV drip... what a disgrace.\""
     },
     {
       "rarity": "Uncommon",
@@ -1370,9 +1370,9 @@
       "itemName": "『注射針が怖い』",
       "originText": "注射の恐怖から逃げ出し、階段から転げ落ちて首の骨を折った臆病者。",
       "priestMemo": "注射針より階段の角の方が痛かっただろう。臆病者の喜劇だ。",
-      "itemNameEn": "Sacred Memory of Relief",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange healing energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "\"Afraid of Needles\"",
+      "originTextEn": "A coward who fled in terror from a syringe, tumbling down a flight of stairs and snapping his neck.",
+      "priestMemoEn": "\"I bet the edge of those stairs hurt a lot more than a tiny needle. The comedy of a coward.\""
     },
     {
       "rarity": "Uncommon",
@@ -1380,9 +1380,9 @@
       "itemName": "『ベッドから落ちる』",
       "originText": "悪夢から逃れようと寝返りを打ち、二段ベッドの上から落下して脳挫傷で死んだ子供。",
       "priestMemo": "夢の中の怪物より、現実の重力の方が確実に命を奪うということだ。",
-      "itemNameEn": "Dim Memory of Tears",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange healing energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "\"Falling out of Bed\"",
+      "originTextEn": "A child tossing and turning to escape a nightmare, tumbling off the top bunk and dying of cerebral contusion.",
+      "priestMemoEn": "\"The gravity of reality is a far more certain killer than any monster in a dream.\""
     },
     {
       "rarity": "Uncommon",
@@ -1390,9 +1390,9 @@
       "itemName": "『毛布が重い』",
       "originText": "寒さをしのぐため数十枚の毛布を被り、その重圧で胸が潰れて圧死した老人。",
       "priestMemo": "暖かさと引き換えに圧殺されるとは。貧乏人の工夫は時に命取りになる。",
-      "itemNameEn": "Forgotten Memory of Grace",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange healing energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "\"Heavy Blankets\"",
+      "originTextEn": "An old man who piled dozens of thick blankets on himself to ward off the cold, crushed to death under the immense weight.",
+      "priestMemoEn": "\"Crushed in exchange for warmth. A poor man's ingenuity is sometimes fatal.\""
     },
     {
       "rarity": "Uncommon",
@@ -1400,9 +1400,9 @@
       "itemName": "『枕が合わない』",
       "originText": "首の痛みに悩み、石の枕で寝てみた結果、寝返りを打って頭蓋骨を割った男。",
       "priestMemo": "硬い枕が良いとは言うが、石はやりすぎだ。永遠の眠りには最適な枕だったようだが。",
-      "itemNameEn": "Eternal Memory of Sanctuary",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange healing energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "\"The Pillow Isn't Right\"",
+      "originTextEn": "A man who suffered from neck pain and decided to sleep on a solid stone block. He rolled over in his sleep and cracked his skull open.",
+      "priestMemoEn": "\"They say firm pillows are good for you, but stone is overdoing it. A perfect pillow for eternal rest, however.\""
     },
     {
       "rarity": "Common",
@@ -1410,9 +1410,9 @@
       "itemName": "『少し休ませて』",
       "originText": "過酷な労働の合間に、木陰で十分だけ眠ろうとして、そのまま二度と目を覚まさなかった農夫。",
       "priestMemo": "永遠の十分間だな。最高の休息を手に入れた彼を羨むべきかもしれない。",
-      "itemNameEn": "Lost Memory of Light",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange healing energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "\"Let Me Rest a Bit\"",
+      "originTextEn": "A farmer who lay down in the shade for a ten-minute nap during grueling labor, never to open his eyes again.",
+      "priestMemoEn": "\"An eternal ten minutes. We should probably envy the absolute rest he finally obtained.\""
     },
     {
       "rarity": "Common",
@@ -1420,9 +1420,9 @@
       "itemName": "『お腹が空いた』",
       "originText": "三日三晩何も食べられず、最後は自分の泥だらけの靴を齧りながら餓死した孤児。",
       "priestMemo": "革靴は煮込まないと硬くて食えないぞ。知識の欠如が死を早めたな。",
-      "itemNameEn": "Fading Memory of Breath",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange healing energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "\"I'm Hungry\"",
+      "originTextEn": "An orphan who hadn't eaten for three days, starving to death while desperately gnawing on his own muddy leather shoes.",
+      "priestMemoEn": "\"Leather shoes are too tough to eat unless you boil them first. A lack of culinary knowledge hastened his demise.\""
     },
     {
       "rarity": "Common",
@@ -1430,9 +1430,9 @@
       "itemName": "『明日も早いから』",
       "originText": "明日も過労の仕事が待っている恐怖から、自ら首に縄をかけて「早退」した平民。",
       "priestMemo": "仕事からの最高の逃避行だ。無断欠勤には違いないが、誰も怒るまい。",
-      "itemNameEn": "Abyssal Memory of Hope",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange healing energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "\"I Have an Early Start Tomorrow\"",
+      "originTextEn": "A commoner so terrified of the next day's grueling labor that he put a rope around his neck to clock out early.",
+      "priestMemoEn": "\"The ultimate escape from work. An unexcused absence, to be sure, but I doubt anyone will scold him now.\""
     },
     {
       "rarity": "Common",
@@ -1440,9 +1440,9 @@
       "itemName": "『風邪を引いた』",
       "originText": "ただの風邪だと高を括り、大雨の中で労働を続けて肺炎で呆気なく死んだ男。",
       "priestMemo": "己の体力を過信した愚か者。風邪は万病の元と言うだろう？",
-      "itemNameEn": "Shattered Memory of Solace",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange healing energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "\"I Caught a Cold\"",
+      "originTextEn": "A man who dismissed his illness as a mere cold, working through a torrential downpour until he abruptly died of pneumonia.",
+      "priestMemoEn": "\"A fool who overestimated his own stamina. A common cold is the root of a myriad of diseases, didn't they tell him?\""
     },
     {
       "rarity": "Common",
@@ -1450,9 +1450,9 @@
       "itemName": "『お茶が熱い』",
       "originText": "熱々の茶を急いで飲み込み、食道を火傷して息ができなくなり窒息死したせっかちな老人。",
       "priestMemo": "急いては事を仕損じる。死に急ぐ必要はなかっただろうに。",
-      "itemNameEn": "Echoing Memory of Life",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange healing energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "\"The Tea is Hot\"",
+      "originTextEn": "An impatient old man who gulped down scalding tea, burning his esophagus so badly it swelled shut and suffocated him.",
+      "priestMemoEn": "\"Haste makes waste. There was absolutely no need to rush into death's arms like that.\""
     },
     {
       "rarity": "Common",
@@ -1460,9 +1460,9 @@
       "itemName": "『スープが薄い』",
       "originText": "薄味の配給スープに絶望し、生きる気力を失ってそのまま餓死した老婆。",
       "priestMemo": "味覚への執着が命より重かったか。塩ひとつまみで救われた命だな。",
-      "itemNameEn": "Cursed Memory of Mercy",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange healing energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "\"The Soup is Watery\"",
+      "originTextEn": "An old woman who fell into despair over the blandness of her rationed soup, losing the will to live and simply starving to death.",
+      "priestMemoEn": "\"Was her attachment to flavor truly heavier than her own life? A single pinch of salt could have saved her.\""
     },
     {
       "rarity": "Common",
@@ -1470,9 +1470,9 @@
       "itemName": "『布団が薄い』",
       "originText": "すきま風の吹く部屋で、一枚の薄い布団を抱きしめながら丸まって凍死した少女。",
       "priestMemo": "貧困は最も静かな殺し屋だ。彼女は寒さの中でどんな夢を見ていたのかね。",
-      "itemNameEn": "Sacred Memory of Relief",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange healing energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "\"The Futon is Thin\"",
+      "originTextEn": "A girl who curled up and froze to death in a drafty room, clutching a single, paper-thin blanket.",
+      "priestMemoEn": "\"Poverty is the quietest of assassins. I wonder what kind of dreams she saw in that freezing room.\""
     },
     {
       "rarity": "Common",
@@ -1480,9 +1480,9 @@
       "itemName": "『母さんに会いたい』",
       "originText": "戦場で致命傷を負い、泥にまみれながら母の名を呼び続けて事切れた少年兵。",
       "priestMemo": "戦場に母親は来ない。そんな当たり前のことすら、死の淵では忘れるのだな。",
-      "itemNameEn": "Dim Memory of Tears",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange healing energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "\"I Want to See My Mother\"",
+      "originTextEn": "A boy soldier who suffered a fatal wound on the battlefield, calling out for his mother as he bled out in the mud.",
+      "priestMemoEn": "\"Mothers don't come to battlefields. Strange how one forgets such obvious truths at the edge of death.\""
     },
     {
       "rarity": "Common",
@@ -1490,9 +1490,9 @@
       "itemName": "『背中が痛い』",
       "originText": "重い荷物を背負い続けた結果、背骨が完全に折れ曲がり、肺を圧迫して窒息した歩荷。",
       "priestMemo": "荷物を下ろすという選択肢はなかったのか？愚直さは時に罪となる。",
-      "itemNameEn": "Forgotten Memory of Grace",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange healing energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "\"My Back Hurts\"",
+      "originTextEn": "A porter who carried overly heavy loads for so long that his spine completely folded over, crushing his lungs and suffocating him.",
+      "priestMemoEn": "\"Was putting the luggage down never an option? Blind obedience is sometimes a sin.\""
     },
     {
       "rarity": "Common",
@@ -1500,9 +1500,9 @@
       "itemName": "『少しだけ横になる』",
       "originText": "戦いの合間に一息つこうと横たわった草むらが、毒蛇の巣であった不運な兵士。",
       "priestMemo": "休息の場所は選ぶべきだ。彼には少しばかり運が足りなかったようだな。",
-      "itemNameEn": "Eternal Memory of Sanctuary",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange healing energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "\"Just Going to Lie Down\"",
+      "originTextEn": "An unlucky soldier who lay down in the tall grass for a quick break between battles, only to realize it was a nest of venomous vipers.",
+      "priestMemoEn": "\"You really should pick your resting spots more carefully. Looks like he lacked a little bit of luck.\""
     }
   ],
   "Support": [
@@ -1512,9 +1512,9 @@
       "itemName": "運命を騙す賽",
       "originText": "自らの死の運命を回避するため、死神とサイコロ勝負をしてイカサマを働き、永遠の逃亡者となった詐欺師。",
       "priestMemo": "死神を騙す手腕は見事だが、一生背後を気にして生きる羽目になったな。最高の喜劇だ。",
-      "itemNameEn": "Lost Memory of Shield",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange support energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "Dice that Cheated Fate",
+      "originTextEn": "A con artist who challenged the Grim Reaper to a game of dice to avoid death, cheated, and became an eternal fugitive.",
+      "priestMemoEn": "\"Splendidly cheated death, only to spend eternity looking over his shoulder. The ultimate comedy.\""
     },
     {
       "rarity": "Legendary",
@@ -1522,9 +1522,9 @@
       "itemName": "時を喰らう靴",
       "originText": "誰よりも速く走るため、周囲の時間を削り取って推進力に変える靴を履き、自分以外の全てを停止させた暗殺者。",
       "priestMemo": "自分以外が止まった世界で、彼はいったい誰を殺したかったのだろうな。",
-      "itemNameEn": "Fading Memory of Step",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange support energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "Time-Devouring Boots",
+      "originTextEn": "An assassin who wore boots that scraped away the time of everything around him to convert into his own propulsion, stopping the rest of the world entirely.",
+      "priestMemoEn": "\"In a world where everyone else is frozen, who exactly did he want to kill?\""
     },
     {
       "rarity": "Legendary",
@@ -1532,9 +1532,9 @@
       "itemName": "影を縫う短剣",
       "originText": "他者の影を地面に縫い付けて動きを封じる術を極めたが、自らの影に裏切られて暗闇に引きずり込まれた盗賊王。",
       "priestMemo": "他人の足を引っ張る者は、いつか自分の足元をすくわれる。影とは正直なものだ。",
-      "itemNameEn": "Abyssal Memory of Veil",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange support energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "Shadow-Stitching Dagger",
+      "originTextEn": "A bandit king who mastered the art of sewing others' shadows to the ground, only to be betrayed by his own shadow and dragged into the abyss.",
+      "priestMemoEn": "\"He who trips up others will eventually have his own feet swept from under him. Shadows are very honest things.\""
     },
     {
       "rarity": "Legendary",
@@ -1542,9 +1542,9 @@
       "itemName": "因果律の抜け穴",
       "originText": "過去の失敗をやり直すため、因果の糸を切り刻み続け、自分が存在したという歴史そのものを消滅させた賢者。",
       "priestMemo": "失敗のない人生を求めて、人生そのものを消すとは。究極の潔癖症だな。",
-      "itemNameEn": "Shattered Memory of Vigor",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange support energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "Loophole of Causality",
+      "originTextEn": "A sage who repeatedly severed the threads of causality to undo past mistakes, ultimately erasing the very history of his own existence.",
+      "priestMemoEn": "\"Erasing your entire life just to avoid making a mistake. The ultimate perfectionist.\""
     },
     {
       "rarity": "Legendary",
@@ -1552,9 +1552,9 @@
       "itemName": "全能の観測者",
       "originText": "世界のあらゆる事象を同時に把握する第三の目を開眼し、情報量に耐えきれず脳がゼリー状に溶けた予言者。",
       "priestMemo": "全てを知るということは、全てを抱え込むということだ。ゼリーになっても世界は見えているかね？",
-      "itemNameEn": "Echoing Memory of Wind",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange support energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "Omnipotent Observer",
+      "originTextEn": "A prophet who opened a third eye to simultaneously perceive all phenomena in the world, his brain melting into jelly from the sheer volume of information.",
+      "priestMemoEn": "\"To know everything is to bear everything. I wonder, can he still see the world now that his brain is jelly?\""
     },
     {
       "rarity": "Epic",
@@ -1562,9 +1562,9 @@
       "itemName": "肉を捨てる跳躍",
       "originText": "迫り来る巨大な魔獣から逃れるため、自らの両腕と内臓を切り捨てて身軽になり、空へ跳躍した斥候。",
       "priestMemo": "見事な跳躍だったが、着地するための足も切り捨てていたのは計算違いだったな。",
-      "itemNameEn": "Cursed Memory of Guardian",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange support energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "Flesh-Discarding Leap",
+      "originTextEn": "A scout who, to escape a massive pursuing beast, chopped off his own arms and internal organs to lighten his weight and leaped into the sky.",
+      "priestMemoEn": "\"A magnificent jump. Pity he miscalculated and chopped off the legs he needed to land.\""
     },
     {
       "rarity": "Epic",
@@ -1572,9 +1572,9 @@
       "itemName": "神経を編む糸",
       "originText": "敵の動きを先読みするため、自らの神経系を引きずり出して周囲に張り巡らせ、風のそよぎで激痛を感じて死んだ密偵。",
       "priestMemo": "センサーとしては超一流だが、受信機が先に壊れては意味がない。",
-      "itemNameEn": "Sacred Memory of Swiftness",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange support energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "Nerve-Weaving Thread",
+      "originTextEn": "A spy who dragged out his own nervous system and strung it up around him to anticipate enemy movements, dying of excruciating pain from a mere breeze.",
+      "priestMemoEn": "\"A top-tier sensor array, but completely useless if the receiver breaks first.\""
     },
     {
       "rarity": "Epic",
@@ -1582,9 +1582,9 @@
       "itemName": "忘却の香炉",
       "originText": "自らの存在を他人の記憶から消し去る香を焚き続け、最終的に自分自身の名前さえ思い出せなくなったスパイ。",
       "priestMemo": "完璧な隠密行動だ。誰にも覚えられていないのだから、死んだことすら誰にも気づかれない。",
-      "itemNameEn": "Dim Memory of Shadow",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange support energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "Censer of Oblivion",
+      "originTextEn": "A spy who continuously burned incense that erased his existence from the memories of others, ultimately forgetting his own name.",
+      "priestMemoEn": "\"Perfect stealth. Since no one remembers him, no one even noticed he died.\""
     },
     {
       "rarity": "Epic",
@@ -1592,9 +1592,9 @@
       "itemName": "未来を縛る鎖",
       "originText": "敵の攻撃を避けるため、数秒先の自分の肉体を鎖で引っ張る術を編み出し、現在と未来の自分が引き合って胴体がちぎれた剣士。",
       "priestMemo": "時間軸を物理的に引っ張るなど、狂気の沙汰だ。見事に自分自身に殺されたな。",
-      "itemNameEn": "Forgotten Memory of Focus",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange support energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "Chain Binding the Future",
+      "originTextEn": "A swordsman who developed a technique to physically pull his own body a few seconds into the future to dodge attacks, tearing his torso in half as the present and future selves pulled against each other.",
+      "priestMemoEn": "\"Physically pulling the timeline is pure madness. Splendidly murdered by himself.\""
     },
     {
       "rarity": "Epic",
@@ -1602,9 +1602,9 @@
       "itemName": "嘘を吐く舌",
       "originText": "どんな虚言も真実と思い込ませる話術を持っていたが、自らの「俺は死なない」という嘘に体が騙され、腐敗しながら生き続けた詐欺師。",
       "priestMemo": "嘘も方便と言うが、自分の細胞まで騙すとは恐れ入る。臭いから早く土に還れ。",
-      "itemNameEn": "Eternal Memory of Ward",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange support energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "Lying Tongue",
+      "originTextEn": "A con artist whose silver tongue could make any lie reality. He fooled his own body with the lie 'I cannot die,' continuing to live even as his flesh rotted away.",
+      "priestMemoEn": "\"They say lying is a useful tool, but to fool your own cells is impressive. Just go back to the dirt already, you stink.\""
     },
     {
       "rarity": "Epic",
@@ -1612,9 +1612,9 @@
       "itemName": "視線を逸らす鏡",
       "originText": "絶対に他者と目が合わなくなる呪いの鏡を覗き込み、誰からも認識されず餓死した臆病者。",
       "priestMemo": "誰も自分を見てくれないというのは、平和だが孤独だ。彼が望んだ平穏の形さ。",
-      "itemNameEn": "Lost Memory of Shield",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange support energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "Mirror that Averts Gazes",
+      "originTextEn": "A coward who peered into a cursed mirror that made him completely unnoticeable to others, starving to death as no one could even see him.",
+      "priestMemoEn": "\"Being unseen by anyone is peaceful, but lonely. It is the exact form of tranquility he wished for.\""
     },
     {
       "rarity": "Epic",
@@ -1622,9 +1622,9 @@
       "itemName": "痛覚のパントマイム",
       "originText": "自分への攻撃を他人に錯覚させる術を使いすぎ、幻の痛みに脳が耐えきれずショック死した奇術師。",
       "priestMemo": "観客を騙すのは良いが、自分の脳まで騙してどうする。最高のエンターテイナーだな。",
-      "itemNameEn": "Fading Memory of Step",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange support energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "Pantomime of Pain",
+      "originTextEn": "An illusionist who overused a trick that made enemies feel his pain, dying of systemic shock when his own brain succumbed to phantom agony.",
+      "priestMemoEn": "\"Tricking the audience is fine, but tricking your own brain? The greatest entertainer to the bitter end.\""
     },
     {
       "rarity": "Epic",
@@ -1632,9 +1632,9 @@
       "itemName": "運を前借りするコイン",
       "originText": "一生分の幸運を一度の賭けに注ぎ込み大勝したが、その直後に階段から落ちて首を折ったギャンブラー。",
       "priestMemo": "幸運の総量は決まっている。使い切ればあとは不幸しか残っていないのだよ。",
-      "itemNameEn": "Abyssal Memory of Veil",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange support energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "Coin Borrowing Luck",
+      "originTextEn": "A gambler who funneled a lifetime of luck into a single massive bet and won, only to fall down the stairs and snap his neck immediately after.",
+      "priestMemoEn": "\"The total amount of luck in a life is fixed. Use it all up, and there's nothing left but misfortune.\""
     },
     {
       "rarity": "Epic",
@@ -1642,9 +1642,9 @@
       "itemName": "気配を消す泥",
       "originText": "完全に自然と同化するため、全身の毛穴から特殊な泥を分泌し続け、最後は本物の泥人形になって砕けた暗殺者。",
       "priestMemo": "見事な迷彩だ。ただ、雨の日に決行したのは大きなミスだったな。",
-      "itemNameEn": "Shattered Memory of Vigor",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange support energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "Presence-Erasing Mud",
+      "originTextEn": "An assassin who constantly secreted special mud from his pores to perfectly blend into nature, eventually crumbling away as an actual mud doll.",
+      "priestMemoEn": "\"Flawless camouflage. Though attempting the assassination on a rainy day was a massive oversight.\""
     },
     {
       "rarity": "Epic",
@@ -1652,9 +1652,9 @@
       "itemName": "反転する重力",
       "originText": "落下する味方を救うため重力を反転させたが、自分だけが空の彼方へ落ちていった風使い。",
       "priestMemo": "ヒーロー気取りの末路だ。空の上の空気の薄さを存分に味わっただろうよ。",
-      "itemNameEn": "Echoing Memory of Wind",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange support energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "Inverting Gravity",
+      "originTextEn": "A wind user who inverted gravity to save a falling ally, only to be the sole person who fell endlessly upwards into the sky.",
+      "priestMemoEn": "\"The fate of a wannabe hero. He must have thoroughly enjoyed the thin air way up there.\""
     },
     {
       "rarity": "Rare",
@@ -1662,9 +1662,9 @@
       "itemName": "『足音を消してくれ』",
       "originText": "追手から逃れるため、自らの足の裏の皮をすべて削ぎ落とし、血まみれの肉球で走り続けた逃亡者。",
       "priestMemo": "足音は消えたが、血の跡がくっきりと残っていたぞ。間抜けな逃亡劇だ。",
-      "itemNameEn": "Cursed Memory of Guardian",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange support energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "\"Please Erase My Footsteps\"",
+      "originTextEn": "A fugitive who carved all the skin off the soles of his feet to escape his pursuers, running on bloody raw flesh.",
+      "priestMemoEn": "\"The footsteps were silenced, sure. But the trail of blood was as clear as day. What a stupid escape plan.\""
     },
     {
       "rarity": "Rare",
@@ -1672,9 +1672,9 @@
       "itemName": "『後ろを見るな』",
       "originText": "振り向くと塩の柱になる呪いを受け、決して背後を見ないよう首の骨をボンドで固めた罪人。",
       "priestMemo": "前しか見えない人生というのも息苦しかろう。結局、前から来た馬車に轢かれたがな。",
-      "itemNameEn": "Sacred Memory of Swiftness",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange support energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "\"Don't Look Back\"",
+      "originTextEn": "A sinner cursed to turn into a pillar of salt if he ever looked back, supergluing his neck bones together to only see forward.",
+      "priestMemoEn": "\"A life where you can only look forward sounds quite suffocating. In the end, he was run over by a carriage from the front anyway.\""
     },
     {
       "rarity": "Rare",
@@ -1682,9 +1682,9 @@
       "itemName": "『息を殺せ』",
       "originText": "敵に見つからないよう三日間息を止め、そのまま肺細胞が壊死して絶命した狙撃手。",
       "priestMemo": "見つからなかったのは素晴らしい。死体は誰にも邪魔されず自然に還っていったよ。",
-      "itemNameEn": "Dim Memory of Shadow",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange support energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "\"Hold Your Breath\"",
+      "originTextEn": "A sniper who held his breath for three days to avoid detection, dying silently as his lung cells necrotized.",
+      "priestMemoEn": "\"It's wonderful that he wasn't found. His corpse returned to nature without anyone disturbing it.\""
     },
     {
       "rarity": "Rare",
@@ -1692,9 +1692,9 @@
       "itemName": "『目立つのは嫌だ』",
       "originText": "周囲に溶け込む魔法を自身にかけすぎた結果、体が透明を通り越して物質界から消滅した男。",
       "priestMemo": "見事に誰の記憶からも消え去った。究極の隠キャというやつだな。",
-      "itemNameEn": "Forgotten Memory of Focus",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange support energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "\"I Hate Standing Out\"",
+      "originTextEn": "A man who cast so much camouflage magic on himself that he went past transparency and completely ceased to exist in the material realm.",
+      "priestMemoEn": "\"Brilliantly vanished from everyone's memories. The ultimate wallflower.\""
     },
     {
       "rarity": "Rare",
@@ -1702,9 +1702,9 @@
       "itemName": "『誰か身代わりに』",
       "originText": "危機に陥るたびに他人に不幸をなすりつけ続けたが、周囲に誰もいなくなり、自分の罠にかかって死んだ悪党。",
       "priestMemo": "身代わりがいなければ自分が死ぬ。単純な引き算すらできなくなったか。",
-      "itemNameEn": "Eternal Memory of Ward",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange support energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "\"Someone Take My Place\"",
+      "originTextEn": "A scoundrel who always pushed his misfortune onto others. Eventually, there was no one left around him, and he died caught in his own trap.",
+      "priestMemoEn": "\"If there are no scapegoats, you die. Has he forgotten how to do basic subtraction?\""
     },
     {
       "rarity": "Rare",
@@ -1712,9 +1712,9 @@
       "itemName": "『逃げ道はどこだ』",
       "originText": "迷宮の出口を探すあまり、壁に頭を打ち付けて道を作ろうとし、頭蓋骨を砕いた探索者。",
       "priestMemo": "頭を使えとは言うが、物理的に使ってどうする。血まみれの壁は良い道しるべになったぞ。",
-      "itemNameEn": "Lost Memory of Shield",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange support energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "\"Where is the Escape Route?\"",
+      "originTextEn": "An explorer so desperate to find the labyrinth's exit that he bashed his head against a wall trying to make a new path, shattering his skull.",
+      "priestMemoEn": "\"They say 'use your head,' but not physically. The bloodstained wall makes for a great landmark, though.\""
     },
     {
       "rarity": "Rare",
@@ -1722,9 +1722,9 @@
       "itemName": "『罠にかかったのは誰？』",
       "originText": "完璧なトラップを仕掛けたことに満足し、数日後に自分でその罠を踏んで真っ二つになった猟師。",
       "priestMemo": "自慢の罠の威力を身をもって証明したな。職人魂には感服するよ。",
-      "itemNameEn": "Fading Memory of Step",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange support energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "\"Who Got Caught in the Trap?\"",
+      "originTextEn": "A hunter who was so satisfied with the perfect trap he set that he forgot about it, stepping on it days later and being sliced in half.",
+      "priestMemoEn": "\"Proving the lethality of his proud trap with his own body. I have to admire the craftsman's spirit.\""
     },
     {
       "rarity": "Rare",
@@ -1732,9 +1732,9 @@
       "itemName": "『運が尽きた』",
       "originText": "常にコイントスで行動を決めていたが、コインが縁で立った瞬間にフリーズして餓死した狂人。",
       "priestMemo": "確率のバグに対応できなかったか。人生はコインの表裏だけではないのだよ。",
-      "itemNameEn": "Abyssal Memory of Veil",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange support energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "\"My Luck Ran Out\"",
+      "originTextEn": "A madman who decided every action with a coin toss, freezing in place and starving to death the moment the coin landed on its edge.",
+      "priestMemoEn": "\"Couldn't handle a glitch in the probability, eh? Life isn't just heads or tails, you know.\""
     },
     {
       "rarity": "Rare",
@@ -1742,9 +1742,9 @@
       "itemName": "『鍵が開かない』",
       "originText": "絶対に開かない金庫の鍵を一生かけてピッキングし続け、開いた瞬間に中に入っていた毒ガスで死んだ泥棒。",
       "priestMemo": "開かないものには理由がある。開けてはいけない箱だっただけのことだ。",
-      "itemNameEn": "Shattered Memory of Vigor",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange support energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "\"The Lock Won't Open\"",
+      "originTextEn": "A thief who spent his entire life picking the lock of a supposedly unopenable safe, only to die instantly from the poison gas inside when it finally opened.",
+      "priestMemoEn": "\"If it doesn't open, there's a reason. It was just a box meant to stay shut.\""
     },
     {
       "rarity": "Rare",
@@ -1752,9 +1752,9 @@
       "itemName": "『靴紐が解けた』",
       "originText": "逃走劇の最中に靴紐が解け、それを結び直そうと立ち止まった瞬間に矢を脳天に受けた兵士。",
       "priestMemo": "几帳面なのは良いことだが、時と場所を選べ。裸足で走る勇気が必要だったな。",
-      "itemNameEn": "Echoing Memory of Wind",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange support energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "\"My Shoelace is Untied\"",
+      "originTextEn": "A soldier whose shoelace came undone mid-retreat. The moment he stopped to tie it, an arrow pierced his skull.",
+      "priestMemoEn": "\"Being meticulous is good, but pick your time and place. Should have had the courage to run barefoot.\""
     },
     {
       "rarity": "Rare",
@@ -1762,9 +1762,9 @@
       "itemName": "『少しだけ待って』",
       "originText": "敵の情けにすがり「少しだけ待ってくれ」と懇願し続けたが、舌を抜かれて待たれずに殺された男。",
       "priestMemo": "待ってくれるのは優しい母親だけだ。戦場で言葉が通じると思うな。",
-      "itemNameEn": "Cursed Memory of Guardian",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange support energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "\"Just Wait a Second\"",
+      "originTextEn": "A man who continuously begged his enemy for a moment of mercy, only to have his tongue ripped out and slaughtered without delay.",
+      "priestMemoEn": "\"The only one who will wait for you is a gentle mother. Don't expect words to work on a battlefield.\""
     },
     {
       "rarity": "Rare",
@@ -1772,9 +1772,9 @@
       "itemName": "『匂いでバレる』",
       "originText": "体臭を消すために香辛料を全身に塗りたくり、その強烈な匂いのせいで敵の猟犬にすぐ見つかった逃亡奴隷。",
       "priestMemo": "臭いを臭いで消そうとする浅はかさ。犬の嗅覚を舐めるからそうなる。",
-      "itemNameEn": "Sacred Memory of Swiftness",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange support energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "\"The Smell Gives it Away\"",
+      "originTextEn": "A runaway slave who slathered himself in spices to mask his body odor, only to be immediately tracked down by enemy hounds drawn to the strong scent.",
+      "priestMemoEn": "\"Trying to mask an odor with an odor. That's what you get for underestimating a dog's nose.\""
     },
     {
       "rarity": "Rare",
@@ -1782,9 +1782,9 @@
       "itemName": "『光から逃げろ』",
       "originText": "影の中しか移動できない呪いを受け、日の出と共に影が消え、太陽光で灰になった吸血鬼の眷属。",
       "priestMemo": "夜明けの時間を計算し忘れたか。時間にルーズな奴は長生きできないぞ。",
-      "itemNameEn": "Dim Memory of Shadow",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange support energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "\"Flee the Light\"",
+      "originTextEn": "A vampire thrall cursed to only travel in shadows, turning to ash when the sun rose and his shadow vanished.",
+      "priestMemoEn": "\"Forgot to calculate sunrise, did we? People who are loose with time don't live long.\""
     },
     {
       "rarity": "Rare",
@@ -1792,9 +1792,9 @@
       "itemName": "『指先が震える』",
       "originText": "極度の緊張から鍵開けの際に指が震え、トラップのワイヤーを引きちぎって爆死した盗賊。",
       "priestMemo": "プレッシャーに弱い盗賊とは滑稽だ。泥棒も楽な商売ではないな。",
-      "itemNameEn": "Forgotten Memory of Focus",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange support energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "\"My Fingertips are Shaking\"",
+      "originTextEn": "A thief whose fingers trembled from extreme tension while picking a lock, snapping the trap wire and blowing himself to pieces.",
+      "priestMemoEn": "\"A thief who caves under pressure is a joke. Being a burglar is no easy gig, eh?\""
     },
     {
       "rarity": "Rare",
@@ -1802,9 +1802,9 @@
       "itemName": "『壁になりたい』",
       "originText": "恐怖のあまり壁のシミと同化する魔術を使い、そのまま二度と人間に戻れなくなった隠密。",
       "priestMemo": "立派なシミになったな。今度、ペンキで上塗りしてやろう。",
-      "itemNameEn": "Eternal Memory of Ward",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange support energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "\"I Want to Be a Wall\"",
+      "originTextEn": "A spy so paralyzed by fear that he cast a spell to merge with a wall stain, never able to return to human form.",
+      "priestMemoEn": "\"You make a fine stain. I'll make sure to paint over you next time.\""
     },
     {
       "rarity": "Uncommon",
@@ -1812,9 +1812,9 @@
       "itemName": "『見つかりませんように』",
       "originText": "かくれんぼの途中でタルの中に隠れ、そのまま誰にも見つけてもらえず餓死した子供。",
       "priestMemo": "隠れんぼの天才だな。だが、ゲームには終わりが必要だということを誰も教えてやらなかったのか。",
-      "itemNameEn": "Lost Memory of Shield",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange support energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "\"Hope They Don't Find Me\"",
+      "originTextEn": "A child who hid in a barrel during hide-and-seek, never to be found by anyone, starving to death inside.",
+      "priestMemoEn": "\"A hide-and-seek genius. Did no one tell him that every game must eventually end?\""
     },
     {
       "rarity": "Uncommon",
@@ -1822,9 +1822,9 @@
       "itemName": "『逃げるが勝ちだ』",
       "originText": "戦いから逃げ続け、ついに世界の果ての崖に追い詰められて足を滑らせた脱走兵。",
       "priestMemo": "逃げた先に楽園はない。崖の下の冷たい海が彼を優しく迎えてくれただろう。",
-      "itemNameEn": "Fading Memory of Step",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange support energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "\"Running Away is Winning\"",
+      "originTextEn": "A deserter who kept running from every fight until he was cornered at the cliff at the edge of the world, slipping and falling to his doom.",
+      "priestMemoEn": "\"There's no paradise waiting for those who run. The freezing sea at the bottom of the cliff welcomed him warmly, I'm sure.\""
     },
     {
       "rarity": "Uncommon",
@@ -1832,9 +1832,9 @@
       "itemName": "『靴擦れが痛い』",
       "originText": "新しい革靴で戦場に出た結果、靴擦れの痛みに耐えきれず歩みを止め、背中から刺された新兵。",
       "priestMemo": "オシャレは我慢だと言うが、命を懸けてまで履くべき靴ではなかったな。",
-      "itemNameEn": "Abyssal Memory of Veil",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange support energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "\"Shoe Sores Hurt\"",
+      "originTextEn": "A fresh recruit who wore brand new leather boots to the battlefield, stopping in the middle of a fight because of shoe sores, and got stabbed in the back.",
+      "priestMemoEn": "\"They say fashion requires sacrifice, but those weren't boots worth betting your life on.\""
     },
     {
       "rarity": "Uncommon",
@@ -1842,9 +1842,9 @@
       "itemName": "『あと五分だけ』",
       "originText": "敵の夜襲を告げる鐘の音を聞きながら、「あと五分だけ」と二度寝して寝首を掻かれた見張り。",
       "priestMemo": "永遠の眠りにつけたのだから、彼の願いは叶ったと言える。",
-      "itemNameEn": "Shattered Memory of Vigor",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange support energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "\"Just Five More Minutes\"",
+      "originTextEn": "A sentry who heard the bell warning of a night raid but went back to sleep muttering 'just five more minutes,' only to get his throat slit in bed.",
+      "priestMemoEn": "\"He earned eternal sleep, so I suppose his wish came true.\""
     },
     {
       "rarity": "Uncommon",
@@ -1852,9 +1852,9 @@
       "itemName": "『誰も信じない』",
       "originText": "味方すら疑い、誰もいない密室に引きこもって、自ら仕掛けた毒の罠で死んだ偏執狂。",
       "priestMemo": "誰も信じないなら、自分自身すら信じるべきではなかったな。",
-      "itemNameEn": "Echoing Memory of Wind",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange support energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "\"I Trust No One\"",
+      "originTextEn": "A paranoid man who suspected even his allies, locking himself in an empty room and dying to a poison trap he set himself.",
+      "priestMemoEn": "\"If you trust no one, you shouldn't have trusted yourself either.\""
     },
     {
       "rarity": "Uncommon",
@@ -1862,9 +1862,9 @@
       "itemName": "『足がもつれる』",
       "originText": "全力疾走の最中に自分の足に躓き、顔面から石畳に突っ込んで首の骨を折った配達人。",
       "priestMemo": "急ぐあまり自分の足に殺されるとは。鈍臭いにも程がある。",
-      "itemNameEn": "Cursed Memory of Guardian",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange support energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "\"Tangled Legs\"",
+      "originTextEn": "A courier who tripped over his own feet while sprinting at full speed, face-planting into the cobblestones and snapping his neck.",
+      "priestMemoEn": "\"Killed by his own legs because he was in too much of a hurry. Clumsy beyond belief.\""
     },
     {
       "rarity": "Uncommon",
@@ -1872,9 +1872,9 @@
       "itemName": "『方向音痴の末路』",
       "originText": "西へ逃げるつもりが、完全に方角を間違えて敵の本陣のど真ん中に突撃してしまった斥候。",
       "priestMemo": "コンパスの一つも持っていなかったのか。敵の将軍もさぞ驚いたことだろう。",
-      "itemNameEn": "Sacred Memory of Swiftness",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange support energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "\"Fate of the Directionally Challenged\"",
+      "originTextEn": "A scout who intended to flee west but got completely turned around, charging straight into the center of the enemy's main camp.",
+      "priestMemoEn": "\"Didn't even have a single compass on him? The enemy general must have been quite surprised.\""
     },
     {
       "rarity": "Uncommon",
@@ -1882,9 +1882,9 @@
       "itemName": "『忘れ物をした』",
       "originText": "安全圏まで逃げ延びたのに、お守りを落としたことに気づいて引き返し、殺された農民。",
       "priestMemo": "命より大事なお守りか。結局、そのお守りは彼を守ってくれなかったようだが。",
-      "itemNameEn": "Dim Memory of Shadow",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange support energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "\"I Forgot Something\"",
+      "originTextEn": "A peasant who successfully fled to safety, but realized he dropped his lucky charm, turning back only to be slaughtered.",
+      "priestMemoEn": "\"A charm more important than your life? Seems it didn't do much protecting anyway.\""
     },
     {
       "rarity": "Uncommon",
@@ -1892,9 +1892,9 @@
       "itemName": "『声が裏返る』",
       "originText": "助けを呼ぼうとした瞬間に声が裏返り、敵に居場所を教えるだけの悲鳴となってしまった村娘。",
       "priestMemo": "悲劇のヒロインを演じるなら、もっと腹式呼吸を練習すべきだったな。",
-      "itemNameEn": "Forgotten Memory of Focus",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange support energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "\"Voice Crack\"",
+      "originTextEn": "A village girl who tried to cry for help but had her voice crack, emitting a pitiful squeak that only served to tell the enemy exactly where she was.",
+      "priestMemoEn": "\"If you want to play the tragic heroine, practice breathing from your diaphragm first.\""
     },
     {
       "rarity": "Uncommon",
@@ -1902,9 +1902,9 @@
       "itemName": "『隠し事の重み』",
       "originText": "機密文書を隠した靴底が重すぎて、川を渡る際に溺れ死んだスパイ。",
       "priestMemo": "秘密は水より重かったか。魚たちには良い読み物になるだろうよ。",
-      "itemNameEn": "Eternal Memory of Ward",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange support energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "\"The Weight of Secrets\"",
+      "originTextEn": "A spy who drowned crossing a river because the classified documents hidden in the soles of his shoes were too heavy.",
+      "priestMemoEn": "\"Secrets are heavier than water, it seems. Should make for a good read for the fish.\""
     },
     {
       "rarity": "Common",
@@ -1912,9 +1912,9 @@
       "itemName": "『これが人生というものか』",
       "originText": "ただひたすらに理不尽な不幸が重なり続け、空を仰いでため息をついた瞬間に隕石に当たった男。",
       "priestMemo": "完璧なオチだ。コメディとしては一流の人生だったと褒めてやろう。",
-      "itemNameEn": "Lost Memory of Shield",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange support energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "\"Is This What Life Is?\"",
+      "originTextEn": "A man struck by a meteor the exact moment he looked up at the sky and sighed, after a lifetime of relentless, absurd misfortune.",
+      "priestMemoEn": "\"A perfect punchline. I'll praise it as a top-tier comedy of a life.\""
     },
     {
       "rarity": "Common",
@@ -1922,9 +1922,9 @@
       "itemName": "『ちょっと転んだだけ』",
       "originText": "何もない平坦な道で転び、打ち所が悪くてそのまま絶命した不運な村人。",
       "priestMemo": "人間の命など、石ころ一つで終わる。その程度のものなのだよ。",
-      "itemNameEn": "Fading Memory of Step",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange support energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "\"I Just Tripped a Little\"",
+      "originTextEn": "An unlucky villager who tripped on a completely flat, empty road, hitting his head in just the wrong way and dying instantly.",
+      "priestMemoEn": "\"A human life can be ended by a single pebble. That's all we amount to.\""
     },
     {
       "rarity": "Common",
@@ -1932,9 +1932,9 @@
       "itemName": "『財布を落とした』",
       "originText": "全財産を入れた財布をスリにすられ、ショックで心臓が停止した守銭奴。",
       "priestMemo": "金への執着が強すぎると、心臓が硬貨でできていると錯覚するらしいな。",
-      "itemNameEn": "Abyssal Memory of Veil",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange support energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "\"I Dropped My Wallet\"",
+      "originTextEn": "A miser whose wallet containing his entire life savings was pickpocketed, causing his heart to literally stop from the shock.",
+      "priestMemoEn": "\"Be too obsessed with money, and you start to think your heart is made of coins.\""
     },
     {
       "rarity": "Common",
@@ -1942,9 +1942,9 @@
       "itemName": "『お腹が痛い』",
       "originText": "賞味期限の切れた干し肉を食べ、強烈な腹痛にのたうち回りながら死んだゴブリン討伐者。",
       "priestMemo": "ゴブリンの剣より、自分の胃袋に殺されるとは。食中毒を甘く見るな。",
-      "itemNameEn": "Shattered Memory of Vigor",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange support energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "\"My Stomach Hurts\"",
+      "originTextEn": "A goblin slayer who ate expired dried meat, dying while writhing in agony from severe abdominal pain.",
+      "priestMemoEn": "\"Killed by his own stomach rather than a goblin's blade. Never underestimate food poisoning.\""
     },
     {
       "rarity": "Common",
@@ -1952,9 +1952,9 @@
       "itemName": "『犬に噛まれた』",
       "originText": "狂犬病の犬に手を噛まれ、発症して水を極端に恐れながら泡を吹いて死んだ浮浪者。",
       "priestMemo": "犬も必死だったのだろう。水への恐怖で狂い死ぬのは、さぞ不快だったろうな。",
-      "itemNameEn": "Echoing Memory of Wind",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange support energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "\"Bitten by a Dog\"",
+      "originTextEn": "A vagrant bitten by a rabid dog, who developed rabies and died foaming at the mouth, terrified of water.",
+      "priestMemoEn": "\"The dog was just desperate too. Dying in a frenzy of hydrophobia must have been quite unpleasant.\""
     },
     {
       "rarity": "Common",
@@ -1962,9 +1962,9 @@
       "itemName": "『ハチに刺された』",
       "originText": "森で用を足している最中にスズメバチに刺され、アナフィラキシーショックで死んだ木こり。",
       "priestMemo": "ズボンを下ろしたまま死ぬのは、男としての尊厳に大きく関わる問題だ。",
-      "itemNameEn": "Cursed Memory of Guardian",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange support energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "\"Stung by a Bee\"",
+      "originTextEn": "A lumberjack stung by a hornet while relieving himself in the woods, dying of anaphylactic shock.",
+      "priestMemoEn": "\"Dying with your pants down is a serious blow to a man's dignity.\""
     },
     {
       "rarity": "Common",
@@ -1972,9 +1972,9 @@
       "itemName": "『雷が怖い』",
       "originText": "雷鳴に驚いて木から落ち、自らの持っていた斧の刃の上に落下した木こりの見習い。",
       "priestMemo": "雷より斧の方がよほど怖いということを、死ぬ瞬間に学んだだろう。",
-      "itemNameEn": "Sacred Memory of Swiftness",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange support energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "\"Afraid of Lightning\"",
+      "originTextEn": "An apprentice woodcutter who, startled by thunder, fell out of a tree directly onto the blade of his own axe.",
+      "priestMemoEn": "\"He surely learned in his final moment that an axe is far scarier than lightning.\""
     },
     {
       "rarity": "Common",
@@ -1982,9 +1982,9 @@
       "itemName": "『鳥のフンが落ちてきた』",
       "originText": "見上げた瞬間に鳥のフンが目に入り、パニックになって崖から落ちた旅人。",
       "priestMemo": "運が付いたと言うべきか。まあ、落ちた先は地獄だったようだが。",
-      "itemNameEn": "Dim Memory of Shadow",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange support energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "\"Bird Droppings Fell\"",
+      "originTextEn": "A traveler who looked up only to get bird droppings in his eye, panicking and falling off a cliff.",
+      "priestMemoEn": "\"Talk about a stroke of luck—or bad luck, considering he fell straight to hell.\""
     },
     {
       "rarity": "Common",
@@ -1992,9 +1992,9 @@
       "itemName": "『階段を踏み外す』",
       "originText": "暗闇で階段の一段目を踏み外し、そのまま首の骨を折って死んだ酒飲み。",
       "priestMemo": "酔っ払いの末路としては王道だな。酒場での語り草にはなるだろう。",
-      "itemNameEn": "Forgotten Memory of Focus",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange support energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "\"Missed a Step\"",
+      "originTextEn": "A drunkard who missed the first step of the stairs in the dark, snapping his neck.",
+      "priestMemoEn": "\"A classic end for a drunk. It'll make for a good story at the tavern.\""
     },
     {
       "rarity": "Common",
@@ -2002,9 +2002,9 @@
       "itemName": "『ただ、運が悪かった』",
       "originText": "特に何もしていないのに、なぜか周囲のあらゆる不幸を引き寄せて死んだ名もなき平民。",
       "priestMemo": "理由のない不幸もある。世界は公平ではないのだから、諦めるしかないさ。",
-      "itemNameEn": "Eternal Memory of Ward",
-      "originTextEn": "A fragmentary echo from the depths. It radiates a strange support energy, hinting at a past long consumed by the abyss.",
-      "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+      "itemNameEn": "\"Just Unlucky\"",
+      "originTextEn": "A nameless commoner who, without doing anything in particular, somehow attracted every piece of misfortune around him and died.",
+      "priestMemoEn": "\"Some misfortune needs no reason. The world isn't fair, so you might as well just give up.\""
     }
   ]
 }
