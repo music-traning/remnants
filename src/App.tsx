@@ -284,7 +284,7 @@ function App() {
               )}
 
               {activeOverlay === 'priest' && (
-                <div style={{ display: 'flex', flexDirection: 'column', flex: 1, minHeight: 0, overflowY: 'auto' }}>
+                <div style={{ display: 'flex', flexDirection: 'column', flex: 1, minHeight: 0, overflow: 'hidden' }}>
                   <div style={{ flexShrink: 0 }}>
                   <div style={{ marginBottom: '16px', display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
                     <button 
@@ -327,7 +327,7 @@ function App() {
                   )}
 
                   </div>
-                  <div style={{ display: 'flex', flexDirection: 'column', flex: 1, minHeight: '250px' }}>
+                  <div style={{ display: 'flex', flexDirection: 'column', flex: 1, minHeight: 0, overflowY: 'auto' }}>
                     <h3 style={{ color: '#0f0', margin: '0 0 8px 0', fontSize: '1rem', flexShrink: 0 }}>{t('priest_unidentified')}</h3>
                     <InventoryView 
                       items={player.inventory.filter(m => !m.isIdentified)} 
@@ -408,7 +408,7 @@ function App() {
                 const expandCost = getExpandCost(player.maxInventorySize);
 
                 return (
-                    <div style={{ display: 'flex', flexDirection: 'column', flex: 1, minHeight: 0, overflowY: 'auto' }}>
+                    <div style={{ display: 'flex', flexDirection: 'column', flex: 1, minHeight: 0, overflow: 'hidden' }}>
                       <div style={{ flexShrink: 0 }}>
                     <div style={{ marginBottom: '16px', display: 'flex', gap: '16px' }}>
                       <button 
@@ -424,7 +424,7 @@ function App() {
                       </button>
                     </div>
                       </div>
-                    <div style={{ display: 'flex', flexDirection: 'column', flex: 1, minHeight: '250px' }}>
+                    <div style={{ display: 'flex', flexDirection: 'column', flex: 1, minHeight: 0, overflowY: 'auto' }}>
                       <InventoryView 
                         items={player.inventory} 
                         selectedItem={selectedItem} 
