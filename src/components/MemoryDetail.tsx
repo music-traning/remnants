@@ -21,7 +21,7 @@ export const MemoryDetail: React.FC<Props> = ({ memory }) => {
       const color = isPositive ? 'text-green' : 'text-red';
       const arrow = isPositive ? '↑' : '↓';
       return (
-        <span key={key} style={{ marginRight: '16px' }} className={color}>
+        <span key={key} className={color}>
           {label}{arrow}{Math.abs(value)}
         </span>
       );
@@ -64,10 +64,10 @@ export const MemoryDetail: React.FC<Props> = ({ memory }) => {
         <h2 style={{ fontSize: '1.25rem', fontWeight: 'bold', margin: '0 0 12px 0', color: hasCurse ? '#f00' : '#fff' }}>
           {displayName}
         </h2>
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', fontSize: '0.9rem' }}>
-          <div style={{ fontWeight: 'bold' }}>{renderStats()}</div>
-          <div>
-            <span style={{ color: '#aaa', marginRight: '8px' }}>COST:[{cost}]</span>
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', fontSize: '0.9rem', flexWrap: 'wrap', gap: '8px' }}>
+          <div style={{ fontWeight: 'bold', display: 'flex', flexWrap: 'wrap', gap: '8px', rowGap: '4px' }}>{renderStats()}</div>
+          <div style={{ flexShrink: 0 }}>
+            <span style={{ color: '#aaa', marginRight: '4px' }}>COST:[{cost}]</span>
             {hasCurse && <span className="text-red" style={{ fontSize: '1.2rem', animation: 'pulse 2s infinite' }} title="Cursed">💀</span>}
           </div>
         </div>
