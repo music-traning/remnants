@@ -1,3 +1,4 @@
+*, *::before, *::after { box-sizing: border-box; }
 body, html, #app {
   margin: 0;
   padding: 0;
@@ -47,6 +48,11 @@ body, html, #app {
   text-align: left;
   width: 100%;
   margin-bottom: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+  flex-shrink: 0;
 }
 
 .cmd-btn:hover {
@@ -78,10 +84,11 @@ body, html, #app {
   100% { opacity: 1; }
 }
 
-/* スマホ横画面・極小画面用レスポンシブ (完全に1画面に収める) */
+/* スマホ横画面・極小画面用レスポンシブ(完全に1画面に収める) */
 @media (max-width: 768px), (max-height: 450px) {
   body, html, #app {
     font-size: 12px;
+    height: 100dvh;
   }
   .crpg-container {
     gap: 4px;
@@ -140,22 +147,4 @@ body, html, #app {
 }
 .status-grid p {
   margin: 0;
-}
-
-@media (max-width: 768px), (max-height: 450px) {
-  
-.status-grid {
-  font-size: 1.1rem;
-  line-height: 2;
-  display: flex;
-  flex-direction: column;
-}
-
-@media (max-width: 768px), (max-height: 450px) {
-  .status-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 0;
-    line-height: 1.5;
-  }
 }

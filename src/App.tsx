@@ -143,9 +143,9 @@ function App() {
         
         {/* 1. Main Viewport */}
         <div className="pane main-viewport">
-          {activeOverlay ? (
-            <div className="overlay" style={{ display: 'flex', flexDirection: 'column' }}>
-              <div style={{ display: 'flex', justifyContent: 'space-between', borderBottom: '1px dashed #fff', paddingBottom: '8px', marginBottom: '16px' }}>
+            {activeOverlay ? (
+              <div className="overlay" style={{ display: 'flex', flexDirection: 'column', height: '100%', overflow: 'hidden' }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', borderBottom: '1px dashed #fff', paddingBottom: '8px', marginBottom: '16px', flexShrink: 0 }}>
                 <h2 style={{ margin: 0 }}>{activeOverlay}</h2>
                 <button className="cmd-btn" onClick={() => setActiveOverlay(null)} style={{ color: '#0f0', width: 'auto' }}>
                   [ {t('sys_close')} ]

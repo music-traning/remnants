@@ -16,9 +16,9 @@ export const InventoryView: React.FC<Props> = ({ items, selectedItem, onSelect, 
   const categories = ['Physical', 'Magic', 'Defense', 'Healing', 'Support'];
 
   return (
-    <div style={{ display: 'grid', gridTemplateColumns: 'minmax(120px, 1fr) minmax(150px, 1fr)', gap: '16px', height: 'calc(100% - 64px)' }}>
+    <div style={{ display: 'flex', gap: '16px', height: '100%', minHeight: 0, overflow: 'hidden' }}>
       {/* 左側: カテゴリ別リスト */}
-      <div style={{ borderRight: '1px solid #aaa', paddingRight: '16px', overflowY: 'auto' }}>
+      <div style={{ flex: '1 1 40%', minWidth: '40%', borderRight: '1px solid #aaa', paddingRight: '8px', overflowY: 'auto' }}>
         {items.length === 0 && <p style={{ color: '#aaa' }}>{t('empty_no_items')}</p>}
         {categories.map(cat => {
           const catItems = items.filter(m => m.category === cat);
@@ -37,18 +37,23 @@ export const InventoryView: React.FC<Props> = ({ items, selectedItem, onSelect, 
                     color: selectedItem?.id === m.id ? '#000' : '#fff' 
                   }}
                 >
-                  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', width: '100%' }}>
-                    <div style={{ display: 'flex', alignItems: 'center' }}>
-                    <span style={{ display: 'inline-block', width: '20px', textAlign: 'center', marginRight: '8px' }}>
-                      {selectedItem?.id === m.id ? '▶' : ''}
-                    </span>
-                    <span style={{ color: selectedItem?.id === m.id ? '#000' : (m.hasCurse ? '#f00' : (m.attachedSpell && m.isIdentified ? '#0ff' : '#fff')) }}>
-                      {m.isIdentified 
-                        ? (m.attachedSpell ? '☁ ' : '') + (language === 'en' ? (m.flavorText?.itemNameEn || m.flavorText?.itemName) : m.flavorText?.itemName)
-                        : t('inv_unidentified')}
-                    </span>
+                  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', width: '100%', overflow: 'hidden' }}>
+                    <div style={{ display: 'flex', alignItems: 'center', overflow: 'hidden', flex: 1 }}>
+                      <span style={{ flexShrink: 0, display: 'inline-block', width: '16px', textAlign: 'center', marginRight: '4px' }}>
+                        {selectedItem?.id === m.id ? '▶' : ''}
+                      </span>
+                      <span style={{ 
+                        color: selectedItem?.id === m.id ? '#000' : (m.hasCurse ? '#f00' : (m.attachedSpell && m.isIdentified ? '#0ff' : '#fff')),
+                        whiteSpace: 'nowrap',
+                        overflow: 'hidden',
+                        textOverflow: 'ellipsis'
+                      }}>
+                        {m.isIdentified 
+                          ? (m.attachedSpell ? '『' + t('mem_enchant') + '』' : '') + (language === 'en' ? (m.flavorText?.itemNameEn || m.flavorText?.itemName) : m.flavorText?.itemName)
+                          : t('inv_unidentified')}
+                      </span>
                     </div>
-                    {inlineAction && inlineAction(m)}
+                    {inlineAction && <div style={{ flexShrink: 0, marginLeft: '8px' }}>{inlineAction(m)}</div>}
                   </div>
                 </div>
               ))}
@@ -58,7 +63,7 @@ export const InventoryView: React.FC<Props> = ({ items, selectedItem, onSelect, 
       </div>
       
       {/* 右側: 詳細 */}
-      <div style={{ overflowY: 'auto' }}>
+      <div style={{ flex: '1 1 60%', overflowY: 'auto', paddingRight: '8px' }}>
         {selectedItem ? (
           <>
             <MemoryDetail memory={selectedItem} />
