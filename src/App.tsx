@@ -142,9 +142,9 @@ function App() {
       <div className="crpg-container">
         
         {/* 1. Main Viewport */}
-        <div className="pane main-viewport">
+        <div className="pane main-viewport" style={{ display: 'flex', flexDirection: 'column', overflow: 'hidden' }}>
             {activeOverlay ? (
-              <div className="overlay" style={{ display: 'flex', flexDirection: 'column', height: '100%', overflow: 'hidden' }}>
+              <div className="overlay" style={{ display: 'flex', flexDirection: 'column', flex: 1, minHeight: 0, overflow: 'hidden' }}>
                 <div style={{ display: 'flex', justifyContent: 'space-between', borderBottom: '1px dashed #fff', paddingBottom: '8px', marginBottom: '16px', flexShrink: 0 }}>
                 <h2 style={{ margin: 0 }}>{activeOverlay}</h2>
                 <button className="cmd-btn" onClick={() => setActiveOverlay(null)} style={{ color: '#0f0', width: 'auto' }}>
@@ -325,8 +325,8 @@ function App() {
                     </div>
                   )}
 
-                  <div style={{ flex: 1 }}>
-                    <h3 style={{ color: '#0f0', margin: '0 0 8px 0', fontSize: '1rem' }}>{t('priest_unidentified')}</h3>
+                  <div style={{ display: 'flex', flexDirection: 'column', flex: 1, minHeight: 0 }}>
+                    <h3 style={{ color: '#0f0', margin: '0 0 8px 0', fontSize: '1rem', flexShrink: 0 }}>{t('priest_unidentified')}</h3>
                     <InventoryView 
                       items={player.inventory.filter(m => !m.isIdentified)} 
                       selectedItem={selectedItem} 
@@ -420,7 +420,7 @@ function App() {
                         {expandCost === null ? t('enma_stash_max') : t('enma_stash_expand', { cost: expandCost })}
                       </button>
                     </div>
-                    <div style={{ flex: 1 }}>
+                    <div style={{ display: 'flex', flexDirection: 'column', flex: 1, minHeight: 0 }}>
                       <InventoryView 
                         items={player.inventory} 
                         selectedItem={selectedItem} 

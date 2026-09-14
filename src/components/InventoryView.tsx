@@ -16,9 +16,9 @@ export const InventoryView: React.FC<Props> = ({ items, selectedItem, onSelect, 
   const categories = ['Physical', 'Magic', 'Defense', 'Healing', 'Support'];
 
   return (
-    <div style={{ display: 'flex', gap: '16px', height: '100%', minHeight: 0, overflow: 'hidden' }}>
+    <div style={{ display: 'flex', flex: 1, gap: '16px', height: '100%', minHeight: 0, overflow: 'hidden' }}>
       {/* 左側: カテゴリ別リスト */}
-      <div style={{ flex: '1 1 40%', minWidth: '40%', borderRight: '1px solid #aaa', paddingRight: '8px', overflowY: 'auto' }}>
+      <div style={{ flex: '1 1 40%', minWidth: '40%', height: '100%', borderRight: '1px solid #aaa', paddingRight: '8px', overflowY: 'auto' }}>
         {items.length === 0 && <p style={{ color: '#aaa' }}>{t('empty_no_items')}</p>}
         {categories.map(cat => {
           const catItems = items.filter(m => m.category === cat);
@@ -63,7 +63,7 @@ export const InventoryView: React.FC<Props> = ({ items, selectedItem, onSelect, 
       </div>
       
       {/* 右側: 詳細 */}
-      <div style={{ flex: '1 1 60%', overflowY: 'auto', paddingRight: '8px' }}>
+      <div style={{ flex: '1 1 60%', height: '100%', overflowY: 'auto', paddingRight: '8px' }}>
         {selectedItem ? (
           <>
             <MemoryDetail memory={selectedItem} />
