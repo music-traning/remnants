@@ -113,7 +113,7 @@ function App() {
   };
 
   const openOverlay = (menu: string) => {
-    if (menu === 'システム') {
+    if (menu === 'system') {
       setSaveList(getSaveList());
     }
     setActiveOverlay(menu);
@@ -127,7 +127,7 @@ function App() {
     setSteps(startDepth * 5);
     setGameState(GameState.EXPLORING);
     setActiveOverlay(null);
-    actions.addLog(`街を出て、深度 ${startDepth} から探索を開始した。`);
+    actions.addLog(t('dung_from', { depth: startDepth }));
   };
 
   const currentCost = player.installedMemories.reduce((acc, mem) => acc + mem.cost, 0);
@@ -148,11 +148,11 @@ function App() {
               <div style={{ display: 'flex', justifyContent: 'space-between', borderBottom: '1px dashed #fff', paddingBottom: '8px', marginBottom: '16px' }}>
                 <h2 style={{ margin: 0 }}>{activeOverlay}</h2>
                 <button className="cmd-btn" onClick={() => setActiveOverlay(null)} style={{ color: '#0f0', width: 'auto' }}>
-                  [ 閉じる ]
+                  [ {t('sys_close')} ]
                 </button>
               </div>
 
-              {activeOverlay === 'システム' && (
+              {activeOverlay === 'system' && (
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '16px', overflowY: 'auto' }}>
                   {saveList.map((save, i) => (
                     <div key={i} style={{ border: '1px solid #555', padding: '16px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
@@ -160,8 +160,8 @@ function App() {
                         <h3 style={{ margin: '0 0 8px 0', color: '#0f0' }}>SLOT {i + 1}</h3>
                         {save ? (
                           <div style={{ fontSize: '0.9rem', color: '#ccc' }}>
-                            Lv: {save.player.level} | 縁: {save.player.currentEn} En | HP: {save.player.currentHP}/{save.player.maxHP}<br/>
-                            最大深度: {save.player.maxReachedDepth} | プレイ時間: {formatTime(save.player.playTimeSeconds)}<br/>
+                            {t('sys_lvl', { lvl: save.player.level })} | En: {save.player.currentEn} | HP: {save.player.currentHP}/{save.player.maxHP}<br/>
+                            {t('sys_max_depth', { depth: save.player.maxReachedDepth })} | {t('sys_playtime', { time: formatTime(save.player.playTimeSeconds) })}<br/>
                             {new Date(save.timestamp).toLocaleString()}
                           </div>
                         ) : (
@@ -173,14 +173,14 @@ function App() {
                           if (window.confirm(`${t('sys_confirm_save', { slot: i + 1 })}`)) {
                             saveGame(i + 1, player, shopInventory);
                             setSaveList(getSaveList());
-                            actions.addLog(`SLOT ${i + 1} にセーブしました。`);
+                            actions.addLog(t('sys_saved', { slot: i + 1 }));
                           }
-                        }}>セーブ</button>
+                        }}>{t('sys_save')}</button>
                         
                         {save && (
                           <>
                             <button className="cmd-btn" style={{ width: 'auto', padding: '4px 12px', borderColor: '#0f0', color: '#0f0' }} onClick={() => {
-                              if (window.confirm(`SLOT ${i + 1} からロードしますか？\n（現在の進行状況は失われます）`)) {
+                              if (window.confirm(t('sys_confirm_load', { slot: i + 1 }))) {
                                 const data = loadGame(i + 1);
                                 if (data) {
                                   // Backwards compatibility check in case old save data format was just returning player implicitly
@@ -188,17 +188,17 @@ function App() {
                                   setPlayer(p);
                                   setShopInventory(data.shopInventory || []);
                                   setActiveOverlay(null);
-                                  actions.addLog(`SLOT ${i + 1} からロードしました。`);
+                                  actions.addLog(t('sys_loaded', { slot: i + 1 }));
                                 }
                               }
-                            }}>ロード</button>
+                            }}>{t('sys_load')}</button>
                             <button className="cmd-btn" style={{ width: 'auto', padding: '4px 12px', borderColor: '#f00', color: '#f00' }} onClick={() => {
-                              if (window.confirm(`SLOT ${i + 1} のデータを消去しますか？`)) {
+                              if (window.confirm(t('sys_confirm_erase', { slot: i + 1 }))) {
                                 deleteGame(i + 1);
                                 setSaveList(getSaveList());
-                                actions.addLog(`SLOT ${i + 1} を消去しました。`);
+                                actions.addLog(t('sys_erased', { slot: i + 1 }));
                               }
-                            }}>消去</button>
+                            }}>{t('sys_erase')}</button>
                           </>
                         )}
                       </div>
@@ -207,7 +207,7 @@ function App() {
                 </div>
               )}
 
-              {activeOverlay === '自身の状態を確認' && (
+              {activeOverlay === 'status' && (
                 <div style={{ flex: 1, overflowY: 'auto' }}>
                   <div style={{ display: 'flex', gap: '32px', marginBottom: '24px' }}>
                     <div>
@@ -229,7 +229,7 @@ function App() {
                   </div>
                   
                   <h3 style={{ color: '#0f0', margin: '0 0 8px 0', borderBottom: '1px solid #aaa' }}>INSTALLED MEMORIES</h3>
-                  {player.installedMemories.length === 0 ? <p>装備中の記憶はありません。</p> : (
+                  {player.installedMemories.length === 0 ? <p>{t('stat_no_equip')}</p> : (
                     <InventoryView 
                       items={player.installedMemories} 
                       selectedItem={selectedItem} 
@@ -240,7 +240,7 @@ function App() {
                           actions.addLog(res.message);
                           if (res.success) setSelectedItem(null);
                         }}>
-                          [ アンインストール（装備解除） ]
+                          [ {t('stat_unequip')} ]
                         </button>
                       )}
                     />
@@ -248,7 +248,7 @@ function App() {
                 </div>
               )}
 
-              {activeOverlay === 'インベントリ（装備）' && (
+              {activeOverlay === 'inventory' && (
                 <InventoryView 
                   items={player.inventory.filter(m => m.isIdentified)} 
                   selectedItem={selectedItem} 
@@ -268,14 +268,14 @@ function App() {
                             if (res.success) setSelectedItem(null);
                           }}
                         >
-                          [ インストール (COST: {mem.cost}, 必須Lv: {reqLevel}) ]
+                          [ {t('inv_equip', { cost: mem.cost, reqLevel })} ]
                         </button>
                         <button className="cmd-btn" style={{ borderColor: '#888', color: '#888', width: 'auto' }} onClick={() => {
                           const res = memoryActions.discardMemory(mem.id);
                           actions.addLog(res.message);
                           if (res.success) setSelectedItem(null);
                         }}>
-                          [ 破棄 ]
+                          [ {t('inv_discard')} ]
                         </button>
                       </div>
                     );
@@ -283,7 +283,7 @@ function App() {
                 />
               )}
 
-              {activeOverlay === '破戒僧の庵' && (
+              {activeOverlay === 'priest' && (
                 <div style={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
                   <div style={{ marginBottom: '16px', display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
                     <button 
@@ -295,7 +295,7 @@ function App() {
                         actions.addLog(res.message);
                       }}
                     >
-                      ▶ 脳の許容量を拡張 (10,000 En)
+                      {t('priest_expand_cap')}
                     </button>
                     <button 
                       className="cmd-btn" 
@@ -306,27 +306,27 @@ function App() {
                         actions.addLog(res.message);
                       }}
                     >
-                      ▶ 記憶スロットを拡張 (100,000 En)
+                      {t('priest_expand_slot')}
                     </button>
                   </div>
 
                   {player.installedMemories.filter(m => m.hasCurse).length > 0 && (
                     <div style={{ border: '1px solid #f00', padding: '8px', marginBottom: '16px' }}>
-                      <h3 style={{ color: '#f00', margin: '0 0 8px 0', fontSize: '1rem' }}>▼ 呪われた装備（解呪）</h3>
+                      <h3 style={{ color: '#f00', margin: '0 0 8px 0', fontSize: '1rem' }}>{t('priest_cursed_equip')}</h3>
                       {player.installedMemories.filter(m => m.hasCurse).map(mem => (
                         <div key={mem.id} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '4px' }}>
                           <span>{mem.attachedSpell ? '★ ' : ''}{mem.flavorText.itemName} (Cost: {mem.cost})</span>
                           <button className="cmd-btn" style={{ width: 'auto', padding: '2px 8px', color: '#f00', borderColor: '#f00' }} onClick={() => {
                             const res = memoryActions.uncurseMemory(mem.id);
                             actions.addLog(res.message);
-                          }}>[ 呪いを解呪する ({mem.cost * 1000} En) ]</button>
+                          }}>[ {t('priest_uncurse', { cost: mem.cost * 1000 })} ]</button>
                         </div>
                       ))}
                     </div>
                   )}
 
                   <div style={{ flex: 1 }}>
-                    <h3 style={{ color: '#0f0', margin: '0 0 8px 0', fontSize: '1rem' }}>▼ 未鑑定の記憶</h3>
+                    <h3 style={{ color: '#0f0', margin: '0 0 8px 0', fontSize: '1rem' }}>{t('priest_unidentified')}</h3>
                     <InventoryView 
                       items={player.inventory.filter(m => !m.isIdentified)} 
                       selectedItem={selectedItem} 
@@ -353,7 +353,7 @@ function App() {
                                 actions.addLog(res.message);
                                 if (res.success) setSelectedItem(null);
                               }}
-                            >鑑定</button>
+                            >{t('priest_identify').split(' ')[0]}</button>
                           </div>
                         )
                       }}
@@ -378,14 +378,14 @@ function App() {
                                 if (res.success) setSelectedItem(null);
                               }}
                             >
-                              [ 鑑定する ({cost} En) ]
+                              [ {t('priest_identify', { cost })} ]
                             </button>
                             <button className="cmd-btn" style={{ borderColor: '#888', color: '#888', width: 'auto' }} onClick={() => {
                               const res = memoryActions.discardMemory(mem.id);
                               actions.addLog(res.message);
                               if (res.success) setSelectedItem(null);
                             }}>
-                              [ 破棄 ]
+                              [ {t('inv_discard')} ]
                             </button>
                           </div>
                         );
@@ -395,7 +395,7 @@ function App() {
                 </div>
               )}
 
-              {activeOverlay === '閻魔の計量所' && (() => {
+              {activeOverlay === 'enma' && (() => {
                 const getExpandCost = (size: number) => {
                   if (size === 30) return 5000;
                   if (size === 35) return 20000;
@@ -417,7 +417,7 @@ function App() {
                           actions.addLog(res.message);
                         }}
                       >
-                        {expandCost === null ? ((window as any).__lang === 'en' ? '▶ Stash fully expanded' : '▶ 倉庫は最大まで拡張済み') : ((window as any).__lang === 'en' ? `▶ Expand Stash (${expandCost} En)` : `▶ 倉庫を拡張する (${expandCost} En)`)}
+                        {expandCost === null ? t('enma_stash_max') : t('enma_stash_expand', { cost: expandCost })}
                       </button>
                     </div>
                     <div style={{ flex: 1 }}>
@@ -439,7 +439,7 @@ function App() {
                 );
               })()}
 
-              {activeOverlay === '記憶を買い戻す' && (
+              {activeOverlay === 'buyback' && (
                 <InventoryView 
                   items={shopInventory} 
                   selectedItem={selectedItem} 
@@ -461,24 +461,24 @@ function App() {
                 />
               )}
 
-              {activeOverlay === '微睡みの寝床' && (
+              {activeOverlay === 'inn' && (
                 <div>
-                  <h3 style={{ color: '#0f0' }}>微睡みの寝床（宿屋）</h3>
-                  <p>疲れた身体と心を休め、HPとMPを全回復します。</p>
-                  <p>現在のHP: {player.currentHP} / {player.maxHP}</p>
-                  <p>現在のMP: {player.currentMP} / {player.maxMP}</p>
+                  <h3 style={{ color: '#0f0' }}>{t('inn_title')}</h3>
+                  <p>{t('inn_desc1')}</p>
+                  <p>{t('inn_hp', { hp: player.currentHP, maxHp: player.maxHP })}</p>
+                  <p>{t('inn_mp', { mp: player.currentMP, maxMp: player.maxMP })}</p>
                   <button className="cmd-btn" style={{ width: 'auto', borderColor: '#0f0', color: '#0f0' }} onClick={() => {
                     const res = ecoActions.restAtInn();
                     actions.addLog(res.message);
                   }}>
-                    [ 休息する (費用: {Math.floor(player.maxHP * 0.1 + player.maxMP * 0.5)} En) ]
+                    [ {t('inn_rest', { cost: Math.floor(player.maxHP * 0.1 + player.maxMP * 0.5) })} ]
                   </button>
                 </div>
               )}
               
-              {activeOverlay === '魔法（スキル）' && (
+              {activeOverlay === 'magic' && (
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
-                  <h3 style={{ color: '#0f0', margin: '0 0 16px 0' }}>装備中の魔法</h3>
+                  <h3 style={{ color: '#0f0', margin: '0 0 16px 0' }}>{t('mag_title')}</h3>
                   {player.installedMemories.filter(m => m.attachedSpell).map(mem => {
                     const spell = mem.attachedSpell!;
                     return (
@@ -486,18 +486,18 @@ function App() {
                         actions.castSpell(mem.id);
                         setActiveOverlay(null);
                       }}>
-                        ▶ {spell.name} ({spell.mpCost} MP) - [元記憶Cost: {mem.cost} による効力]
+                        ▶ {spell.name} ({spell.mpCost} MP) - {t('mag_effect', { cost: mem.cost })}
                       </button>
                     )
                   })}
                   {player.installedMemories.filter(m => m.attachedSpell).length === 0 && (
-                    <p style={{ color: '#aaa' }}>使用できる魔法がありません。魔法が付与された記憶を装備してください。</p>
+                    <p style={{ color: '#aaa' }}>{t('mag_no_magic')}</p>
                   )}
                 </div>
               )}
               
               
-              {activeOverlay === '迷宮の入り口' && (() => {
+              {activeOverlay === 'dungeon' && (() => {
                 const maxDepth = player.maxReachedDepth || 0;
                 const maxCheckpoint = Math.floor(maxDepth / 5) * 5;
                 const checkpoints = [];
@@ -506,12 +506,12 @@ function App() {
                 }
                 return (
                   <div>
-                    <h3 style={{ color: '#0f0', margin: '0 0 16px 0' }}>迷宮の入り口</h3>
+                    <h3 style={{ color: '#0f0', margin: '0 0 16px 0' }}>{t('dung_title')}</h3>
                     <p style={{ marginBottom: '16px' }}>{t('dungeon_select')}</p>
                     <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(150px, 1fr))', gap: '8px' }}>
                       {checkpoints.map(d => (
                         <button key={d} className="cmd-btn" onClick={() => handleEnterDungeon(d)}>
-                          ▶ {t('dungeon_from', { depth: d })}
+                          {t('dung_from', { depth: d })}
                         </button>
                       ))}
                     </div>
@@ -519,7 +519,7 @@ function App() {
                 );
               })()}
 
-              {activeOverlay === '倉庫' && (
+              {activeOverlay === 'stash' && (
                 <div>
                   <div style={{ fontSize: '1.2rem', marginBottom: '24px' }}>
                     <p>{t('stash_hand')} <span className="text-green">{player.currentEn} En</span></p>
@@ -527,7 +527,7 @@ function App() {
                   </div>
                   
                   <div style={{ marginBottom: '24px', display: 'flex', alignItems: 'center', gap: '8px' }}>
-                    <span>金額: </span>
+                    <span>{t('stash_amount')}</span>
                     <input 
                       type="number" 
                       value={stashAmount} 
@@ -542,12 +542,12 @@ function App() {
                     <button className="cmd-btn" style={{ width: 'auto', border: '1px solid #fff' }} onClick={() => {
                       const res = ecoActions.depositEn(stashAmount);
                       actions.addLog(res.message);
-                    }}>▶ 預ける</button>
+                    }}>{t('stash_deposit')}</button>
                     
                     <button className="cmd-btn" style={{ width: 'auto', border: '1px solid #fff' }} onClick={() => {
                       const res = ecoActions.withdrawEn(stashAmount);
                       actions.addLog(res.message);
-                    }}>▶ 引き出す</button>
+                    }}>{t('stash_withdraw')}</button>
                   </div>
                 </div>
               )}
@@ -563,7 +563,7 @@ function App() {
               {gameState === GameState.ENCOUNTER && currentEnemy && (
                 <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', background: '#000', padding: '16px', border: '2px solid #f00', textAlign: 'center' }}>
                   <h2 className="text-red" style={{ margin: 0 }}>{currentEnemy.name}</h2>
-                  <p style={{ margin: '8px 0 0 0' }}>が立ちはだかる！</p>
+                  <p style={{ margin: '8px 0 0 0' }}>{t('ui_stands')}</p>
                 </div>
               )}
             </div>
@@ -592,36 +592,36 @@ function App() {
           <div className="cmd-grid">
             {gameState === GameState.TOWN && (
               <>
-                <button className="cmd-btn" onClick={() => openOverlay('自身の状態を確認')}>▶ {t('cmd_status')}</button>
-                <button className="cmd-btn" onClick={() => openOverlay('インベントリ（装備）')}>▶ {t('cmd_inv')}</button>
-                <button className="cmd-btn" onClick={() => openOverlay('破戒僧の庵')}>▶ {t('cmd_priest')}</button>
-                <button className="cmd-btn" onClick={() => openOverlay('閻魔の計量所')}>▶ {t('cmd_enma')}</button>
-                <button className="cmd-btn" onClick={() => openOverlay('記憶を買い戻す')}>▶ {t('cmd_buyback')}</button>
-                <button className="cmd-btn" onClick={() => openOverlay('倉庫')}>▶ {t('cmd_stash')}</button>
-                <button className="cmd-btn" onClick={() => openOverlay('システム')}>▶ {t('cmd_system')}</button>
-                <button className="cmd-btn" onClick={() => openOverlay('微睡みの寝床')}>▶ {t('cmd_inn')}</button>
-                <button className="cmd-btn" onClick={() => openOverlay('迷宮の入り口')}>▶ {t('cmd_dungeon')}</button>
+                <button className="cmd-btn" onClick={() => openOverlay('status')}>▶ {t('cmd_status')}</button>
+                <button className="cmd-btn" onClick={() => openOverlay('inventory')}>▶ {t('cmd_inv')}</button>
+                <button className="cmd-btn" onClick={() => openOverlay('priest')}>▶ {t('cmd_priest')}</button>
+                <button className="cmd-btn" onClick={() => openOverlay('enma')}>▶ {t('cmd_enma')}</button>
+                <button className="cmd-btn" onClick={() => openOverlay('buyback')}>▶ {t('cmd_buyback')}</button>
+                <button className="cmd-btn" onClick={() => openOverlay('stash')}>▶ {t('cmd_stash')}</button>
+                <button className="cmd-btn" onClick={() => openOverlay('system')}>▶ {t('cmd_system')}</button>
+                <button className="cmd-btn" onClick={() => openOverlay('inn')}>▶ {t('cmd_inn')}</button>
+                <button className="cmd-btn" onClick={() => openOverlay('dungeon')}>▶ {t('cmd_dungeon')}</button>
               </>
             )}
             {gameState === GameState.EXPLORING && (
               <>
-                <div style={{ color: '#0f0', gridColumn: '1 / -1', marginBottom: '8px' }}>【 深度: {depth} 】</div>
+                <div style={{ color: '#0f0', gridColumn: '1 / -1', marginBottom: '8px' }}>{t('ui_depth', { depth })}</div>
                 <button className="cmd-btn" onClick={() => { actions.explore(); setActiveOverlay(null); }}>▶ {t('cmd_explore')}</button>
-                <button className="cmd-btn" onClick={() => openOverlay('魔法（スキル）')}>▶ {t('cmd_magic')}</button>
+                <button className="cmd-btn" onClick={() => openOverlay('magic')}>▶ {t('cmd_magic')}</button>
                 <button className="cmd-btn" onClick={() => { actions.returnToTown(); setActiveOverlay(null); }}>▶ {t('cmd_return', { cost: depth * 100 })}</button>
               </>
             )}
             {gameState === GameState.ENCOUNTER && (
               <>
-                <div style={{ color: '#0f0', gridColumn: '1 / -1', marginBottom: '8px' }}>【 深度: {depth} 】</div>
+                <div style={{ color: '#0f0', gridColumn: '1 / -1', marginBottom: '8px' }}>{t('ui_depth', { depth })}</div>
                 <button className="cmd-btn" onClick={() => { actions.fight(); setActiveOverlay(null); }}>▶ {t('cmd_fight')}</button>
-                <button className="cmd-btn" onClick={() => openOverlay('魔法（スキル）')}>▶ 魔法（スキル）</button>
+                <button className="cmd-btn" onClick={() => openOverlay('magic')}>▶ {t('mag_btn_combat')}</button>
                 <button className="cmd-btn" onClick={() => { actions.run(); setActiveOverlay(null); }}>▶ {t('cmd_run')}</button>
               </>
             )}
             {gameState === GameState.COMBAT_RESULT && (
               <>
-                <div style={{ color: '#0f0', gridColumn: '1 / -1', marginBottom: '8px' }}>【 深度: {depth} 】</div>
+                <div style={{ color: '#0f0', gridColumn: '1 / -1', marginBottom: '8px' }}>{t('ui_depth', { depth })}</div>
                 <button className="cmd-btn" onClick={actions.continueFromCombat}>▶ {t('cmd_next')}</button>
               </>
             )}

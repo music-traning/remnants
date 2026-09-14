@@ -23,10 +23,11 @@ export interface Enemy {
 }
 
 export const useGameLoop = (initialPlayer: Player) => {
+  const { t } = useI18n();
   const [player, setPlayer] = useState<Player>(initialPlayer);
   const [gameState, setGameState] = useState<GameState>(GameState.TOWN);
   const [currentEnemy, setCurrentEnemy] = useState<Enemy | null>(null);
-  const [logMessages, setLogMessages] = useState<string[]>(['街に滞在している。']);
+  const [logMessages, setLogMessages] = useState<string[]>([t('gl_town_stay')]);
   const [shopInventory, setShopInventory] = useState<MemoryItem[]>([]);
   const [steps, setSteps] = useState<number>(0);
 
@@ -80,13 +81,13 @@ export const useGameLoop = (initialPlayer: Player) => {
 
       const getSpellInfo = (type: SpellType): {name: string, mpCost: number} => {
         switch (type) {
-          case 'Heal': return { name: '癒しの光', mpCost: 15 };
-          case 'AtkUp': return { name: '力の鼓舞', mpCost: 20 };
-          case 'DefUp': return { name: '守護の結界', mpCost: 15 };
-          case 'SpdUp': return { name: '疾風の恩寵', mpCost: 15 };
-          case 'MagicAttack': return { name: '魔力弾', mpCost: 20 };
-          case 'Return': return { name: '帰還の道標', mpCost: 50 };
-          default: return { name: '未知の魔法', mpCost: 10 };
+          case 'Heal': return { name: t('spell_heal'), mpCost: 15 };
+          case 'AtkUp': return { name: t('spell_atkup'), mpCost: 20 };
+          case 'DefUp': return { name: t('spell_defup'), mpCost: 15 };
+          case 'SpdUp': return { name: t('spell_spdup'), mpCost: 15 };
+          case 'MagicAttack': return { name: t('spell_magic_atk'), mpCost: 20 };
+          case 'Return': return { name: t('spell_return'), mpCost: 50 };
+          default: return { name: t('spell_unknown'), mpCost: 10 };
         }
       };
 
@@ -153,13 +154,13 @@ export const useGameLoop = (initialPlayer: Player) => {
         setGameState(GameState.ENCOUNTER);
         setCurrentEnemy({
           id: `boss_final`,
-          name: '失われた『俺』の影',
+          name: t('gl_boss_name'),
           hp: 8000,
           attack: 180,
           defense: 90,
           isBoss: true
         });
-        addLog(`【警告】圧倒的な絶望が立ち塞がる……。失われた『俺』の影が現れた！（深度: ${currentDepth}）`);
+        addLog(t('gl_boss_warn', { depth: currentDepth }));
         return newSteps;
       }
 
@@ -173,7 +174,7 @@ export const useGameLoop = (initialPlayer: Player) => {
         
         setCurrentEnemy({
           id: `enemy_${Date.now()}`,
-          name: currentDepth > 20 ? '奈落の亡霊' : currentDepth > 10 ? '狂える探求者' : '彷徨う亡者',
+          name: currentDepth > 20 ? t('gl_mob_deep') : currentDepth > 10 ? t('gl_mob_mid') : t('gl_mob_shallow'),
           hp,
           attack,
           defense
@@ -190,14 +191,14 @@ export const useGameLoop = (initialPlayer: Player) => {
     if (gameState !== GameState.ENCOUNTER || !currentEnemy) return;
     
     if (currentEnemy.isBoss) {
-      addLog('この強大な存在からは逃げられない……！');
+      addLog(t('gl_flee_fail_boss'));
       return;
     }
 
     if (Math.random() < 0.7) {
       setGameState(GameState.EXPLORING);
       setCurrentEnemy(null);
-      addLog('無事に逃げ切った！探索を継続する。');
+      addLog(t('gl_flee_success'));
     } else {
       addLog('逃走に失敗し、背後から致命傷を受けた！');
       handleWipeout();
@@ -212,7 +213,7 @@ export const useGameLoop = (initialPlayer: Player) => {
         let expGained = Math.floor((currentEnemy.hp * 2 + currentEnemy.attack * 5) * expMult);
         
         if (currentEnemy.isBoss) {
-          addLog(`【死闘の果てに】失われた『俺』の影を打ち破った！（受けたダメージ: ${dmgTaken}）`);
+          addLog(t('gl_boss_defeat', { dmg: dmgTaken }));
           expGained = 9999;
           
           const finalMemory: MemoryItem = {
@@ -226,31 +227,31 @@ export const useGameLoop = (initialPlayer: Player) => {
             requiredUncurseItem: null,
             baseValue: 999999,
             flavorText: {
-              itemName: '『俺が失う前の記憶』',
-              originText: '全てを思い出した。俺が何者であり、何故この奈落へ落ちたのかを。全ステータスが劇的に上昇するが、凄まじい呪いが毎ターン命を削り続ける。',
+              itemName: t('gl_boss_item'),
+              originText: t('gl_boss_item_origin'),
               priestMemo: '…まさか、これを本当に見つけるとはな。だが、お前が誰だったかを知って、どうなるというのだ？'
             }
           };
           
           if (!isInventoryFull) {
              newInventory.push(finalMemory);
-             addLog(`『俺が失う前の記憶』を手に入れた……。`);
+             addLog(t('gl_boss_drop'));
           } else {
-             addLog(`インベントリが満杯で『俺が失う前の記憶』を拾えなかった……！`);
+             addLog(t('gl_boss_drop_full'));
           }
         } else {
-          addLog(`${currentEnemy.name} を討ち取った！（受けたダメージ: ${dmgTaken}, 獲得EXP: ${expGained}）`);
+          addLog(t('gl_defeat', { name: currentEnemy.name, dmg: dmgTaken, exp: expGained }));
           if (!isInventoryFull) {
             newInventory.push(generateDropItem());
-            addLog(`「未鑑定の記憶」を拾い、インベントリに収納した。`);
+            addLog(t('gl_unidentified_drop'));
           } else {
-            addLog(`持ち物がいっぱいで記憶を拾えなかった…。`);
+            addLog(t('gl_inv_full_drop'));
           }
         }
 
         const hasFinalMemory = p.installedMemories.some(m => m.id === 'mem_final_boss');
         if (hasFinalMemory) {
-          addLog(`【呪い】『俺が失う前の記憶』の強烈な負荷により、戦闘中に命が削られた！`);
+          addLog(t('gl_curse_dmg'));
         }
 
         let newExp = p.currentEXP + expGained;
@@ -266,7 +267,7 @@ export const useGameLoop = (initialPlayer: Player) => {
         }
         
         if (leveledUp) {
-          addLog(`【成長】レベルが ${newLevel} に上がった！`);
+          addLog(t('gl_levelup', { level: newLevel }));
         }
 
         return {
@@ -314,7 +315,7 @@ export const useGameLoop = (initialPlayer: Player) => {
       setTimeout(() => processVictory(damageTaken, 1), 0);
       
     } else {
-      addLog(`${currentEnemy.name} との戦闘で力尽きた……。`);
+      addLog(t('gl_dead', { name: currentEnemy.name }));
       handleWipeout();
     }
   }, [gameState, currentEnemy, player.currentHP, player.installedMemories, calculatePlayerStat, addLog, handleWipeout, processVictory]);
@@ -330,7 +331,7 @@ export const useGameLoop = (initialPlayer: Player) => {
       const costAmount = memory.cost; // Memory Cost acts as scaling factor
 
       if (p.currentMP < spell.mpCost) {
-        addLog(`MPが足りない！`);
+        addLog(t('gl_no_mp'));
         return p;
       }
 
@@ -409,7 +410,7 @@ export const useGameLoop = (initialPlayer: Player) => {
   const leaveTown = useCallback(() => {
     if (gameState === GameState.TOWN) {
       setGameState(GameState.EXPLORING);
-      addLog('街を出て、薄暗いダンジョンの探索を開始した。');
+      addLog(t('gl_dungeon_start'));
     }
   }, [gameState, addLog]);
 
@@ -418,7 +419,7 @@ export const useGameLoop = (initialPlayer: Player) => {
       const returnCost = depth * 100;
       setPlayer(p => {
         if (p.currentEn >= returnCost) {
-          addLog(`帰還の道標として ${returnCost} En を支払い、街へ帰還した。`);
+          addLog(t('gl_return_paid', { cost: returnCost }));
           return { ...p, currentEn: p.currentEn - returnCost, buffs: { attackExpiresAtStep: 0, defenseExpiresAtStep: 0, speedExpiresAtStep: 0 } };
         } else {
           let newInventory = [...p.inventory];
@@ -432,7 +433,7 @@ export const useGameLoop = (initialPlayer: Player) => {
           
           const shortfall = depth - itemsDestroyed;
           
-          addLog(`【業の強制取り立て】縁が不足している…。破戒僧が無理やり倉庫を探り、未装備の記憶を ${itemsDestroyed} 個没収した。`);
+          addLog(t('gl_karma_items', { count: itemsDestroyed }));
           
           let newMaxHP = p.maxHP;
           if (shortfall > 0) {
@@ -461,7 +462,7 @@ export const useGameLoop = (initialPlayer: Player) => {
     if (gameState === GameState.COMBAT_RESULT) {
       setGameState(GameState.EXPLORING);
       setCurrentEnemy(null);
-      addLog('息を整え、再び探索を続ける。');
+      addLog(t('gl_continue'));
     }
   }, [gameState, addLog]);
 
