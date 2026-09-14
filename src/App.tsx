@@ -261,7 +261,7 @@ function App() {
                         <button 
                           className="cmd-btn" 
                           disabled={!canEquip}
-                          style={{ borderColor: canEquip ? '#0f0' : '#555', color: canEquip ? '#0f0' : '#555', width: 'auto' }} 
+                          style={{ borderColor: canEquip ? '#0f0' : '#777', color: canEquip ? '#0f0' : '#777', width: 'auto' }} 
                           onClick={() => {
                             const res = memoryActions.installMemory(mem.id);
                             actions.addLog(res.message);

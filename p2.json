@@ -1,0 +1,152 @@
+[
+  {
+    "rarity": "Rare",
+    "cost": 3,
+    "itemName": "『俺の肉を食え』",
+    "originText": "雪山で遭難し、飢える我が子に自らの太ももを削ぎ落として与え続けた父親。\n肉を失う痛みよりも、狂気が勝る。",
+    "priestMemo": "美しい親の愛だが、子供は結局、その肉を喉に詰まらせて死んだよ。皮肉なものだ。",
+    "itemNameEn": "Cursed Memory of Blood",
+    "originTextEn": "A fragmentary echo from the depths. It radiates a strange physical energy, hinting at a past long consumed by the abyss.",
+    "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+  },
+  {
+    "rarity": "Rare",
+    "cost": 3,
+    "itemName": "『目を開けたまま眠れ』",
+    "originText": "暗殺を恐れるあまり、自分のまぶたを縫い付けて一生眠らずに死んだ独裁者。\n極度の疲労が反射神経に変わる。",
+    "priestMemo": "眠らぬ努力は認めるが、疲労で幻覚を見て、自らの影に刃を向けて死ぬとは滑稽極まりない。",
+    "itemNameEn": "Sacred Memory of Fang",
+    "originTextEn": "A fragmentary echo from the depths. It radiates a strange physical energy, hinting at a past long consumed by the abyss.",
+    "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+  },
+  {
+    "rarity": "Rare",
+    "cost": 3,
+    "itemName": "『まだ歩ける』",
+    "originText": "両脚を地雷で吹き飛ばされながらも、腕の力だけで故郷まで這って帰ろうとした兵士。\n這いずった跡には血の道ができた。",
+    "priestMemo": "故郷の村はとっくに焼き払われていたというのに、何が彼をそこまで突き動かしたのかね。",
+    "itemNameEn": "Dim Memory of Blade",
+    "originTextEn": "A fragmentary echo from the depths. It radiates a strange physical energy, hinting at a past long consumed by the abyss.",
+    "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+  },
+  {
+    "rarity": "Rare",
+    "cost": 3,
+    "itemName": "『腕が一本多い』",
+    "originText": "結合双生児として生まれ、兄弟の腕を切り落として己の背中に移植した男。\n不自然な角度から放たれる一撃。",
+    "priestMemo": "兄弟の痛みを感じながら戦う気分はどうだ？少しは寂しさが紛れるか？",
+    "itemNameEn": "Forgotten Memory of Iron",
+    "originTextEn": "A fragmentary echo from the depths. It radiates a strange physical energy, hinting at a past long consumed by the abyss.",
+    "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+  },
+  {
+    "rarity": "Rare",
+    "cost": 3,
+    "itemName": "『笑いながら殴れ』",
+    "originText": "殴られるたびに多幸感を感じるよう脳を改造された奴隷剣闘士。\n肉体が破壊されることに快楽を覚えている。",
+    "priestMemo": "痛みを快楽に変換できるなら、この地獄のような世界も天国に変わるのだろうな。羨ましい限りだ。",
+    "itemNameEn": "Eternal Memory of Muscle",
+    "originTextEn": "A fragmentary echo from the depths. It radiates a strange physical energy, hinting at a past long consumed by the abyss.",
+    "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+  },
+  {
+    "rarity": "Rare",
+    "cost": 3,
+    "itemName": "『爪が剥がれても』",
+    "originText": "地下牢の石壁を素手で掘り続け、十指の爪を完全に失い、白骨化した指先で穴を開けた囚人。",
+    "priestMemo": "その執念で外に出たところで、外の光に目が潰れて死んだわけだが。",
+    "itemNameEn": "Lost Memory of Strength",
+    "originTextEn": "A fragmentary echo from the depths. It radiates a strange physical energy, hinting at a past long consumed by the abyss.",
+    "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+  },
+  {
+    "rarity": "Rare",
+    "cost": 3,
+    "itemName": "『血が足りない』",
+    "originText": "若さを保つため、毎日数リットルの他人の血を飲み続けた貴族。\n常に血の渇きに苛まれている。",
+    "priestMemo": "結局、鉄分過多で内臓が破裂した。血は飲むものではない、流すものだ。",
+    "itemNameEn": "Fading Memory of Fist",
+    "originTextEn": "A fragmentary echo from the depths. It radiates a strange physical energy, hinting at a past long consumed by the abyss.",
+    "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+  },
+  {
+    "rarity": "Rare",
+    "cost": 3,
+    "itemName": "『耳を削ぎ落とせ』",
+    "originText": "敵の断末魔を聞くたびに自らの耳を削ぎ落とし、完全に聴覚を失った処刑人。\n無音の世界が闘争への集中力を高める。",
+    "priestMemo": "他人の悲鳴に耐えられなかったのか？処刑人に向いていない優男の末路だな。",
+    "itemNameEn": "Abyssal Memory of Bone",
+    "originTextEn": "A fragmentary echo from the depths. It radiates a strange physical energy, hinting at a past long consumed by the abyss.",
+    "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+  },
+  {
+    "rarity": "Rare",
+    "cost": 3,
+    "itemName": "『息を止めて走れ』",
+    "originText": "毒ガスが充満する塹壕の中を、呼吸を止めたまま走り抜けて伝令を届けた少年兵。\n肺の激痛が刻まれている。",
+    "priestMemo": "届けた伝令の内容が「全軍撤退」だった時の、見捨てられた少年の絶望は計り知れない。",
+    "itemNameEn": "Shattered Memory of Claw",
+    "originTextEn": "A fragmentary echo from the depths. It radiates a strange physical energy, hinting at a past long consumed by the abyss.",
+    "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+  },
+  {
+    "rarity": "Rare",
+    "cost": 3,
+    "itemName": "『骨までしゃぶれ』",
+    "originText": "孤島に流され、餓死した仲間の骨の髄まですすって生きながらえた男。\n獣のような執着心が宿る。",
+    "priestMemo": "そこまでして生きたところで、救助に来た船員を襲って射殺されるのだから世話はない。",
+    "itemNameEn": "Echoing Memory of Warrior",
+    "originTextEn": "A fragmentary echo from the depths. It radiates a strange physical energy, hinting at a past long consumed by the abyss.",
+    "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+  },
+  {
+    "rarity": "Rare",
+    "cost": 3,
+    "itemName": "『舌を噛み切れ』",
+    "originText": "拷問で機密を漏らさぬよう、自ら舌を噛み切り、失血死したスパイ。\n痛みに耐える意志の力。",
+    "priestMemo": "その機密とやらは、翌日には時代遅れの情報になっていたがな。無駄な死だ。",
+    "itemNameEn": "Cursed Memory of Blood",
+    "originTextEn": "A fragmentary echo from the depths. It radiates a strange physical energy, hinting at a past long consumed by the abyss.",
+    "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+  },
+  {
+    "rarity": "Rare",
+    "cost": 3,
+    "itemName": "『髪が抜けるまで』",
+    "originText": "呪いにより、一日一本ずつ髪を抜かれ、最後の一本が抜けた時に狂死した女。\nじわじわと迫る死の恐怖。",
+    "priestMemo": "ただの脱毛症に怯えて狂死するとは、人間の精神は脆いものだな。",
+    "itemNameEn": "Sacred Memory of Fang",
+    "originTextEn": "A fragmentary echo from the depths. It radiates a strange physical energy, hinting at a past long consumed by the abyss.",
+    "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+  },
+  {
+    "rarity": "Rare",
+    "cost": 3,
+    "itemName": "『内臓が腐る匂い』",
+    "originText": "毒を盛られ、自らの内臓が徐々に溶けていく悪臭を嗅ぎながら余命を過ごした王族。",
+    "priestMemo": "権力の座につくなら、胃腸薬より解毒剤を常備しておくべきだったな。",
+    "itemNameEn": "Dim Memory of Blade",
+    "originTextEn": "A fragmentary echo from the depths. It radiates a strange physical energy, hinting at a past long consumed by the abyss.",
+    "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+  },
+  {
+    "rarity": "Rare",
+    "cost": 3,
+    "itemName": "『皮膚を剥ぐ快感』",
+    "originText": "敵の皮膚を綺麗に剥ぎ取ることに生涯を捧げた猟奇的な革職人。\nその執着が刃物の切れ味を増す。",
+    "priestMemo": "剥いだ皮膚で作ったランプシェードは、今もどこかの貴族の館を照らしているらしいぞ。",
+    "itemNameEn": "Forgotten Memory of Iron",
+    "originTextEn": "A fragmentary echo from the depths. It radiates a strange physical energy, hinting at a past long consumed by the abyss.",
+    "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+  },
+  {
+    "rarity": "Rare",
+    "cost": 3,
+    "itemName": "『燃える肉の匂い』",
+    "originText": "火あぶりにされながらも、肉が焼ける匂いを楽しみながら高笑いした魔女。\n狂気が痛覚を麻痺させている。",
+    "priestMemo": "焼肉の匂いは食欲をそそるからな。彼女も最後に腹が減っていたのだろう。",
+    "itemNameEn": "Eternal Memory of Muscle",
+    "originTextEn": "A fragmentary echo from the depths. It radiates a strange physical energy, hinting at a past long consumed by the abyss.",
+    "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+  }
+]

@@ -55,11 +55,11 @@ body, html, #app {
 }
 
 .cmd-btn:disabled {
-  opacity: 0.5;
+  opacity: 0.9;
   cursor: not-allowed;
   background: transparent;
-  color: #555;
-  border-color: #555;
+  color: #777 !important;
+  border-color: #777 !important;
 }
 
 .retro-box {

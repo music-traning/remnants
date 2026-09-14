@@ -1,0 +1,152 @@
+[
+  {
+    "rarity": "Uncommon",
+    "cost": 2,
+    "itemName": "『殴られた跡が消えない』",
+    "originText": "夫からの暴力に耐え続け、全身の痣が皮膚と同化してしまった女。\n殴られることへの慣れが防御となる。",
+    "priestMemo": "愛されていると錯覚するからそうなる。次は逃げる足を手に入れることだ。",
+    "itemNameEn": "Lost Memory of Strength",
+    "originTextEn": "A fragmentary echo from the depths. It radiates a strange physical energy, hinting at a past long consumed by the abyss.",
+    "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+  },
+  {
+    "rarity": "Uncommon",
+    "cost": 2,
+    "itemName": "『石を噛む味』",
+    "originText": "パンを買えず、路傍の石を噛んで飢えを凌いだ浮浪者。\n絶望的な貧困が肉体を強靭にした。",
+    "priestMemo": "歯が丈夫なのは良いことだ。だが、石は栄養にはならんぞ。",
+    "itemNameEn": "Fading Memory of Fist",
+    "originTextEn": "A fragmentary echo from the depths. It radiates a strange physical energy, hinting at a past long consumed by the abyss.",
+    "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+  },
+  {
+    "rarity": "Uncommon",
+    "cost": 2,
+    "itemName": "『足首がちぎれそうだ』",
+    "originText": "鉄球を繋がれたまま一生を炭鉱で過ごし、足首が壊死して骨が見えていた奴隷。",
+    "priestMemo": "鎖から解放された時、彼は一歩も歩けなかった。自由とは残酷なものだな。",
+    "itemNameEn": "Abyssal Memory of Bone",
+    "originTextEn": "A fragmentary echo from the depths. It radiates a strange physical energy, hinting at a past long consumed by the abyss.",
+    "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+  },
+  {
+    "rarity": "Uncommon",
+    "cost": 2,
+    "itemName": "『胃液が逆流する』",
+    "originText": "極度の緊張から毎日嘔吐を繰り返し、胃酸で食道と歯を溶かした暗殺者。",
+    "priestMemo": "プレッシャーに弱い暗殺者とは傑作だ。仕事前に吐くのは素人の証だぞ。",
+    "itemNameEn": "Shattered Memory of Claw",
+    "originTextEn": "A fragmentary echo from the depths. It radiates a strange physical energy, hinting at a past long consumed by the abyss.",
+    "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+  },
+  {
+    "rarity": "Uncommon",
+    "cost": 2,
+    "itemName": "『息ができない』",
+    "originText": "狭い棺桶に生きたまま埋められ、酸欠の暗闇で爪を剥がしながら蓋を掻きむしった男。",
+    "priestMemo": "お前の悲鳴は地上には届かなかったが、土の中のミミズには良い子守唄になっただろう。",
+    "itemNameEn": "Echoing Memory of Warrior",
+    "originTextEn": "A fragmentary echo from the depths. It radiates a strange physical energy, hinting at a past long consumed by the abyss.",
+    "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+  },
+  {
+    "rarity": "Uncommon",
+    "cost": 2,
+    "itemName": "『首の皮一枚』",
+    "originText": "処刑人の斧が鈍らだったせいで、首の皮一枚で繋がったまま数時間生き延びた罪人。",
+    "priestMemo": "すぐに死ねないのは不幸なことだ。処刑人にはもっと刃を研いでおけと伝えておこう。",
+    "itemNameEn": "Cursed Memory of Blood",
+    "originTextEn": "A fragmentary echo from the depths. It radiates a strange physical energy, hinting at a past long consumed by the abyss.",
+    "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+  },
+  {
+    "rarity": "Uncommon",
+    "cost": 2,
+    "itemName": "『血尿が止まらない』",
+    "originText": "連日の重労働で内臓を壊し、赤い尿を流しながら笑い続けた炭鉱夫。",
+    "priestMemo": "赤いワインが出たなどと喜んでいたらしいな。無知とは幸福なことだ。",
+    "itemNameEn": "Sacred Memory of Fang",
+    "originTextEn": "A fragmentary echo from the depths. It radiates a strange physical energy, hinting at a past long consumed by the abyss.",
+    "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+  },
+  {
+    "rarity": "Uncommon",
+    "cost": 2,
+    "itemName": "『凍傷の指先』",
+    "originText": "愛娘の幻影を抱きしめたまま凍死した狂人。\nその腕は硬直し、決して解けることはない。",
+    "priestMemo": "温かいのはお前の幻覚の中だけだ。現実は、ただの氷の塊にすぎん。",
+    "itemNameEn": "Dim Memory of Blade",
+    "originTextEn": "A fragmentary echo from the depths. It radiates a strange physical energy, hinting at a past long consumed by the abyss.",
+    "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+  },
+  {
+    "rarity": "Uncommon",
+    "cost": 2,
+    "itemName": "『喉が渇いて死ぬ』",
+    "originText": "砂漠で道に迷い、自らの尿をすすり、最後は自らの手首を切って血を飲んだ商人。",
+    "priestMemo": "金貨は水には変わらない。砂漠で一番価値があるのは、お前の持っていた金ではなく水袋だった。",
+    "itemNameEn": "Forgotten Memory of Iron",
+    "originTextEn": "A fragmentary echo from the depths. It radiates a strange physical energy, hinting at a past long consumed by the abyss.",
+    "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+  },
+  {
+    "rarity": "Uncommon",
+    "cost": 2,
+    "itemName": "『蛆虫が這う感覚』",
+    "originText": "傷口に蛆虫が湧くのを放置し、それが肉を食い破る感覚を楽しみながら腐っていった男。",
+    "priestMemo": "彼にとっては、蛆虫も立派なペットだったのだろう。孤独よりはマシか。",
+    "itemNameEn": "Eternal Memory of Muscle",
+    "originTextEn": "A fragmentary echo from the depths. It radiates a strange physical energy, hinting at a past long consumed by the abyss.",
+    "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+  },
+  {
+    "rarity": "Common",
+    "cost": 1,
+    "itemName": "『親指をしゃぶる』",
+    "originText": "不安から自分の指をしゃぶり続け、骨が見えるまで肉を削り取った子供。",
+    "priestMemo": "甘えん坊も度が過ぎると自傷行為になる。誰か構ってやれ。",
+    "itemNameEn": "Lost Memory of Strength",
+    "originTextEn": "A fragmentary echo from the depths. It radiates a strange physical energy, hinting at a past long consumed by the abyss.",
+    "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+  },
+  {
+    "rarity": "Common",
+    "cost": 1,
+    "itemName": "『まばたきを忘れた』",
+    "originText": "敵の影に怯えるあまり、まばたきをせずに目が乾き切って失明した歩哨。",
+    "priestMemo": "見開いた目で暗闇を見つめても、恐怖が倍増するだけだ。",
+    "itemNameEn": "Fading Memory of Fist",
+    "originTextEn": "A fragmentary echo from the depths. It radiates a strange physical energy, hinting at a past long consumed by the abyss.",
+    "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+  },
+  {
+    "rarity": "Common",
+    "cost": 1,
+    "itemName": "『膝が笑っている』",
+    "originText": "恐怖で足の震えが止まらず、最後は自らの膝の皿をハンマーで砕いて動きを止めた新兵。",
+    "priestMemo": "震えを止めるために足を壊すとは。斬新な解決策だが、歩けなくなるぞ。",
+    "itemNameEn": "Abyssal Memory of Bone",
+    "originTextEn": "A fragmentary echo from the depths. It radiates a strange physical energy, hinting at a past long consumed by the abyss.",
+    "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+  },
+  {
+    "rarity": "Common",
+    "cost": 1,
+    "itemName": "『耳鳴りがうるさい』",
+    "originText": "大砲の音で鼓膜が破れ、絶え間ない耳鳴りに発狂して自らの耳にナイフを突き立てた砲兵。",
+    "priestMemo": "ナイフを刺しても耳鳴りは脳から消えない。残念だったな。",
+    "itemNameEn": "Shattered Memory of Claw",
+    "originTextEn": "A fragmentary echo from the depths. It radiates a strange physical energy, hinting at a past long consumed by the abyss.",
+    "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+  },
+  {
+    "rarity": "Common",
+    "cost": 1,
+    "itemName": "『泥の味がする』",
+    "originText": "顔面から泥水に突っ込んだまま絶命し、泥を飲み込み続けた死体。",
+    "priestMemo": "泥水は不味いだろう。次はもっと綺麗な川で死ぬことだ。",
+    "itemNameEn": "Echoing Memory of Warrior",
+    "originTextEn": "A fragmentary echo from the depths. It radiates a strange physical energy, hinting at a past long consumed by the abyss.",
+    "priestMemoEn": "\"Hmph... The dead tell no tales, but their belongings sure fetch a price. Use it or sell it.\""
+  }
+]

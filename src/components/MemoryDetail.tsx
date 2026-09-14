@@ -31,6 +31,8 @@ export const MemoryDetail: React.FC<Props> = ({ memory }) => {
   const displayName = language === 'en' ? (flavorText?.itemNameEn || flavorText?.itemName) : flavorText?.itemName;
   const displayOrigin = language === 'en' ? (flavorText?.originTextEn || flavorText?.originText) : flavorText?.originText;
   const displayMemo = language === 'en' ? (flavorText?.priestMemoEn || flavorText?.priestMemo) : flavorText?.priestMemo;
+  
+  const priestLabelTop = language === 'ja' ? '-20px' : '-10px';
 
   if (!isIdentified) {
     return (
@@ -45,7 +47,7 @@ export const MemoryDetail: React.FC<Props> = ({ memory }) => {
           <p style={{ margin: 0, fontSize: '0.85rem', color: '#ccc' }}>{t('mem_unidentified_desc')}</p>
         </div>
         <div className="priest-memo" style={{ position: 'relative' }}>
-          <span style={{ position: 'absolute', top: '-10px', left: '16px', backgroundColor: '#000', padding: '0 4px', fontSize: '0.75rem', color: '#888' }}>
+          <span style={{ position: 'absolute', top: priestLabelTop, left: '16px', backgroundColor: '#000', padding: '0 4px', fontSize: '0.75rem', color: '#888' }}>
             {t('mem_priest_label')}
           </span>
           <p style={{ margin: 0, fontSize: '0.85rem', color: '#ccc', fontStyle: 'italic' }}>
@@ -73,7 +75,7 @@ export const MemoryDetail: React.FC<Props> = ({ memory }) => {
 
       {attachedSpell && (
         <div style={{ padding: '8px', border: '1px dashed #0ff', marginBottom: '12px', color: '#0ff' }}>
-          <div style={{ fontSize: '0.8rem', marginBottom: '4px' }}>【 {t('mem_enchant')} 】</div>
+          <div style={{ fontSize: '0.8rem', marginBottom: '4px' }}>『{t('mem_enchant')}』</div>
           <div style={{ fontSize: '0.9rem' }}>
             ▶ {attachedSpell.name} (MP: {attachedSpell.mpCost})
           </div>
@@ -87,7 +89,7 @@ export const MemoryDetail: React.FC<Props> = ({ memory }) => {
       </div>
 
       <div className="priest-memo" style={{ position: 'relative' }}>
-        <span style={{ position: 'absolute', top: '-10px', left: '16px', backgroundColor: '#000', padding: '0 4px', fontSize: '0.75rem', color: '#888' }}>
+        <span style={{ position: 'absolute', top: priestLabelTop, left: '16px', backgroundColor: '#000', padding: '0 4px', fontSize: '0.75rem', color: '#888' }}>
           {t('mem_priest_label')}
         </span>
         <p style={{ margin: 0, fontSize: '0.85rem', color: '#ccc', fontStyle: 'italic' }}>
