@@ -188,4 +188,13 @@ export const en = {
   sys_no_data: "NO DATA",
   empty_select: "Please select an item from the list.",
   empty_no_items: "No items available.",
+  sys_install: "Installed {itemNameEn}.",
+  sys_uninstall: "Uninstalled {itemNameEn}.",
+  sys_discard: "Discarded {itemNameEn}.",
+  sys_sell: "Sold {itemNameEn} for {price} En.",
+  sys_buy: "Bought back {itemNameEn} for {price} En.",
+  mem_unidentified_desc: "It seems to hold some sort of malice...",
+  mem_priest_label: "Corrupt Priest's Memo",
+  mem_priest_unidentified: "'I don't know what this is. Get it identified first.'",
+  mem_enchant: "Enchantment Magic",
 };

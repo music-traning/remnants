@@ -1,11 +1,12 @@
 import { useI18n } from '../contexts/I18nContext';
 import { useCallback } from 'react';
 import type { Player, MemoryItem, En } from '../types/game';
+import type { LogEntry } from './useGameLoop';
 import { GameState } from './useGameLoop';
 
 export interface EconomyActionResult {
   success: boolean;
-  message: string;
+  message: string | LogEntry;
 }
 
 export const getMemoryBasePrice = (cost: number): number => {
@@ -52,7 +53,7 @@ export const useEconomy = (
       currentEn: prev.currentEn + sellPrice
     }));
     setShopInventory(prev => [...prev, soldMemory]);
-    return { success: true, message: `${target.flavorText?.itemName || '未鑑定の記憶'} を ${sellPrice} 縁で売却しました。` };
+    return { success: true, message: { key: 'sys_sell', params: { itemName: target.flavorText?.itemName || '未鑑定の記憶', itemNameEn: target.flavorText?.itemNameEn || 'Unidentified Memory', price: sellPrice } } };
   }, [player.inventory, player.totalDives, gameState, setPlayer, setShopInventory]);
 
   // ==========================================
@@ -80,7 +81,7 @@ export const useEconomy = (
     }));
     setShopInventory(prev => prev.filter(m => m.id !== memoryId));
     
-    return { success: true, message: `${target.flavorText?.itemName || '未鑑定の記憶'} を ${buyPrice} 縁で買い戻しました。` };
+    return { success: true, message: { key: 'sys_buy', params: { itemName: target.flavorText?.itemName || '未鑑定の記憶', itemNameEn: target.flavorText?.itemNameEn || 'Unidentified Memory', price: buyPrice } } };
   }, [shopInventory, player.currentEn, player.inventory.length, player.maxInventorySize, gameState, setPlayer, setShopInventory]);
 
   const expandInventory = useCallback((): EconomyActionResult => {

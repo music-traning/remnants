@@ -71,7 +71,7 @@ const formatTime = (secs: number) => {
 };
 
 function App() {
-  const { t } = useI18n();
+  const { t, language } = useI18n();
   const [isManualOpen, setIsManualOpen] = useState(false);
 
   const { player, setPlayer, setGameState, gameState, currentEnemy, logMessages, shopInventory, setShopInventory, depth, setSteps, actions } = useGameLoop(initialPlayer);
@@ -315,7 +315,7 @@ function App() {
                       <h3 style={{ color: '#f00', margin: '0 0 8px 0', fontSize: '1rem' }}>{t('priest_cursed_equip')}</h3>
                       {player.installedMemories.filter(m => m.hasCurse).map(mem => (
                         <div key={mem.id} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '4px' }}>
-                          <span>{mem.attachedSpell ? '★ ' : ''}{mem.flavorText.itemName} (Cost: {mem.cost})</span>
+                          <span>{mem.attachedSpell ? '☁ ' : ''}{language === 'en' ? (mem.flavorText?.itemNameEn || mem.flavorText?.itemName) : mem.flavorText?.itemName} (Cost: {mem.cost})</span>
                           <button className="cmd-btn" style={{ width: 'auto', padding: '2px 8px', color: '#f00', borderColor: '#f00' }} onClick={() => {
                             const res = memoryActions.uncurseMemory(mem.id);
                             actions.addLog(res.message);

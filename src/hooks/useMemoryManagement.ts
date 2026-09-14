@@ -1,11 +1,12 @@
 import { useI18n } from '../contexts/I18nContext';
 import { useCallback } from 'react';
 import type { Player, MemoryItem, StatModifiers } from '../types/game';
+import type { LogEntry } from './useGameLoop';
 import { recalculateStats, type BaseStats } from '../utils/statCalculator';
 
 export interface ActionResult {
   success: boolean;
-  message: string;
+  message: string | LogEntry;
 }
 
 export const useMemoryManagement = (
@@ -73,6 +74,7 @@ export const useMemoryManagement = (
       identifiedMemory.flavorText = {
         ...identifiedMemory.flavorText,
         itemName: `【呪】${identifiedMemory.flavorText.itemName}`,
+        itemNameEn: `[Cursed] ${identifiedMemory.flavorText.itemNameEn || identifiedMemory.flavorText.itemName}`,
         priestMemo: identifiedMemory.flavorText.priestMemo + ' さらに呪い付きだ。愚か者め。'
       };
     }
@@ -117,7 +119,7 @@ export const useMemoryManagement = (
       return clampedPlayer;
     });
     
-    return { success: true, message: `${target.flavorText.itemName} をインストールしました。` };
+    return { success: true, message: { key: 'sys_install', params: { itemName: target.flavorText.itemName, itemNameEn: target.flavorText.itemNameEn || target.flavorText.itemName } } };
   }, [player, baseStats, setPlayer]);
 
   // ==========================================
@@ -144,7 +146,7 @@ export const useMemoryManagement = (
       return clampedPlayer;
     });
     
-    return { success: true, message: `${target.flavorText.itemName} をアンインストールしました。` };
+    return { success: true, message: { key: 'sys_uninstall', params: { itemName: target.flavorText.itemName, itemNameEn: target.flavorText.itemNameEn || target.flavorText.itemName } } };
   }, [player, baseStats, setPlayer]);
 
   // ==========================================
@@ -159,7 +161,7 @@ export const useMemoryManagement = (
       inventory: prev.inventory.filter(m => m.id !== memoryId)
     }));
     
-    return { success: true, message: `${target.flavorText?.itemName || '記憶'} を破棄（忘却）しました。` };
+    return { success: true, message: { key: 'sys_discard', params: { itemName: target.flavorText?.itemName || '記憶', itemNameEn: target.flavorText?.itemNameEn || 'Memory' } } };
   }, [player.inventory, setPlayer]);
 
   // ==========================================

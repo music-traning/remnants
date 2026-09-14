@@ -188,4 +188,13 @@ export const ja = {
   ui_depth: "【 深度: {depth} 】",
   empty_select: "リストからアイテムを選択してください",
   empty_no_items: "アイテムがありません。",
+  sys_install: "{itemName} をインストールしました。",
+  sys_uninstall: "{itemName} をアンインストールしました。",
+  sys_discard: "{itemName} を破棄しました。",
+  sys_sell: "{itemName} を {price} 縁で売却しました。",
+  sys_buy: "{itemName} を {price} 縁で買い戻しました。",
+  mem_unidentified_desc: "何かの念がこもっているようだ…",
+  mem_priest_label: "破戒僧のメモ",
+  mem_priest_unidentified: "「持ち込まれても分からんぞ。まずは鑑定しろ。」",
+  mem_enchant: "エンチャント魔法",
 };

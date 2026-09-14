@@ -44,10 +44,8 @@ export const InventoryView: React.FC<Props> = ({ items, selectedItem, onSelect, 
                     </span>
                     <span style={{ color: selectedItem?.id === m.id ? '#000' : (m.hasCurse ? '#f00' : (m.attachedSpell && m.isIdentified ? '#0ff' : '#fff')) }}>
                       {m.isIdentified 
-  ? (m.attachedSpell 
-      ? `★ ${(window as any).__lang === 'en' ? m.flavorText.itemNameEn : m.flavorText.itemName}` 
-      : (language === 'en' && m.flavorText.itemNameEn ? m.flavorText.itemNameEn : m.flavorText.itemName)) 
-  : t('inv_unidentified')}
+                        ? (m.attachedSpell ? '☁ ' : '') + (language === 'en' ? (m.flavorText?.itemNameEn || m.flavorText?.itemName) : m.flavorText?.itemName)
+                        : t('inv_unidentified')}
                     </span>
                     </div>
                     {inlineAction && inlineAction(m)}

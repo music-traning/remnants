@@ -28,6 +28,10 @@ export const MemoryDetail: React.FC<Props> = ({ memory }) => {
     });
   };
 
+  const displayName = language === 'en' ? (flavorText?.itemNameEn || flavorText?.itemName) : flavorText?.itemName;
+  const displayOrigin = language === 'en' ? (flavorText?.originTextEn || flavorText?.originText) : flavorText?.originText;
+  const displayMemo = language === 'en' ? (flavorText?.priestMemoEn || flavorText?.priestMemo) : flavorText?.priestMemo;
+
   if (!isIdentified) {
     return (
       <div className="retro-box memory-detail" style={{ maxWidth: '400px', width: '100%', userSelect: 'none' }}>
@@ -38,14 +42,14 @@ export const MemoryDetail: React.FC<Props> = ({ memory }) => {
           </div>
         </div>
         <div style={{ minHeight: '60px', marginBottom: '8px' }}>
-          <p style={{ margin: 0, fontSize: '0.85rem', color: '#ccc' }}>何かの念がこもっているようだ…</p>
+          <p style={{ margin: 0, fontSize: '0.85rem', color: '#ccc' }}>{t('mem_unidentified_desc')}</p>
         </div>
         <div className="priest-memo" style={{ position: 'relative' }}>
           <span style={{ position: 'absolute', top: '-10px', left: '16px', backgroundColor: '#000', padding: '0 4px', fontSize: '0.75rem', color: '#888' }}>
-            破戒僧のメモ
+            {t('mem_priest_label')}
           </span>
           <p style={{ margin: 0, fontSize: '0.85rem', color: '#ccc', fontStyle: 'italic' }}>
-            「持ち込まれても分からんぞ。まずは鑑定しろ。」
+            {t('mem_priest_unidentified')}
           </p>
         </div>
       </div>
@@ -56,20 +60,20 @@ export const MemoryDetail: React.FC<Props> = ({ memory }) => {
     <div className="retro-box memory-detail" style={{ maxWidth: '400px', width: '100%', userSelect: 'none' }}>
       <div style={{ borderBottom: '2px solid #fff', paddingBottom: '12px', marginBottom: '8px' }}>
         <h2 style={{ fontSize: '1.25rem', fontWeight: 'bold', margin: '0 0 12px 0', color: hasCurse ? '#f00' : '#fff' }}>
-          {language === 'en' && flavorText.itemNameEn ? flavorText.itemNameEn : flavorText.itemName}
+          {displayName}
         </h2>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', fontSize: '0.9rem' }}>
           <div style={{ fontWeight: 'bold' }}>{renderStats()}</div>
           <div>
             <span style={{ color: '#aaa', marginRight: '8px' }}>COST:[{cost}]</span>
-            {hasCurse && <span className="text-red" style={{ fontSize: '1.2rem', animation: 'pulse 2s infinite' }} title="呪い">💀</span>}
+            {hasCurse && <span className="text-red" style={{ fontSize: '1.2rem', animation: 'pulse 2s infinite' }} title="Cursed">💀</span>}
           </div>
         </div>
       </div>
 
       {attachedSpell && (
         <div style={{ padding: '8px', border: '1px dashed #0ff', marginBottom: '12px', color: '#0ff' }}>
-          <div style={{ fontSize: '0.8rem', marginBottom: '4px' }}>【エンチャント魔法】</div>
+          <div style={{ fontSize: '0.8rem', marginBottom: '4px' }}>【 {t('mem_enchant')} 】</div>
           <div style={{ fontSize: '0.9rem' }}>
             ▶ {attachedSpell.name} (MP: {attachedSpell.mpCost})
           </div>
@@ -78,16 +82,16 @@ export const MemoryDetail: React.FC<Props> = ({ memory }) => {
 
       <div style={{ minHeight: '60px', marginBottom: '8px' }}>
         <p style={{ margin: 0, fontSize: '0.85rem', color: '#ccc', whiteSpace: 'pre-wrap' }}>
-          {language === 'en' && flavorText.originTextEn ? flavorText.originTextEn : flavorText.originText}
+          {displayOrigin}
         </p>
       </div>
 
       <div className="priest-memo" style={{ position: 'relative' }}>
         <span style={{ position: 'absolute', top: '-10px', left: '16px', backgroundColor: '#000', padding: '0 4px', fontSize: '0.75rem', color: '#888' }}>
-          破戒僧のメモ
+          {t('mem_priest_label')}
         </span>
         <p style={{ margin: 0, fontSize: '0.85rem', color: '#ccc', fontStyle: 'italic' }}>
-          {language === 'en' && flavorText.priestMemoEn ? flavorText.priestMemoEn : `「${flavorText.priestMemo}」`}
+          {language === 'en' ? displayMemo : `「${displayMemo}」`}
         </p>
       </div>
     </div>
