@@ -1,10 +1,12 @@
 import { useI18n } from '../contexts/I18nContext';
+import { ja } from '../locales/ja';
+import { en } from '../locales/en';
+import { getBaseStats } from '../utils/statCalculator';
 import { useState, useCallback, useEffect } from 'react';
-import type { Player, MemoryItem, MemoryCategory, Rarity, SpellType, Spell } from '../types/game';
+import type { Player, MemoryItem, MemoryCategory, Rarity, SpellType, Spell, MemoryTemplate } from '../types/game';
 import memoryMasterData from '../data/memoryMaster.json';
 
-type MemoryTemplate = { rarity: string; cost: number; itemName: string; originText: string; priestMemo: string; itemNameEn?: string; originTextEn?: string; priestMemoEn?: string; };
-const memoryMaster = memoryMasterData as Record<string, MemoryTemplate[]>;
+const memoryMaster = memoryMasterData as unknown as Record<string, Omit<MemoryTemplate, 'category' | 'baseValue'>[]>;
 
 export enum GameState {
   TOWN = 'TOWN',
@@ -47,7 +49,7 @@ export const useGameLoop = (initialPlayer: Player) => {
   }, []);
 
   const calculatePlayerStat = useCallback((statName: 'attack' | 'defense' | 'speed'): number => {
-    let total = statName === 'attack' ? 10 + player.level * 2 : statName === 'defense' ? 5 + player.level : 10 + player.level;
+    let total = getBaseStats(player.level)[statName];
     for (const mem of player.installedMemories) {
       const modifier = mem.statModifiers[statName];
       if (modifier) total += modifier;
@@ -229,9 +231,12 @@ export const useGameLoop = (initialPlayer: Player) => {
             requiredUncurseItem: null,
             baseValue: 999999,
             flavorText: {
-              itemName: t('gl_boss_item'),
-              originText: t('gl_boss_item_origin'),
-              priestMemo: '…まさか、これを本当に見つけるとはな。だが、お前が誰だったかを知って、どうなるというのだ？'
+              itemName: ja.gl_boss_item,
+              originText: ja.gl_boss_item_origin,
+              priestMemo: ja.gl_boss_item_priest,
+              itemNameEn: en.gl_boss_item,
+              originTextEn: en.gl_boss_item_origin,
+              priestMemoEn: en.gl_boss_item_priest
             }
           };
           

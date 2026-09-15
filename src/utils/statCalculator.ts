@@ -19,6 +19,16 @@ export interface CalculatedStats {
   };
 }
 
+export function getBaseStats(level: number): BaseStats {
+  return {
+    maxHP: 500,
+    maxMP: 50,
+    attack: 10 + level * 2,
+    defense: 5 + level,
+    speed: 10 + level
+  };
+}
+
 /**
  * プレイヤーの最終ステータスを算出し、異常値をクランプする純粋関数
  */

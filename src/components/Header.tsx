@@ -43,7 +43,6 @@ export const Header: React.FC<HeaderProps> = ({ onOpenManual }) => {
           onClick={() => {
             const next = language === 'ja' ? 'en' : 'ja';
             setLanguage(next);
-            (window as any).__lang = next; // Fallback for components not using context
           }}
         >
           {t('btn_lang')}

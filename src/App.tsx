@@ -4,7 +4,7 @@ import type { Player, MemoryItem } from './types/game';
 import { useGameLoop, GameState } from './hooks/useGameLoop';
 import { useEconomy } from './hooks/useEconomy';
 import { useMemoryManagement } from './hooks/useMemoryManagement';
-import { recalculateStats } from './utils/statCalculator';
+import { recalculateStats, getBaseStats } from './utils/statCalculator';
 import { InventoryView } from './components/InventoryView';
 import { saveGame, loadGame, deleteGame, getSaveList, type SaveData } from './utils/saveManager';
 import './index.css';
@@ -80,13 +80,7 @@ function App() {
   
   useBGM(gameState, depth);
 
-  const baseStats = useMemo(() => ({
-    maxHP: 500,
-    maxMP: 50,
-    attack: 10 + player.level * 2,
-    defense: 5 + player.level,
-    speed: 10 + player.level
-  }), [player.level]);
+  const baseStats = useMemo(() => getBaseStats(player.level), [player.level]);
 
   const memoryActions = useMemoryManagement(player, setPlayer, baseStats).actions;
   const { calculatedStats } = recalculateStats(player, baseStats);
