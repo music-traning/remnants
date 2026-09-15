@@ -19,13 +19,13 @@ export const useMemoryManagement = (
   // ==========================================
   const identifyMemory = useCallback((memoryId: string): ActionResult => {
     const targetIndex = player.inventory.findIndex(m => m.id === memoryId);
-    if (targetIndex === -1) return { success: false, message: '指定されたアイテムが見つかりません。' };
+    if (targetIndex === -1) return { success: false, message: { key: 'eco_not_found' } };
     
     const target = player.inventory[targetIndex];
-    if (target.isIdentified) return { success: false, message: '既に鑑定済みのアイテムです。' };
+    if (target.isIdentified) return { success: false, message: { key: 'eco_already_identified' } };
 
     const identifyCost = target.cost * 25;
-    if (player.currentEn < identifyCost) return { success: false, message: `【エラー】鑑定には ${identifyCost} 縁が必要です。` };
+    if (player.currentEn < identifyCost) return { success: false, message: { key: 'eco_need_en', params: { cost: identifyCost } } };
 
     const c = target.cost;
     const stats: StatModifiers = {};
@@ -85,7 +85,7 @@ export const useMemoryManagement = (
       return { ...prev, inventory: newInventory, currentEn: prev.currentEn - identifyCost };
     });
     
-    return { success: true, message: `${identifyCost}縁を支払い、鑑定に成功しました。` };
+    return { success: true, message: { key: 'eco_identified', params: { cost: identifyCost } } };
   }, [player.inventory, player.currentEn, setPlayer]);
 
   // ==========================================
@@ -93,21 +93,21 @@ export const useMemoryManagement = (
   // ==========================================
   const installMemory = useCallback((memoryId: string): ActionResult => {
     const target = player.inventory.find(m => m.id === memoryId);
-    if (!target) return { success: false, message: '指定されたアイテムが見つかりません。' };
-    if (!target.isIdentified) return { success: false, message: '未鑑定の記憶は装備できません。' };
+    if (!target) return { success: false, message: { key: 'eco_not_found' } };
+    if (!target.isIdentified) return { success: false, message: { key: 'mem_unidentified_equip' } };
 
     const reqLevel = target.cost * 2;
     if (player.level < reqLevel) {
-      return { success: false, message: `レベルが足りず、自我が崩壊するため装備できません。（必要Lv: ${reqLevel}）` };
+      return { success: false, message: { key: 'mem_req_level', params: { level: reqLevel } } };
     }
 
     if (player.installedMemories.length >= player.maxSlots) {
-      return { success: false, message: 'メモリスロットの上限に達しています。' };
+      return { success: false, message: { key: 'mem_slot_full' } };
     }
 
     const currentTotalCost = player.installedMemories.reduce((sum, mem) => sum + mem.cost, 0);
     if (currentTotalCost + target.cost > player.totalCapacity) {
-      return { success: false, message: 'キャパシティ（コスト上限）をオーバーしています。' };
+      return { success: false, message: { key: 'mem_cost_over', params: { current: currentTotalCost + target.cost, max: player.totalCapacity } } };
     }
 
     setPlayer(prev => {
@@ -123,18 +123,18 @@ export const useMemoryManagement = (
   }, [player, baseStats, setPlayer]);
 
   // ==========================================
-  // 3. アンインストール（装備解除）ロジック (Uninstall)
+  // 3. アンインストール（外す） (Uninstall)
   // ==========================================
   const uninstallMemory = useCallback((memoryId: string): ActionResult => {
     const target = player.installedMemories.find(m => m.id === memoryId);
-    if (!target) return { success: false, message: '指定されたアイテムは装備されていません。' };
+    if (!target) return { success: false, message: { key: 'mem_not_equipped' } };
     
     if (target.hasCurse) {
-      return { success: false, message: '【呪縛】この記憶は呪われており、外すことができません！' };
+      return { success: false, message: { key: 'mem_cursed_unequip' } };
     }
     
     if (player.inventory.length >= player.maxInventorySize) {
-      return { success: false, message: '【エラー】インベントリの空き容量がありません。' };
+      return { success: false, message: { key: 'eco_inv_full' } };
     }
 
     setPlayer(prev => {
@@ -154,7 +154,7 @@ export const useMemoryManagement = (
   // ==========================================
   const discardMemory = useCallback((memoryId: string): ActionResult => {
     const target = player.inventory.find(m => m.id === memoryId);
-    if (!target) return { success: false, message: 'アイテムが見つかりません。' };
+    if (!target) return { success: false, message: { key: 'eco_not_found' } };
 
     setPlayer(prev => ({
       ...prev,
@@ -168,20 +168,20 @@ export const useMemoryManagement = (
   // 5. 破戒僧の庵：脳の許容量拡張 (Train Capacity)
   // ==========================================
   const trainCapacity = useCallback((): ActionResult => {
-    if (player.totalCapacity >= 30) return { success: false, message: '脳の許容量は既に限界（30）だ。' };
-    if (player.currentEn < 10000) return { success: false, message: '縁が足りない。（必要: 10,000 En）' };
+    if (player.totalCapacity >= 30) return { success: false, message: { key: 'mem_cap_max' } };
+    if (player.currentEn < 10000) return { success: false, message: { key: 'eco_need_en', params: { cost: 10000 } } };
     setPlayer(prev => ({ ...prev, totalCapacity: prev.totalCapacity + 1, currentEn: prev.currentEn - 10000 }));
-    return { success: true, message: '10,000 Enを支払い、修行で脳の許容量（Capacity）を拡張した。' };
+    return { success: true, message: { key: 'mem_cap_trained' } };
   }, [player.totalCapacity, player.currentEn, setPlayer]);
 
   // ==========================================
   // 6. 破戒僧の庵：記憶スロット拡張 (Train Slots)
   // ==========================================
   const trainSlots = useCallback((): ActionResult => {
-    if (player.maxSlots >= 6) return { success: false, message: '記憶スロットは既に限界（6）だ。' };
-    if (player.currentEn < 100000) return { success: false, message: '縁が足りない。（必要: 100,000 En）' };
+    if (player.maxSlots >= 6) return { success: false, message: { key: 'mem_slot_max' } };
+    if (player.currentEn < 100000) return { success: false, message: { key: 'eco_need_en', params: { cost: 100000 } } };
     setPlayer(prev => ({ ...prev, maxSlots: prev.maxSlots + 1, currentEn: prev.currentEn - 100000 }));
-    return { success: true, message: '100,000 Enを支払い、修行で記憶スロットを拡張した。' };
+    return { success: true, message: { key: 'mem_slot_trained' } };
   }, [player.maxSlots, player.currentEn, setPlayer]);
 
   // ==========================================
@@ -189,12 +189,12 @@ export const useMemoryManagement = (
   // ==========================================
   const uncurseMemory = useCallback((memoryId: string): ActionResult => {
     const target = player.installedMemories.find(m => m.id === memoryId);
-    if (!target) return { success: false, message: 'アイテムが見つかりません。' };
-    if (!target.hasCurse) return { success: false, message: 'この記憶は呪われていません。' };
-    if (player.inventory.length >= player.maxInventorySize) return { success: false, message: '倉庫がいっぱいで外せません。' };
+    if (!target) return { success: false, message: { key: 'eco_not_found' } };
+    if (!target.hasCurse) return { success: false, message: { key: 'mem_not_cursed' } };
+    if (player.inventory.length >= player.maxInventorySize) return { success: false, message: { key: 'eco_inv_full' } };
     
     const cost = target.cost * 1000;
-    if (player.currentEn < cost) return { success: false, message: `縁が足りません。（必要: ${cost} En）` };
+    if (player.currentEn < cost) return { success: false, message: { key: 'eco_need_en', params: { cost } } };
 
     setPlayer(prev => {
       const newInstalled = prev.installedMemories.filter(m => m.id !== memoryId);
@@ -203,7 +203,7 @@ export const useMemoryManagement = (
       const { clampedPlayer } = recalculateStats(updatedPlayer, baseStats);
       return clampedPlayer;
     });
-    return { success: true, message: `${cost} Enを支払い、強引に呪いを引き剥がしました。` };
+    return { success: true, message: { key: 'mem_uncursed' } };
   }, [player, baseStats, setPlayer]);
 
   return { actions: { identifyMemory, installMemory, uninstallMemory, discardMemory, trainCapacity, trainSlots, uncurseMemory } };

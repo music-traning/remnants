@@ -27,27 +27,27 @@ export const useEconomy = (
 ) => {
   const { t } = useI18n();
   const depositEn = useCallback((amount: En): EconomyActionResult => {
-    if (gameState !== GameState.TOWN) return { success: false, message: '預入は街でのみ可能です。' };
-    if (amount <= 0 || player.currentEn < amount) return { success: false, message: '縁が不足しています。' };
+    if (gameState !== GameState.TOWN) return { success: false, message: { key: 'eco_town_only' } };
+    if (amount <= 0 || player.currentEn < amount) return { success: false, message: { key: 'eco_no_en' } };
     setPlayer(prev => ({ ...prev, currentEn: prev.currentEn - amount, stashedEn: prev.stashedEn + amount }));
-    return { success: true, message: t('eco_deposited', { amount }) };
+    return { success: true, message: { key: 'eco_deposited', params: { amount } } };
   }, [player.currentEn, gameState, setPlayer]);
 
   const withdrawEn = useCallback((amount: En): EconomyActionResult => {
-    if (gameState !== GameState.TOWN) return { success: false, message: '引出は街でのみ可能です。' };
-    if (amount <= 0 || player.stashedEn < amount) return { success: false, message: '縁が不足しています。' };
+    if (gameState !== GameState.TOWN) return { success: false, message: { key: 'eco_town_only' } };
+    if (amount <= 0 || player.stashedEn < amount) return { success: false, message: { key: 'eco_stash_no_en' } };
     setPlayer(prev => ({ ...prev, stashedEn: prev.stashedEn - amount, currentEn: prev.currentEn + amount }));
-    return { success: true, message: t('eco_withdrew', { amount }) };
+    return { success: true, message: { key: 'eco_withdrew', params: { amount } } };
   }, [player.stashedEn, gameState, setPlayer]);
 
   // ==========================================
   // 1. 記憶の売却（閻魔の計量所）
   // ==========================================
   const sellMemory = useCallback((memoryId: string): EconomyActionResult => {
-    if (gameState !== GameState.TOWN) return { success: false, message: '街にいる時のみ利用できます。' };
+    if (gameState !== GameState.TOWN) return { success: false, message: { key: 'eco_town_only' } };
     
     const target = player.inventory.find(m => m.id === memoryId);
-    if (!target) return { success: false, message: 'アイテムが見つかりません。' };
+    if (!target) return { success: false, message: { key: 'eco_not_found' } };
 
     const sellPrice = calculateSellPrice(target);
     const soldMemory = { ...target, soldAtDiveCount: player.totalDives || 0 };
@@ -62,21 +62,21 @@ export const useEconomy = (
   }, [player.inventory, player.totalDives, gameState, setPlayer, setShopInventory]);
 
   // ==========================================
-  // 2. 記憶の買い戻し
+  // 2. 記憶の買戻し
   // ==========================================
   const buyBackMemory = useCallback((memoryId: string): EconomyActionResult => {
-    if (gameState !== GameState.TOWN) return { success: false, message: '街にいる時のみ利用できます。' };
+    if (gameState !== GameState.TOWN) return { success: false, message: { key: 'eco_town_only' } };
     
     const target = shopInventory.find(m => m.id === memoryId);
-    if (!target) return { success: false, message: 'アイテムが見つかりません。' };
+    if (!target) return { success: false, message: { key: 'eco_not_found' } };
 
     const buyPrice = Math.floor(getMemoryBasePrice(target.cost) * 1.5);
     if (player.currentEn < buyPrice) {
-      return { success: false, message: `縁が足りません。（必要: ${buyPrice} 縁）` };
+      return { success: false, message: { key: 'eco_need_en', params: { cost: buyPrice } } };
     }
     
     if (player.inventory.length >= player.maxInventorySize) {
-      return { success: false, message: '倉庫がいっぱいです。' };
+      return { success: false, message: { key: 'eco_inv_full' } };
     }
 
     setPlayer(prev => ({
@@ -90,7 +90,7 @@ export const useEconomy = (
   }, [shopInventory, player.currentEn, player.inventory.length, player.maxInventorySize, gameState, setPlayer, setShopInventory]);
 
   const expandInventory = useCallback((): EconomyActionResult => {
-    if (gameState !== GameState.TOWN) return { success: false, message: '街でのみ可能です。' };
+    if (gameState !== GameState.TOWN) return { success: false, message: { key: 'eco_town_only' } };
     
     let cost = 0;
     let nextSize = player.maxInventorySize;
@@ -98,16 +98,16 @@ export const useEconomy = (
     else if (player.maxInventorySize === 35) { cost = 20000; nextSize = 40; }
     else if (player.maxInventorySize === 40) { cost = 50000; nextSize = 45; }
     else if (player.maxInventorySize === 45) { cost = 100000; nextSize = 50; }
-    else { return { success: false, message: '倉庫は既に最大（50）まで拡張されています。' }; }
+    else { return { success: false, message: { key: 'eco_stash_max' } }; }
 
-    if (player.currentEn < cost) return { success: false, message: `縁が不足しています。（必要: ${cost} En）` };
+    if (player.currentEn < cost) return { success: false, message: { key: 'eco_need_en', params: { cost } } };
 
     setPlayer(prev => ({
       ...prev,
       currentEn: prev.currentEn - cost,
       maxInventorySize: nextSize
     }));
-    return { success: true, message: `${cost} 縁を支払い、倉庫の容量を ${nextSize} に拡張しました！` };
+    return { success: true, message: { key: 'eco_stash_expanded', params: { size: nextSize } } };
   }, [player.maxInventorySize, player.currentEn, gameState, setPlayer]);
 
   // ==========================================
@@ -116,13 +116,13 @@ export const useEconomy = (
   const restAtInn = useCallback((): EconomyActionResult => {
     const cost = Math.floor(player.maxHP * 0.1 + player.maxMP * 0.5);
     if (player.currentEn < cost) {
-       return { success: false, message: `縁が足りない。（必要: ${cost} En）` };
+       return { success: false, message: { key: 'eco_need_en', params: { cost } } };
     }
     if (player.currentHP === player.maxHP && player.currentMP === player.maxMP) {
-       return { success: false, message: `すでに体力も魔力も万全だ。` };
+       return { success: false, message: { key: 'eco_inn_full' } };
     }
     setPlayer(prev => ({ ...prev, currentHP: prev.maxHP, currentMP: prev.maxMP, currentEn: prev.currentEn - cost }));
-    return { success: true, message: `${cost} Enを支払い、微睡みの寝床で十分に休息した。` };
+    return { success: true, message: { key: 'eco_rested' } };
   }, [player, setPlayer]);
 
   return { actions: { depositEn, withdrawEn, sellMemory, buyBackMemory, expandInventory, restAtInn } };

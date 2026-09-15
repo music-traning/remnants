@@ -202,7 +202,10 @@ export const useGameLoop = (initialPlayer: Player) => {
       return;
     }
 
-    if (Math.random() < 0.7) {
+    const pSpeed = calculatePlayerStat('speed');
+    const escapeRate = 0.6 + Math.min(0.2, pSpeed * 0.005);
+    
+    if (Math.random() < escapeRate) {
       setGameState(GameState.EXPLORING);
       setCurrentEnemy(null);
       addLog({ key: 'gl_flee_success' });
@@ -210,7 +213,7 @@ export const useGameLoop = (initialPlayer: Player) => {
       addLog({ key: 'gl_flee_fail' });
       handleWipeout();
     }
-  }, [gameState, currentEnemy, addLog, handleWipeout]);
+  }, [gameState, currentEnemy, addLog, handleWipeout, calculatePlayerStat]);
 
   const processVictory = useCallback((dmgTaken: number, expMult: number = 1) => {
     if (!currentEnemy) return;
@@ -295,9 +298,12 @@ export const useGameLoop = (initialPlayer: Player) => {
 
     const playerAttack = calculatePlayerStat('attack');
     const playerDefense = calculatePlayerStat('defense');
+    const playerSpeed = calculatePlayerStat('speed');
 
     const damageToEnemy = Math.max(1, playerAttack - currentEnemy.defense);
-    const damageToPlayer = Math.max(1, currentEnemy.attack - playerDefense);
+    const evasionRate = Math.min(0.25, playerSpeed * 0.005);
+    const isEvade = Math.random() < evasionRate;
+    const damageToPlayer = isEvade ? 0 : Math.max(1, currentEnemy.attack - playerDefense);
 
     const hasFinalMemory = player.installedMemories.some(m => m.id === 'mem_final_boss');
     const curseDamagePerTurn = hasFinalMemory ? 50 : 0;
@@ -306,13 +312,16 @@ export const useGameLoop = (initialPlayer: Player) => {
     addLog({ key: 'gl_combat_player_atk', params: { name: currentEnemy.name, dmg: damageToEnemy } });
 
     if (enemyRemainingHP <= 0) {
-      setPlayer(p => ({ ...p, currentHP: player.currentHP }));
       setTimeout(() => processVictory(0, 1), 0);
       return;
     }
 
     let playerRemainingHP = player.currentHP - damageToPlayer;
-    addLog({ key: 'gl_combat_enemy_atk', params: { name: currentEnemy.name, dmg: damageToPlayer } });
+    if (isEvade) {
+      addLog({ key: 'gl_combat_evade', params: { name: currentEnemy.name } });
+    } else {
+      addLog({ key: 'gl_combat_enemy_atk', params: { name: currentEnemy.name, dmg: damageToPlayer } });
+    }
 
     if (curseDamagePerTurn > 0) {
       playerRemainingHP -= curseDamagePerTurn;
