@@ -284,9 +284,11 @@ function App() {
               )}
 
               {activeOverlay === 'priest' && (
+                /* 1. Outer: overflow hidden so height chain works */
                 <div style={{ display: 'flex', flexDirection: 'column', flex: 1, minHeight: 0, overflow: 'hidden' }}>
-                  <div style={{ flexShrink: 0 }}>
-                  <div style={{ marginBottom: '16px', display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
+                  {/* 2. Top buttons: flex-shrink 0, never squished */}
+                  <div style={{ flexShrink: 0, marginBottom: '8px' }}>
+                    <div style={{ marginBottom: '8px', display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
                     <button 
                       className="cmd-btn" 
                       style={{ width: 'auto', borderColor: player.totalCapacity >= 30 ? '#555' : '#fff', color: player.totalCapacity >= 30 ? '#555' : '#fff' }} 
@@ -327,8 +329,8 @@ function App() {
                   )}
 
                   </div>
-                  <div style={{ display: 'flex', flexDirection: 'column', flex: 1, minHeight: 0, overflowY: 'auto' }}>
-                    <h3 style={{ color: '#0f0', margin: '0 0 8px 0', fontSize: '1rem', flexShrink: 0 }}>{t('priest_unidentified')}</h3>
+                  {/* 3. Scroll area: plain div wrapper owns scroll, NOT InventoryView */}
+                  <div style={{ flex: 1, minHeight: 0, overflowY: 'auto', width: '100%' }}>
                     <InventoryView 
                       items={player.inventory.filter(m => !m.isIdentified)} 
                       selectedItem={selectedItem} 
@@ -408,26 +410,24 @@ function App() {
                 const expandCost = getExpandCost(player.maxInventorySize);
 
                 return (
-                    <div style={{ display: 'flex', flexDirection: 'column', flex: 1, minHeight: 0, overflow: 'hidden' }}>
-                      <div style={{ flexShrink: 0 }}>
-                    <div style={{ marginBottom: '16px', display: 'flex', gap: '16px' }}>
-                      <button 
-                        className="cmd-btn" 
-                        style={{ width: 'auto', borderColor: expandCost === null ? '#555' : '#fff', color: expandCost === null ? '#555' : '#fff' }} 
+                  /* 1. Outer: overflow hidden so height chain works */
+                  <div style={{ display: 'flex', flexDirection: 'column', flex: 1, minHeight: 0, overflow: 'hidden' }}>
+                    {/* 2. Top button: flex-shrink 0, never squished */}
+                    <div style={{ flexShrink: 0, marginBottom: '8px' }}>
+                      <button
+                        className="cmd-btn"
+                        style={{ width: 'auto', borderColor: expandCost === null ? '#555' : '#fff', color: expandCost === null ? '#555' : '#fff' }}
                         disabled={expandCost === null}
-                        onClick={() => {
-                          const res = ecoActions.expandInventory();
-                          actions.addLog(res.message);
-                        }}
+                        onClick={() => { const res = ecoActions.expandInventory(); actions.addLog(res.message); }}
                       >
                         {expandCost === null ? t('enma_stash_max') : t('enma_stash_expand', { cost: expandCost })}
                       </button>
                     </div>
-                      </div>
-                    <div style={{ display: 'flex', flexDirection: 'column', flex: 1, minHeight: 0, overflowY: 'auto' }}>
-                      <InventoryView 
-                        items={player.inventory} 
-                        selectedItem={selectedItem} 
+                    {/* 3. Scroll area: plain <div> wrapper owns the scroll, NOT InventoryView */}
+                    <div style={{ flex: 1, minHeight: 0, overflowY: 'auto', width: '100%' }}>
+                      <InventoryView
+                        items={player.inventory}
+                        selectedItem={selectedItem}
                         onSelect={setSelectedItem}
                         inlineAction={(mem) => {
                           const sellPrice = Math.floor(Math.pow(mem.cost, 2.5) * 150 + mem.cost * 500);
@@ -444,7 +444,8 @@ function App() {
               })()}
 
               {activeOverlay === 'buyback' && (
-                <InventoryView 
+                <div style={{ flex: 1, minHeight: 0, overflowY: 'auto', width: '100%' }}>
+                <InventoryView
                   items={shopInventory} 
                   selectedItem={selectedItem} 
                   onSelect={setSelectedItem}
@@ -463,6 +464,7 @@ function App() {
                     );
                   }}
                 />
+                </div>
               )}
 
               {activeOverlay === 'inn' && (

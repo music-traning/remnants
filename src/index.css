@@ -37,6 +37,13 @@ body, html, #app {
   background-color: #000;
 }
 
+/* main-viewport hosts overlays with internal flex scroll — must NOT scroll itself */
+.pane.main-viewport {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
 .cmd-btn {
   background: transparent;
   color: #fff;
