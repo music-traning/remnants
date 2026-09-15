@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef, useMemo } from 'react';
 import { initialInventory } from './data/mockData';
 import type { Player, MemoryItem } from './types/game';
 import { useGameLoop, GameState } from './hooks/useGameLoop';
-import { useEconomy } from './hooks/useEconomy';
+import { useEconomy, calculateSellPrice, getMemoryBasePrice } from './hooks/useEconomy';
 import { useMemoryManagement } from './hooks/useMemoryManagement';
 import { recalculateStats, getBaseStats } from './utils/statCalculator';
 import { InventoryView } from './components/InventoryView';
@@ -418,7 +418,7 @@ function App() {
                         selectedItem={selectedItem}
                         onSelect={setSelectedItem}
                         inlineAction={(mem) => {
-                          const sellPrice = Math.floor(Math.pow(mem.cost, 2.5) * 150 + mem.cost * 500);
+                          const sellPrice = calculateSellPrice(mem);
                           return (
                             <button className="cmd-btn" style={{ borderColor: '#f00', color: '#f00', width: 'auto', padding: '2px 8px', fontSize: '0.8rem', marginLeft: '8px' }} onClick={(e) => { e.stopPropagation(); handleSell(mem); }}>
                               {t('btn_sell', { price: sellPrice })}
@@ -438,7 +438,7 @@ function App() {
                   selectedItem={selectedItem} 
                   onSelect={setSelectedItem}
                   inlineAction={(mem) => {
-                    const basePrice = Math.floor(Math.pow(mem.cost, 2.5) * 150 + mem.cost * 500);
+                    const basePrice = getMemoryBasePrice(mem.cost);
                     const cost = Math.floor(basePrice * 1.5);
                     const canAfford = player.currentEn >= cost;
                     const divesLeft = 3 - ((player.totalDives || 0) - (mem.soldAtDiveCount || 0));

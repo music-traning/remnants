@@ -13,6 +13,11 @@ export const getMemoryBasePrice = (cost: number): number => {
   return Math.floor(Math.pow(cost, 2.5) * 150 + cost * 500);
 };
 
+export const calculateSellPrice = (memory: MemoryItem): number => {
+  const basePrice = getMemoryBasePrice(memory.cost);
+  return memory.isIdentified ? basePrice : Math.floor(basePrice * 0.7);
+};
+
 export const useEconomy = (
   player: Player,
   setPlayer: React.Dispatch<React.SetStateAction<Player>>,
@@ -44,7 +49,7 @@ export const useEconomy = (
     const target = player.inventory.find(m => m.id === memoryId);
     if (!target) return { success: false, message: 'アイテムが見つかりません。' };
 
-    const sellPrice = getMemoryBasePrice(target.cost);
+    const sellPrice = calculateSellPrice(target);
     const soldMemory = { ...target, soldAtDiveCount: player.totalDives || 0 };
     
     setPlayer(prev => ({
