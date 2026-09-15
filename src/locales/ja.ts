@@ -90,6 +90,8 @@ export const ja = {
   gl_nothing: "何も見つからなかった……。 (深度: {{depth}})",
   gl_drop: "敵を打ち倒し、{{name}} を獲得した！",
   gl_no_drop: "敵を打ち倒したが、めぼしいものは無かった。",
+  gl_combat_player_atk: "{name}に {dmg} のダメージ！",
+  gl_combat_enemy_atk: "{name}の反撃で {dmg} のダメージ！",
   gl_flee_success: "無事に逃げ切った！探索を継続する。",
   gl_flee_fail: "逃走に失敗し、背後から致命傷を受けた……",
   gl_enemy_atk: "{{name}} の攻撃！ {{dmg}} のダメージを受けた！",

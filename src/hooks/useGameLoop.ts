@@ -21,6 +21,7 @@ export interface Enemy {
   id: string;
   name: string;
   hp: number;
+  maxHp: number;
   attack: number;
   defense: number;
   isBoss?: boolean;
@@ -160,6 +161,7 @@ export const useGameLoop = (initialPlayer: Player) => {
           id: `boss_final`,
           name: t('gl_boss_name'),
           hp: 8000,
+          maxHp: 8000,
           attack: 180,
           defense: 90,
           isBoss: true
@@ -180,6 +182,7 @@ export const useGameLoop = (initialPlayer: Player) => {
           id: `enemy_${Date.now()}`,
           name: currentDepth > 20 ? t('gl_mob_deep') : currentDepth > 10 ? t('gl_mob_mid') : t('gl_mob_shallow'),
           hp,
+          maxHp: hp,
           attack,
           defense
         });
@@ -299,32 +302,31 @@ export const useGameLoop = (initialPlayer: Player) => {
     const hasFinalMemory = player.installedMemories.some(m => m.id === 'mem_final_boss');
     const curseDamagePerTurn = hasFinalMemory ? 50 : 0;
 
-    let playerRemainingHP = player.currentHP;
-    let enemyRemainingHP = currentEnemy.hp;
-    
-    while (playerRemainingHP > 0 && enemyRemainingHP > 0) {
-      enemyRemainingHP -= damageToEnemy;
-      if (enemyRemainingHP <= 0) break;
-      
-      playerRemainingHP -= damageToPlayer;
-      playerRemainingHP -= curseDamagePerTurn;
+    const enemyRemainingHP = currentEnemy.hp - damageToEnemy;
+    addLog({ key: 'gl_combat_player_atk', params: { name: currentEnemy.name, dmg: damageToEnemy } });
+
+    if (enemyRemainingHP <= 0) {
+      setPlayer(p => ({ ...p, currentHP: player.currentHP }));
+      setTimeout(() => processVictory(0, 1), 0);
+      return;
     }
 
-    if (playerRemainingHP > 0) {
-      const damageTaken = player.currentHP - playerRemainingHP;
-      
-      // Fix: Update state using processVictory to avoid double setPlayer clashes causing bugs.
-      setPlayer(p => {
-        return { ...p, currentHP: playerRemainingHP };
-      });
-      
-      // Ensure processVictory evaluates properly
-      setTimeout(() => processVictory(damageTaken, 1), 0);
-      
-    } else {
+    let playerRemainingHP = player.currentHP - damageToPlayer;
+    addLog({ key: 'gl_combat_enemy_atk', params: { name: currentEnemy.name, dmg: damageToPlayer } });
+
+    if (curseDamagePerTurn > 0) {
+      playerRemainingHP -= curseDamagePerTurn;
+      addLog({ key: 'gl_curse_dmg' });
+    }
+
+    if (playerRemainingHP <= 0) {
       addLog({ key: 'gl_dead', params: { name: currentEnemy.name } });
       handleWipeout();
+      return;
     }
+
+    setPlayer(p => ({ ...p, currentHP: playerRemainingHP }));
+    setCurrentEnemy({ ...currentEnemy, hp: enemyRemainingHP });
   }, [gameState, currentEnemy, player.currentHP, player.installedMemories, calculatePlayerStat, addLog, handleWipeout, processVictory]);
 
   const castSpell = useCallback((memoryId: string) => {

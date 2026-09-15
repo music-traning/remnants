@@ -557,6 +557,9 @@ function App() {
               {gameState === GameState.ENCOUNTER && currentEnemy && (
                 <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', background: '#000', padding: '16px', border: '2px solid #f00', textAlign: 'center' }}>
                   <h2 className="text-red" style={{ margin: 0 }}>{currentEnemy.name}</h2>
+                  <div style={{ color: '#f00', fontSize: '0.9rem', marginTop: '4px', borderBottom: '1px solid #f00', paddingBottom: '4px' }}>
+                    HP: {currentEnemy.hp} / {currentEnemy.maxHp}
+                  </div>
                   <p style={{ margin: '8px 0 0 0' }}>{t('ui_stands')}</p>
                 </div>
               )}

@@ -90,6 +90,8 @@ export const en = {
   gl_nothing: "Found nothing... (Depth: {{depth}})",
   gl_drop: "Defeated the enemy and obtained {{name}}!",
   gl_no_drop: "Defeated the enemy, but found nothing of value.",
+  gl_combat_player_atk: "You attacked {name} for {dmg} damage!",
+  gl_combat_enemy_atk: "{name} strikes back for {dmg} damage!",
   gl_flee_success: "Successfully fled! Continuing exploration.",
   gl_flee_fail: "Failed to flee, receiving a fatal wound from behind...",
   gl_enemy_atk: "{{name}} attacked! Took {{dmg}} damage!",
