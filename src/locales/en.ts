@@ -113,6 +113,7 @@ export const en = {
   gl_drop: "Defeated the enemy and obtained {{name}}!",
   gl_no_drop: "Defeated the enemy, but found nothing of value.",
   gl_combat_player_atk: "You attacked {name} for {dmg} damage!",
+  gl_critical_hit: "Critical hit!",
   gl_combat_enemy_atk: "{name} strikes back for {dmg} damage!",
   gl_combat_evade: "You swiftly evaded {name}'s attack!",
   gl_flee_success: "Successfully fled! Continuing exploration.",

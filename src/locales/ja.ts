@@ -113,6 +113,7 @@ export const ja = {
   gl_drop: "敵を倒し、{{name}} を手に入れた！",
   gl_no_drop: "敵を倒したが、めぼしい記憶はなかった。",
   gl_combat_player_atk: "【攻撃】{name} に {dmg} のダメージを与えた！",
+  gl_critical_hit: "会心の一撃！",
   gl_combat_enemy_atk: "【被弾】{name} の反撃！ {dmg} のダメージを受けた！",
   gl_combat_evade: "【回避】素早い身のこなしで {name} の攻撃を躱した！",
   gl_flee_success: "逃走に成功した！探索を続ける。",

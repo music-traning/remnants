@@ -2,6 +2,7 @@ import { useI18n } from '../contexts/I18nContext';
 import { ja } from '../locales/ja';
 import { en } from '../locales/en';
 import { getBaseStats } from '../utils/statCalculator';
+import { calculateDamage } from '../utils/combatCalculator';
 import { useState, useCallback, useEffect } from 'react';
 import type { Player, MemoryItem, MemoryCategory, Rarity, SpellType, Spell, MemoryTemplate } from '../types/game';
 import memoryMasterData from '../data/memoryMaster.json';
@@ -300,27 +301,36 @@ export const useGameLoop = (initialPlayer: Player) => {
     const playerDefense = calculatePlayerStat('defense');
     const playerSpeed = calculatePlayerStat('speed');
 
-    const damageToEnemy = Math.max(1, playerAttack - currentEnemy.defense);
-    const evasionRate = Math.min(0.25, playerSpeed * 0.005);
-    const isEvade = Math.random() < evasionRate;
-    const damageToPlayer = isEvade ? 0 : Math.max(1, currentEnemy.attack - playerDefense);
+    const pEntity = { attack: playerAttack, defense: playerDefense, speed: playerSpeed, hp: player.currentHP };
+    const eEntity = { attack: currentEnemy.attack, defense: currentEnemy.defense, speed: 0, hp: currentEnemy.hp };
+
+    const pDmgResult = calculateDamage(pEntity, eEntity);
+    const eDmgResult = calculateDamage(eEntity, pEntity);
 
     const hasFinalMemory = player.installedMemories.some(m => m.id === 'mem_final_boss');
     const curseDamagePerTurn = hasFinalMemory ? 50 : 0;
 
-    const enemyRemainingHP = currentEnemy.hp - damageToEnemy;
-    addLog({ key: 'gl_combat_player_atk', params: { name: currentEnemy.name, dmg: damageToEnemy } });
+    const enemyRemainingHP = pDmgResult.remainingHp;
+    if (pDmgResult.isCritical) {
+      addLog({ key: 'gl_critical_hit', params: { dmg: pDmgResult.damage } });
+    }
+    addLog({ key: 'gl_combat_player_atk', params: { name: currentEnemy.name, dmg: pDmgResult.damage } });
 
     if (enemyRemainingHP <= 0) {
       setTimeout(() => processVictory(0, 1), 0);
       return;
     }
 
-    let playerRemainingHP = player.currentHP - damageToPlayer;
-    if (isEvade) {
+    let playerRemainingHP = eDmgResult.remainingHp;
+    
+    // 敵からの攻撃はisCritical判定はないがログを統一（将来的に敵クリティカルもあり得る）
+    if (eDmgResult.isEvaded) {
       addLog({ key: 'gl_combat_evade', params: { name: currentEnemy.name } });
     } else {
-      addLog({ key: 'gl_combat_enemy_atk', params: { name: currentEnemy.name, dmg: damageToPlayer } });
+      if (eDmgResult.isCritical) {
+        addLog({ key: 'gl_critical_hit', params: { dmg: eDmgResult.damage } });
+      }
+      addLog({ key: 'gl_combat_enemy_atk', params: { name: currentEnemy.name, dmg: eDmgResult.damage } });
     }
 
     if (curseDamagePerTurn > 0) {
