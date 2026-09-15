@@ -121,6 +121,11 @@ body, html, #app {
     font-size: 0.75rem;
     margin-bottom: 0;
   }
+  /* Extra compact for overlay header area in landscape */
+  .overlay h2 {
+    font-size: 0.85rem !important;
+    line-height: 1.2;
+  }
 }
 
 .cmd-grid {

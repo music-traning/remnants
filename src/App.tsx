@@ -145,7 +145,7 @@ function App() {
         <div className="pane main-viewport" style={{ display: 'flex', flexDirection: 'column', overflow: 'hidden' }}>
             {activeOverlay ? (
               <div className="overlay" style={{ display: 'flex', flexDirection: 'column', flex: 1, minHeight: 0, overflow: 'hidden' }}>
-                <div style={{ display: 'flex', justifyContent: 'space-between', borderBottom: '1px dashed #fff', paddingBottom: '8px', marginBottom: '16px', flexShrink: 0 }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', borderBottom: '1px dashed #fff', paddingBottom: '4px', marginBottom: '6px', flexShrink: 0 }}>
                 <h2 style={{ margin: 0 }}>{activeOverlay}</h2>
                 <button className="cmd-btn" onClick={() => setActiveOverlay(null)} style={{ color: '#0f0', width: 'auto' }}>
                   [ {t('sys_close')} ]
@@ -286,43 +286,34 @@ function App() {
               {activeOverlay === 'priest' && (
                 /* 1. Outer: overflow hidden so height chain works */
                 <div style={{ display: 'flex', flexDirection: 'column', flex: 1, minHeight: 0, overflow: 'hidden' }}>
-                  {/* 2. Top buttons: flex-shrink 0, never squished */}
-                  <div style={{ flexShrink: 0, marginBottom: '8px' }}>
-                    <div style={{ marginBottom: '8px', display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
-                    <button 
-                      className="cmd-btn" 
-                      style={{ width: 'auto', borderColor: player.totalCapacity >= 30 ? '#555' : '#fff', color: player.totalCapacity >= 30 ? '#555' : '#fff' }} 
-                      disabled={player.totalCapacity >= 30}
-                      onClick={() => {
-                        const res = memoryActions.trainCapacity();
-                        actions.addLog(res.message);
-                      }}
-                    >
-                      {t('priest_expand_cap')}
-                    </button>
-                    <button 
-                      className="cmd-btn" 
-                      style={{ width: 'auto', borderColor: player.maxSlots >= 6 ? '#555' : '#fff', color: player.maxSlots >= 6 ? '#555' : '#fff' }} 
-                      disabled={player.maxSlots >= 6}
-                      onClick={() => {
-                        const res = memoryActions.trainSlots();
-                        actions.addLog(res.message);
-                      }}
-                    >
-                      {t('priest_expand_slot')}
-                    </button>
-                  </div>
+                  {/* 2. Top buttons: flex-shrink 0, 2-column grid for landscape */}
+                  <div style={{ flexShrink: 0, marginBottom: '4px' }}>
+                    <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '4px', marginBottom: '4px' }}>
+                      <button
+                        className="cmd-btn"
+                        style={{ padding: '2px 6px', fontSize: '0.75rem', borderColor: player.totalCapacity >= 30 ? '#555' : '#fff', color: player.totalCapacity >= 30 ? '#555' : '#fff' }}
+                        disabled={player.totalCapacity >= 30}
+                        onClick={() => { const res = memoryActions.trainCapacity(); actions.addLog(res.message); }}
+                      >
+                        {t('priest_expand_cap')}
+                      </button>
+                      <button
+                        className="cmd-btn"
+                        style={{ padding: '2px 6px', fontSize: '0.75rem', borderColor: player.maxSlots >= 6 ? '#555' : '#fff', color: player.maxSlots >= 6 ? '#555' : '#fff' }}
+                        disabled={player.maxSlots >= 6}
+                        onClick={() => { const res = memoryActions.trainSlots(); actions.addLog(res.message); }}
+                      >
+                        {t('priest_expand_slot')}
+                      </button>
+                    </div>
 
                   {player.installedMemories.filter(m => m.hasCurse).length > 0 && (
-                    <div style={{ border: '1px solid #f00', padding: '8px', marginBottom: '16px' }}>
-                      <h3 style={{ color: '#f00', margin: '0 0 8px 0', fontSize: '1rem' }}>{t('priest_cursed_equip')}</h3>
+                    <div style={{ border: '1px solid #f00', padding: '4px 8px', marginBottom: '4px' }}>
+                      <h3 style={{ color: '#f00', margin: '0 0 4px 0', fontSize: '0.85rem' }}>{t('priest_cursed_equip')}</h3>
                       {player.installedMemories.filter(m => m.hasCurse).map(mem => (
-                        <div key={mem.id} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '4px' }}>
-                          <span>{mem.attachedSpell ? '☁ ' : ''}{language === 'en' ? (mem.flavorText?.itemNameEn || mem.flavorText?.itemName) : mem.flavorText?.itemName} (Cost: {mem.cost})</span>
-                          <button className="cmd-btn" style={{ width: 'auto', padding: '2px 8px', color: '#f00', borderColor: '#f00' }} onClick={() => {
-                            const res = memoryActions.uncurseMemory(mem.id);
-                            actions.addLog(res.message);
-                          }}>[ {t('priest_uncurse', { cost: mem.cost * 1000 })} ]</button>
+                        <div key={mem.id} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '2px' }}>
+                          <span style={{ fontSize: '0.8rem' }}>{mem.attachedSpell ? '☁ ' : ''}{language === 'en' ? (mem.flavorText?.itemNameEn || mem.flavorText?.itemName) : mem.flavorText?.itemName} (Cost: {mem.cost})</span>
+                          <button className="cmd-btn" style={{ width: 'auto', padding: '1px 6px', fontSize: '0.75rem', color: '#f00', borderColor: '#f00' }} onClick={() => { const res = memoryActions.uncurseMemory(mem.id); actions.addLog(res.message); }}>[ {t('priest_uncurse', { cost: mem.cost * 1000 })} ]</button>
                         </div>
                       ))}
                     </div>
@@ -413,10 +404,10 @@ function App() {
                   /* 1. Outer: overflow hidden so height chain works */
                   <div style={{ display: 'flex', flexDirection: 'column', flex: 1, minHeight: 0, overflow: 'hidden' }}>
                     {/* 2. Top button: flex-shrink 0, never squished */}
-                    <div style={{ flexShrink: 0, marginBottom: '8px' }}>
+                    <div style={{ flexShrink: 0, marginBottom: '4px' }}>
                       <button
                         className="cmd-btn"
-                        style={{ width: 'auto', borderColor: expandCost === null ? '#555' : '#fff', color: expandCost === null ? '#555' : '#fff' }}
+                        style={{ width: 'auto', padding: '2px 6px', fontSize: '0.75rem', borderColor: expandCost === null ? '#555' : '#fff', color: expandCost === null ? '#555' : '#fff' }}
                         disabled={expandCost === null}
                         onClick={() => { const res = ecoActions.expandInventory(); actions.addLog(res.message); }}
                       >
