@@ -59,15 +59,13 @@ export const ManualModal: React.FC<ManualModalProps> = ({ isOpen, onClose }) => 
         <h2 style={{ borderBottom: '1px solid #555', paddingBottom: '8px', marginTop: 0 }}>
           {t('manual_title')}
         </h2>
-        <div style={{ marginTop: '16px', lineHeight: '1.6' }}>
-          <h3 style={{ color: '#0f0' }}>{t('manual_explore')}</h3>
-          <p>{t('manual_explore_desc')}</p>
-
-          <h3 style={{ color: '#0f0', marginTop: '24px' }}>{t('manual_cost')}</h3>
-          <p>{t('manual_cost_desc')}</p>
-
-          <h3 style={{ color: '#0f0', marginTop: '24px' }}>{t('manual_penalty')}</h3>
-          <p>{t('manual_penalty_desc')}</p>
+        <div style={{ marginTop: '16px', lineHeight: '1.6', fontSize: '0.9rem' }}>
+          {[1, 2, 3, 4, 5, 6].map(i => (
+            <div key={i} style={{ marginBottom: '24px' }}>
+              <h3 style={{ color: '#0f0', margin: '0 0 8px 0', fontSize: '1rem' }}>{t(`manual_sec${i}_title` as any)}</h3>
+              <p style={{ margin: 0, whiteSpace: 'pre-wrap' }}>{t(`manual_sec${i}_desc` as any)}</p>
+            </div>
+          ))}
         </div>
       </div>
     </div>
