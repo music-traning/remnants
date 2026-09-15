@@ -75,7 +75,7 @@ export const MemoryDetail: React.FC<Props> = ({ memory }) => {
 
       {attachedSpell && (
         <div style={{ padding: '8px', border: '1px dashed #0ff', marginBottom: '12px', color: '#0ff' }}>
-          <div style={{ fontSize: '0.8rem', marginBottom: '4px' }}>『{t('mem_enchant')}』</div>
+          <div className="hidden sm:block" style={{ fontSize: '0.8rem', marginBottom: '4px' }}>【{t('mem_enchant')}】</div>
           <div style={{ fontSize: '0.9rem' }}>
             ▶ {attachedSpell.name} (MP: {attachedSpell.mpCost})
           </div>

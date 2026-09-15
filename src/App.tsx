@@ -605,7 +605,7 @@ function App() {
                 <div style={{ color: '#0f0', gridColumn: '1 / -1', marginBottom: '8px' }}>{t('ui_depth', { depth })}</div>
                 <button className="cmd-btn" onClick={() => { actions.explore(); setActiveOverlay(null); }}>▶ {t('cmd_explore')}</button>
                 <button className="cmd-btn" onClick={() => openOverlay('magic')}>▶ {t('cmd_magic')}</button>
-                <button className="cmd-btn" onClick={() => { actions.returnToTown(); setActiveOverlay(null); }}>▶ {t('cmd_return', { cost: depth * 100 })}</button>
+                <button className="cmd-btn" style={{ gridColumn: '1 / -1', marginTop: '4px', border: '1px solid #ffcc00', color: '#ffcc00' }} onClick={() => { actions.returnToTown(); setActiveOverlay(null); }}>▶ {t('cmd_return', { cost: depth * 100 })}</button>
               </>
             )}
             {gameState === GameState.ENCOUNTER && (
