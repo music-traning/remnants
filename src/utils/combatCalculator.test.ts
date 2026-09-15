@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { calculateDamage, applyStatusTick } from './combatCalculator';
+import { calculateDamage, applyStatusTick, calculateFleeChance } from './combatCalculator';
 import type { CombatEntity } from './combatCalculator';
 
 describe('combatCalculator', () => {
@@ -85,4 +85,19 @@ describe('combatCalculator', () => {
       expect(result.remainingHp).toBe(100);
     });
   });
+
+  describe('calculateFleeChance', () => {
+    it('returns 70% chance when playerSpeed equals baseSpeed', () => {
+      expect(calculateFleeChance(10, 10)).toBe(0.7);
+    });
+
+    it('clamps to 85% when playerSpeed is much higher', () => {
+      expect(calculateFleeChance(100, 10)).toBe(0.85); // 0.7 + 90*0.01 = 1.6 -> clamped 0.85
+    });
+
+    it('clamps to 55% when playerSpeed is much lower', () => {
+      expect(calculateFleeChance(10, 100)).toBe(0.55); // 0.7 - 90*0.01 = -0.2 -> clamped 0.55
+    });
+  });
 });
+

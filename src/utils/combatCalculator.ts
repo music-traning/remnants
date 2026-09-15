@@ -67,3 +67,13 @@ export function applyStatusTick(target: CombatEntity, effect: StatusEffectType):
     remainingHp: target.hp
   };
 }
+
+export function calculateFleeChance(playerSpeed: number, baseSpeed: number): number {
+  // Base flee chance is 70% (0.7).
+  // speedに応じたボーナス: (playerSpeed - baseSpeed) * 0.01 とか。
+  // 10高ければ +10%、10低ければ -10%
+  const speedDiff = playerSpeed - baseSpeed;
+  const chance = 0.7 + speedDiff * 0.01;
+  return Math.max(0.55, Math.min(0.85, chance));
+}
+

@@ -2,7 +2,7 @@ import { useI18n } from '../contexts/I18nContext';
 import { ja } from '../locales/ja';
 import { en } from '../locales/en';
 import { getBaseStats } from '../utils/statCalculator';
-import { calculateDamage } from '../utils/combatCalculator';
+import { calculateDamage, calculateFleeChance } from '../utils/combatCalculator';
 import { useState, useCallback, useEffect } from 'react';
 import type { Player, MemoryItem, MemoryCategory, Rarity, SpellType, Spell, MemoryTemplate } from '../types/game';
 import memoryMasterData from '../data/memoryMaster.json';
@@ -204,7 +204,8 @@ export const useGameLoop = (initialPlayer: Player) => {
     }
 
     const pSpeed = calculatePlayerStat('speed');
-    const escapeRate = 0.6 + Math.min(0.2, pSpeed * 0.005);
+    const baseSpeed = getBaseStats(player.level).speed;
+    const escapeRate = calculateFleeChance(pSpeed, baseSpeed);
     
     if (Math.random() < escapeRate) {
       setGameState(GameState.EXPLORING);
@@ -214,7 +215,7 @@ export const useGameLoop = (initialPlayer: Player) => {
       addLog({ key: 'gl_flee_fail' });
       handleWipeout();
     }
-  }, [gameState, currentEnemy, addLog, handleWipeout, calculatePlayerStat]);
+  }, [gameState, currentEnemy, addLog, handleWipeout, calculatePlayerStat, player.level]);
 
   const processVictory = useCallback((dmgTaken: number, expMult: number = 1) => {
     if (!currentEnemy) return;

@@ -38,9 +38,9 @@ describe('statCalculator', () => {
     expect(calculatedStats.specialFlags.hpDrainCurse).toBe(true);
   });
 
-  it('recalculateStats clamps maxHP to at least 1 and maxMP to at least 0', () => {
+  it('recalculateStats clamps maxHP to at least 1 and maxMP to at least 0, and clamps currentHP/MP to new max', () => {
     const basePlayer = {
-      level: 1, currentHP: 10, maxHP: 10, currentMP: 10, maxMP: 10,
+      level: 1, currentHP: 50, maxHP: 50, currentMP: 50, maxMP: 50,
       currentEXP: 0, currentEn: 0, stashedEn: 0, totalDives: 0, maxReachedDepth: 0,
       inventory: [], installedMemories: [],
       maxInventorySize: 10, totalCapacity: 10, maxSlots: 3,
@@ -65,5 +65,7 @@ describe('statCalculator', () => {
     expect(calculatedStats.maxMP).toBe(0);
     expect(clampedPlayer.maxHP).toBe(1);
     expect(clampedPlayer.maxMP).toBe(0);
+    expect(clampedPlayer.currentHP).toBe(1);
+    expect(clampedPlayer.currentMP).toBe(0);
   });
 });

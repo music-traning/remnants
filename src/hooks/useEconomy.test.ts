@@ -16,6 +16,12 @@ describe('useEconomy utils', () => {
     expect(price3).toBeGreaterThan(price2);
   });
 
+  it('getMemoryBasePrice returns expected formula results', () => {
+    // Formula: Math.floor(Math.pow(cost, 2.5) * 150 + cost * 500)
+    expect(getMemoryBasePrice(1)).toBe(650); // 1*150 + 500 = 650
+    expect(getMemoryBasePrice(5)).toBe(10885); // Math.floor(5^2.5 * 150 + 2500) = 10885
+  });
+
   it('calculateSellPrice applies 70% multiplier when unidentified', () => {
     const memory = {
       id: 'mem_1',
