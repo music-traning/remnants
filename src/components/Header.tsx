@@ -1,5 +1,6 @@
 import React from 'react';
 import { useI18n } from '../contexts/I18nContext';
+import { useAudioContext } from '../contexts/AudioContext';
 
 interface HeaderProps {
   onOpenManual: () => void;
@@ -7,6 +8,7 @@ interface HeaderProps {
 
 export const Header: React.FC<HeaderProps> = ({ onOpenManual }) => {
   const { language, setLanguage, t } = useI18n();
+  const { musicEnabled, setMusicEnabled } = useAudioContext();
 
   return (
     <header style={{ 
@@ -21,6 +23,13 @@ export const Header: React.FC<HeaderProps> = ({ onOpenManual }) => {
         {t('title')}
       </h1>
       <div style={{ display: 'flex', gap: '8px' }}>
+        <button 
+          className="cmd-btn" 
+          style={{ width: 'auto', padding: '4px 8px', borderColor: '#fff', marginBottom: 0 }} 
+          onClick={() => setMusicEnabled(!musicEnabled)}
+        >
+          Music: {musicEnabled ? 'ON' : 'OFF'}
+        </button>
         <button 
           className="cmd-btn" 
           style={{ width: 'auto', padding: '4px 8px', borderColor: '#fff', marginBottom: 0 }} 

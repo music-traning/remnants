@@ -11,6 +11,7 @@ import './index.css';
 import { useI18n } from './contexts/I18nContext';
 import { Header } from './components/Header';
 import { ManualModal } from './components/ManualModal';
+import { useBGM } from './hooks/useBGM';
 
 
 const initialPlayer: Player = {
@@ -76,6 +77,8 @@ function App() {
 
   const { player, setPlayer, setGameState, gameState, currentEnemy, logMessages, shopInventory, setShopInventory, depth, setSteps, actions } = useGameLoop(initialPlayer);
   const ecoActions = useEconomy(player, setPlayer, gameState, shopInventory, setShopInventory).actions;
+  
+  useBGM(gameState, depth);
 
   const baseStats = useMemo(() => ({
     maxHP: 500,
