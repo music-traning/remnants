@@ -3,6 +3,7 @@ import { ja } from '../locales/ja';
 import { en } from '../locales/en';
 import { getBaseStats } from '../utils/statCalculator';
 import { calculateDamage, calculateFleeChance } from '../utils/combatCalculator';
+import { playHitSound, playCriticalSound, playEvadeSound } from '../utils/audio';
 import { useState, useCallback, useEffect } from 'react';
 import type { Player, MemoryItem, MemoryCategory, Rarity, SpellType, Spell, MemoryTemplate } from '../types/game';
 import memoryMasterData from '../data/memoryMaster.json';
@@ -36,6 +37,9 @@ export const useGameLoop = (initialPlayer: Player) => {
   const [logMessages, setLogMessages] = useState<(string | LogEntry)[]>([{ key: 'gl_town_stay' }]);
   const [shopInventory, setShopInventory] = useState<MemoryItem[]>([]);
   const [steps, setSteps] = useState<number>(0);
+  const [shakeTrigger, setShakeTrigger] = useState<number>(0);
+
+  const triggerShake = useCallback(() => setShakeTrigger(prev => prev + 1), []);
 
   const depth = Math.floor(steps / 5);
 
@@ -313,7 +317,11 @@ export const useGameLoop = (initialPlayer: Player) => {
 
     const enemyRemainingHP = pDmgResult.remainingHp;
     if (pDmgResult.isCritical) {
+      triggerShake();
+      playCriticalSound();
       addLog({ key: 'gl_critical_hit', params: { dmg: pDmgResult.damage } });
+    } else {
+      playHitSound();
     }
     addLog({ key: 'gl_combat_player_atk', params: { name: currentEnemy.name, dmg: pDmgResult.damage } });
 
@@ -326,10 +334,16 @@ export const useGameLoop = (initialPlayer: Player) => {
     
     // 敵からの攻撃はisCritical判定はないがログを統一（将来的に敵クリティカルもあり得る）
     if (eDmgResult.isEvaded) {
+      playEvadeSound();
       addLog({ key: 'gl_combat_evade', params: { name: currentEnemy.name } });
     } else {
       if (eDmgResult.isCritical) {
+        triggerShake();
+        playCriticalSound();
         addLog({ key: 'gl_critical_hit', params: { dmg: eDmgResult.damage } });
+      } else {
+        triggerShake();
+        playHitSound();
       }
       addLog({ key: 'gl_combat_enemy_atk', params: { name: currentEnemy.name, dmg: eDmgResult.damage } });
     }
@@ -347,7 +361,7 @@ export const useGameLoop = (initialPlayer: Player) => {
 
     setPlayer(p => ({ ...p, currentHP: playerRemainingHP }));
     setCurrentEnemy({ ...currentEnemy, hp: enemyRemainingHP });
-  }, [gameState, currentEnemy, player.currentHP, player.installedMemories, calculatePlayerStat, addLog, handleWipeout, processVictory]);
+  }, [gameState, currentEnemy, player.currentHP, player.installedMemories, calculatePlayerStat, addLog, handleWipeout, processVictory, triggerShake]);
 
   const castSpell = useCallback((memoryId: string) => {
     if (gameState !== GameState.EXPLORING && gameState !== GameState.ENCOUNTER) return;
@@ -504,6 +518,7 @@ export const useGameLoop = (initialPlayer: Player) => {
     logMessages,
     shopInventory,
     setShopInventory,
+    shakeTrigger,
     depth,
     steps,
     setSteps,

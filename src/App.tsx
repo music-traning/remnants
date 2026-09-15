@@ -74,11 +74,20 @@ const formatTime = (secs: number) => {
 function App() {
   const { t, language } = useI18n();
   const [isManualOpen, setIsManualOpen] = useState(false);
+  const [isShaking, setIsShaking] = useState(false);
 
-  const { player, setPlayer, setGameState, gameState, currentEnemy, logMessages, shopInventory, setShopInventory, depth, setSteps, actions } = useGameLoop(initialPlayer);
+  const { player, setPlayer, setGameState, gameState, currentEnemy, logMessages, shopInventory, setShopInventory, depth, setSteps, shakeTrigger, actions } = useGameLoop(initialPlayer);
   const ecoActions = useEconomy(player, setPlayer, gameState, shopInventory, setShopInventory).actions;
   
   useBGM(gameState, depth);
+
+  useEffect(() => {
+    if (shakeTrigger > 0) {
+      setIsShaking(true);
+      const timer = setTimeout(() => setIsShaking(false), 300);
+      return () => clearTimeout(timer);
+    }
+  }, [shakeTrigger]);
 
   const baseStats = useMemo(() => getBaseStats(player.level), [player.level]);
 
@@ -136,7 +145,7 @@ function App() {
       <Header onOpenManual={() => setIsManualOpen(true)} />
         <ManualModal isOpen={isManualOpen} onClose={() => setIsManualOpen(false)} />
       
-      <div className="crpg-container">
+      <div className={`crpg-container ${isShaking ? 'shake-animation' : ''}`}>
         
         {/* 1. Main Viewport */}
         <div className="pane main-viewport" style={{ display: 'flex', flexDirection: 'column', overflow: 'hidden' }}>
