@@ -2067,6 +2067,156 @@
       "itemNameEn": "RNG Overflow",
       "originTextEn": "\"No! It's not my fate! It's the 'drop rate'! My existence is only proven by a 0.05% chance!\" Screaming non-existent numbers at the void, his body crumbled into jagged mosaic pieces.",
       "priestMemoEn": "\"Drop rates...? Some kind of ritual? Well, stare too long into the abyss and your words tend to... glitch.\""
+    },
+    {
+      "rarity": "Legendary",
+      "cost": 5,
+      "itemName": "0除算の盾",
+      "originText": "致命傷を受ける直前、自身の肉体の座標計算をゼロで割り、世界をエラーで満たした。物理法則が崩壊したその空間では、いかなる刃も無限の空隙に呑み込まれる。",
+      "priestMemo": "「どうせ死ぬなら世界ごと道連れか。計算機の悲鳴が心地いいぜ。」",
+      "itemNameEn": "Shield of Division by Zero",
+      "originTextEn": "Right before suffering a fatal blow, he divided the coordinates of his own flesh by zero, flooding the world with errors. In that space where physical laws collapsed, any blade is swallowed by an infinite void.",
+      "priestMemoEn": "\"If you're going to die, might as well drag the world down with you. The screaming of the calculator is music to my ears.\""
+    },
+    {
+      "rarity": "Legendary",
+      "cost": 5,
+      "itemName": "上書き不可の亡骸",
+      "originText": "幾千の拷問の末、彼の精神は『これ以上の状態更新を拒否する』という境地に達した。一切のダメージを受け付けなくなったが、同時に一歩も動けなくなった。",
+      "priestMemo": "「書き込み権限がねぇって？ 最高の防御法だが、ただの石ころと変わらねぇな。」",
+      "itemNameEn": "Read-Only Corpse",
+      "originTextEn": "After thousands of tortures, his mind reached a state of 'refusing any further state updates'. He became immune to all damage, but simultaneously lost the ability to move a single step.",
+      "priestMemoEn": "\"No write permissions? It's the ultimate defense, but you're no different from a pebble on the road.\""
+    },
+    {
+      "rarity": "Legendary",
+      "cost": 5,
+      "itemName": "痛覚のオーバーフロー",
+      "originText": "限界値を超える苦痛を与えられ続けた結果、脳のメモリが桁あふれを起こし、絶対的な快楽と鉄壁の麻痺へと反転した。彼は千の矢を受けても微笑み続ける。",
+      "priestMemo": "「痛すぎると気持ちよくなるって本当だったんだな。俺は遠慮しておくが。」",
+      "itemNameEn": "Pain Overflow",
+      "originTextEn": "Subjected to agony surpassing all limits, his brain's memory overflowed, inverting into absolute pleasure and ironclad paralysis. He continues to smile even when pierced by a thousand arrows.",
+      "priestMemoEn": "\"So it's true that extreme pain wraps around into pleasure. I think I'll pass on testing that theory, though.\""
+    },
+    {
+      "rarity": "Legendary",
+      "cost": 5,
+      "itemName": "無限ループする防壁",
+      "originText": "「死ぬ瞬間」を保存し、その直前の数秒間を永遠にループし続けることで死を先送りした男の記憶。ダメージを受けるたびに時間が巻き戻り、同じ絶望を味わい続ける。",
+      "priestMemo": "「永遠に死ねないってのは、ある意味で最高の防具だ。中身はとっくに壊れてるがな。」",
+      "itemNameEn": "Infinite Loop Bulwark",
+      "originTextEn": "The memory of a man who saved the exact 'moment of death', endlessly looping the few seconds prior to postpone his end. Every time he takes damage, time rewinds, forcing him to taste the same despair.",
+      "priestMemoEn": "\"Not being able to die forever is the ultimate armor in a way. Though the mind inside broke a long time ago.\""
+    },
+    {
+      "rarity": "Legendary",
+      "cost": 5,
+      "itemName": "未定義の肉塊",
+      "originText": "この世界を構築するシステムから定義を外された男。斬られても「何を斬られたか」が処理されず、燃やされても「炎」がエラーを吐く。",
+      "priestMemo": "「存在しない奴を殺すことはできねぇ。哲学的だが、実態はただのバグだ。」",
+      "itemNameEn": "Undefined Mass",
+      "originTextEn": "A man whose definition was erased from the system that constructs this world. Slashing him yields no computed result; burning him only makes the flames throw an error.",
+      "priestMemoEn": "\"You can't kill someone who doesn't exist. It sounds philosophical, but in reality, it's just a bug.\""
+    },
+    {
+      "rarity": "Epic",
+      "cost": 4,
+      "itemName": "欠損データの鎧",
+      "originText": "肉体の大部分のデータが破損し、常にノイズに覆われている。攻撃そのものが「無効な領域」に吸い込まれるため、彼をまともに殴ることはできない。",
+      "priestMemo": "「スカスカの体の方が攻撃を避けやすい。見事な生存戦略だぜ。」",
+      "itemNameEn": "Missing Data Armor",
+      "originTextEn": "The majority of his flesh's data is corrupted, constantly cloaked in static noise. Attacks are swallowed into 'invalid sectors', making it impossible to strike him cleanly.",
+      "priestMemoEn": "\"A body full of holes is easier for dodging. A brilliant survival strategy, indeed.\""
+    },
+    {
+      "rarity": "Epic",
+      "cost": 4,
+      "itemName": "型不一致の防具",
+      "originText": "「鉄の鎧」として装備されたはずが、誤った型で読み込まれた結果「硬度だけを持つ概念」として定着した。重さを持たない不可視の盾。",
+      "priestMemo": "「文字列と数値を間違えた結果がこれか。この世界を創った奴はかなり大雑把だな。」",
+      "itemNameEn": "Type Mismatch Gear",
+      "originTextEn": "Intended to be equipped as 'Iron Armor', it was loaded with the wrong data type, manifesting as 'the mere concept of hardness'. An invisible, weightless shield.",
+      "priestMemoEn": "\"The result of mixing up strings and integers. Whoever created this world is remarkably sloppy.\""
+    },
+    {
+      "rarity": "Epic",
+      "cost": 4,
+      "itemName": "メモリリークの盾",
+      "originText": "攻撃を受けるたびに世界の記憶領域を食いつぶし、敵の演算速度を遅らせる盾。最終的には世界そのものがフリーズする。",
+      "priestMemo": "「防御するたびに重くなるんだ。最後には敵も味方も動けなくなるって寸法さ。」",
+      "itemNameEn": "Memory Leak Shield",
+      "originTextEn": "A shield that consumes the world's memory space with every blocked attack, slowing down the enemy's processing speed. Eventually, the world itself freezes.",
+      "priestMemoEn": "\"It gets heavier every time you defend. In the end, neither friend nor foe can move an inch.\""
+    },
+    {
+      "rarity": "Epic",
+      "cost": 4,
+      "itemName": "断末魔のキャッシュ",
+      "originText": "殺された瞬間の衝撃を一時保存（キャッシュ）し、後から少しずつ肉体に適用することで即死を免れた狂信者。痛みは常に遅れてやってくる。",
+      "priestMemo": "「ツケ払いみたいに痛みがくるんだろ？ 想像しただけで吐き気がするぜ。」",
+      "itemNameEn": "Death Rattle Cache",
+      "originTextEn": "A zealot who avoided instant death by caching the impact of his murder, applying it to his flesh gradually over time. The pain always arrives late.",
+      "priestMemoEn": "\"So the pain comes in installments, like paying off a debt? Just imagining it makes me nauseous.\""
+    },
+    {
+      "rarity": "Epic",
+      "cost": 4,
+      "itemName": "例外処理の皮膚",
+      "originText": "致命的な一撃を受けた際、それを「致命的ではないエラー」として握り潰すようにプログラミングされた皮膚。代償として感情がログに吐き出され続ける。",
+      "priestMemo": "「泣き叫ぶログが頭に直接流れ込んでくる。防御力と引き換えにするには鬱陶しすぎるな。」",
+      "itemNameEn": "Exception Handled Skin",
+      "originTextEn": "Skin programmed to swallow fatal blows and suppress them as 'non-fatal errors'. In exchange, his emotions are endlessly spat out into the error logs.",
+      "priestMemoEn": "\"Screaming logs pouring directly into my head. It's far too annoying a price to pay for defense.\""
+    },
+    {
+      "rarity": "Epic",
+      "cost": 4,
+      "itemName": "ダウングレードされた盾",
+      "originText": "古いバージョンの仕様で生成された盾。現代の複雑な攻撃判定を一切受け付けず、ただ「ぶつかる」という単純な物理法則のみを適用する。",
+      "priestMemo": "「古い時代の遺物だ。最新の魔法もこいつの前じゃただの光るゴミになる。」",
+      "itemNameEn": "Downgraded Aegis",
+      "originTextEn": "A shield generated under an outdated version's specifications. It completely ignores modern complex hit calculations, applying only the primitive physics of 'colliding'.",
+      "priestMemoEn": "\"A relic from an older era. Even the latest magic becomes just shiny garbage against this.\""
+    },
+    {
+      "rarity": "Epic",
+      "cost": 4,
+      "itemName": "ロールバックの心臓",
+      "originText": "心臓が停止した瞬間、3秒前の状態に自らを復元する生きたバックアップ。無限に死をやり直すことで、彼は強靭な盾として前線に立ち続けた。",
+      "priestMemo": "「死ぬ直前の恐怖もループするんだろう？ 狂ってなきゃやってられないな。」",
+      "itemNameEn": "Rollback Heart",
+      "originTextEn": "A living backup that restores himself to three seconds prior the moment his heart stops. By repeating death infinitely, he stood on the frontlines as an unbreakable shield.",
+      "priestMemoEn": "\"The terror right before death loops too, right? You'd have to be insane to endure that.\""
+    },
+    {
+      "rarity": "Epic",
+      "cost": 4,
+      "itemName": "パッチ未適用の痛覚",
+      "originText": "ダメージ倍率のバグが修正される前の初期バージョンで生き残った戦士。あらゆる痛覚が0.01倍で処理されるため、彼は肉が削げても笑っていた。",
+      "priestMemo": "「運営が見逃したバグの恩恵だ。まあ、血が流れりゃ結局死ぬんだがな。」",
+      "itemNameEn": "Unpatched Nerves",
+      "originTextEn": "A warrior who lived through the early alpha versions before the damage multiplier bug was patched. With all pain processed at 0.01x, he laughed even as his flesh was flayed.",
+      "priestMemoEn": "\"The blessing of a bug overlooked by the devs. Though, you still bleed to death in the end.\""
+    },
+    {
+      "rarity": "Epic",
+      "cost": 4,
+      "itemName": "壊れた乱数シード",
+      "originText": "彼の周囲では確率が固定化されている。敵の攻撃は必ず「最小ダメージ」を引き当て、彼は常に奇跡的な生存を果たした。",
+      "priestMemo": "「奇跡じゃねぇ、ただの乱数調整だ。神様もサイコロの振り方が雑になったもんだ。」",
+      "itemNameEn": "Broken RNG Seed",
+      "originTextEn": "The probabilities around him are entirely locked. Enemy attacks strictly pull 'minimum damage', allowing him to constantly achieve miraculous survival.",
+      "priestMemoEn": "\"It's no miracle, just RNG manipulation. Seems even God got sloppy with rolling the dice.\""
+    },
+    {
+      "rarity": "Epic",
+      "cost": 4,
+      "itemName": "NaNの甲冑",
+      "originText": "「数値ではない」という概念で編まれた甲冑。いかなる攻撃力で計算しようとも結果は定義不能となり、着用者は無敵のまま自我を失った。",
+      "priestMemo": "「計算できねぇならノーダメージ、って理屈だ。着た奴の頭もバグっちまうがな。」",
+      "itemNameEn": "Armor of NaN",
+      "originTextEn": "Armor woven from the concept of 'Not a Number'. No matter what attack power is applied, the calculation is undefined, leaving the wearer invincible but devoid of ego.",
+      "priestMemoEn": "\"If it can't be calculated, it's zero damage. That's the logic. Though it bugs out the wearer's brain too.\""
     }
   ]
 }
