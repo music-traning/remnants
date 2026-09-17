@@ -502,7 +502,7 @@ function App() {
               
               {activeOverlay === 'dungeon' && (() => {
                 const maxDepth = player.maxReachedDepth || 0;
-                const maxCheckpoint = Math.floor(maxDepth / 5) * 5;
+                const maxCheckpoint = Math.min(Math.floor(maxDepth / 5) * 5, 25);
                 const checkpoints = [];
                 for (let d = 0; d <= maxCheckpoint; d += 5) {
                   checkpoints.push(d);
