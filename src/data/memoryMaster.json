@@ -2217,6 +2217,156 @@
       "itemNameEn": "Armor of NaN",
       "originTextEn": "Armor woven from the concept of 'Not a Number'. No matter what attack power is applied, the calculation is undefined, leaving the wearer invincible but devoid of ego.",
       "priestMemoEn": "\"If it can't be calculated, it's zero damage. That's the logic. Though it bugs out the wearer's brain too.\""
+    },
+    {
+      "rarity": "Rare",
+      "cost": 3,
+      "itemName": "遅延レンダリングの盾",
+      "originText": "彼の肉体への攻撃は、常に数フレーム遅れて処理される。致命傷を受けても画面に描画される前にポーションを飲めば、死はなかったことになった。",
+      "priestMemo": "「見えない傷を治すのはさぞ滑稽だろうな。まあ、結局処理落ちで死んだらしいが。」",
+      "itemNameEn": "Lazy Rendered Shield",
+      "originTextEn": "Attacks against his flesh are always processed several frames late. If he drinks a potion before a fatal wound is drawn on screen, his death never happened.",
+      "priestMemoEn": "\"Healing invisible wounds must look quite ridiculous. Well, I hear he died from frame drops in the end anyway.\""
+    },
+    {
+      "rarity": "Rare",
+      "cost": 3,
+      "itemName": "モザイク処理された苦痛",
+      "originText": "己の受ける苦痛を視覚情報として出力し、低解像度のモザイクで覆い隠した男。痛覚もぼやけ、何が起きているのか理解せぬまま微笑んで肉塊となった。",
+      "priestMemo": "「現実逃避も極まれば立派な装甲だ。解像度を下げたところで、肉が削れる事実は変わらねぇがな。」",
+      "itemNameEn": "Pixelated Agony",
+      "originTextEn": "A man who output his pain as visual data and obscured it with low-res pixelation. His senses blurred, he smiled obliviously as he was reduced to a lump of meat.",
+      "priestMemoEn": "\"Escapism at its peak makes for fine armor. Lowering the resolution doesn't change the fact your flesh is being torn off, though.\""
+    },
+    {
+      "rarity": "Rare",
+      "cost": 3,
+      "itemName": "未初期化の筋肉",
+      "originText": "生成時にパラメータが初期化されず、ゴミデータが詰まったまま硬直した筋肉。可動性を完全に失った代わりに、決して砕けない異常な硬度を得た。",
+      "priestMemo": "「動けねぇならただの置物だろ。中に入ってるバグごと、いい壁にはなるかもしれねぇな。」",
+      "itemNameEn": "Uninitialized Muscle",
+      "originTextEn": "Muscle tissue that hardened instantly, packed with garbage data due to uninitialized parameters upon generation. Having lost all mobility, it gained anomalous, unbreakable rigidity.",
+      "priestMemoEn": "\"If it can't move, it's just a statue. I suppose it makes a decent wall, complete with the bugs trapped inside.\""
+    },
+    {
+      "rarity": "Rare",
+      "cost": 3,
+      "itemName": "無効なメモリアドレス",
+      "originText": "敵の刃が自身の肉体を参照した際、存在しない記憶領域を指し示すよう神経を書き換えた。斬撃は虚空を切り裂き、彼の肉体は「参照エラー」として弾かれる。",
+      "priestMemo": "「攻撃がすり抜けるんじゃなくて、攻撃した側がバグるのか。悪質極まりねぇな。」",
+      "itemNameEn": "Invalid Memory Address",
+      "originTextEn": "He rewrote his nerves so that whenever an enemy's blade referenced his flesh, it pointed to a non-existent memory sector. The slash tears through the void, bouncing off his body as a 'reference error'.",
+      "priestMemoEn": "\"So the attacks don't pass through, the attacker just bugs out? That's as malicious as it gets.\""
+    },
+    {
+      "rarity": "Rare",
+      "cost": 3,
+      "itemName": "フレームスキップの外套",
+      "originText": "「痛い」と感じる瞬間のフレームだけを意図的にスキップする外套。ダメージそのものは蓄積するため、気づいた時には体が半分消し飛んでいる。",
+      "priestMemo": "「痛みがなきゃ死に際にも気づけねぇ。幸せな最期なのか、ただの阿呆なのか。」",
+      "itemNameEn": "Frame-Skip Cloak",
+      "originTextEn": "A cloak that intentionally skips the exact frames where pain is registered. However, the physical damage still accumulates, leaving half the body obliterated before the wearer even notices.",
+      "priestMemoEn": "\"If you can't feel the pain, you won't even realize you're dying. Is it a blissful end, or just pure stupidity?\""
+    },
+    {
+      "rarity": "Rare",
+      "cost": 3,
+      "itemName": "タイムアウトの盾",
+      "originText": "攻撃の判定処理に意図的な遅延を発生させ、システムにタイムアウトを引き起こさせる盾。敵の攻撃は永遠に「処理中」となり、静止したまま朽ち果てる。",
+      "priestMemo": "「いつ振り下ろされるか分からない剣の下で寝起きする気分はどうだ？ 俺なら発狂するね。」",
+      "itemNameEn": "Timeout Shield",
+      "originTextEn": "A shield that introduces intentional lag into hit calculations, causing the system to time out. Enemy attacks are forever stuck 'processing', rotting away in suspended animation.",
+      "priestMemoEn": "\"How does it feel sleeping under a sword that might swing down at any moment? It would drive me mad.\""
+    },
+    {
+      "rarity": "Rare",
+      "cost": 3,
+      "itemName": "無視された警告文",
+      "originText": "「このダメージは致命的です」というシステムの警告をすべて無視して戦い続けた狂戦士の記憶。肉体はとっくに死んでいるのに、警告を読まないため倒れない。",
+      "priestMemo": "「警告ダイアログをノールックで閉じる奴の末路だ。死体になっても戦わされるとはな。」",
+      "itemNameEn": "Ignored Warning Log",
+      "originTextEn": "Memory of a berserker who kept fighting while ignoring every system warning stating 'This damage is fatal.' His body died long ago, but since he refuses to read the warnings, he never falls.",
+      "priestMemoEn": "\"The fate of one who closes warning dialogs without looking. To think he'd be forced to fight even as a corpse.\""
+    },
+    {
+      "rarity": "Rare",
+      "cost": 3,
+      "itemName": "バッファオーバーランの肉",
+      "originText": "許容量を超える苦痛を浴び続け、隣接する「生命力」のデータ領域まで痛覚で上書きしてしまった肉体。最早HPと痛みの区別がつかない。",
+      "priestMemo": "「痛いほど生きていると実感する、ってのを文字通り体現しちまったわけだ。」",
+      "itemNameEn": "Buffer Overrun Flesh",
+      "originTextEn": "Flesh that endured so much agony it overwrote the adjacent 'vitality' data sectors with pure pain. It can no longer distinguish between HP and suffering.",
+      "priestMemoEn": "\"Feeling alive only when in pain... he took that literally, didn't he?\""
+    },
+    {
+      "rarity": "Rare",
+      "cost": 3,
+      "itemName": "ゼロデイの装甲",
+      "originText": "システムの脆弱性を突き、まだパッチが当たっていない「未知の無敵状態」を悪用して作られた装甲。開発者が気付くまでは絶対の防御を誇る。",
+      "priestMemo": "「神様（デベロッパー）の目を盗んでコソコソ生き延びる。ネズミにはお似合いの盾だ。」",
+      "itemNameEn": "Zero-Day Carapace",
+      "originTextEn": "Carapace forged by exploiting a vulnerability in the system, abusing an unpatched 'unknown invincibility state'. It boasts absolute defense—until the developers notice.",
+      "priestMemoEn": "\"Sneaking around, surviving right under the eyes of God—or the developers. A fitting shield for a rat.\""
+    },
+    {
+      "rarity": "Rare",
+      "cost": 3,
+      "itemName": "ガベージコレクションの拒絶",
+      "originText": "「不要なデータ」として世界から消去される運命を拒絶し、世界のメモリの片隅に不法滞在し続けた亡霊。いかなる消滅魔法も彼を対象として認識できない。",
+      "priestMemo": "「ゴミ箱の中でふんぞり返ってるだけのゴミだろ。まあ、掃除されないなら最強か。」",
+      "itemNameEn": "Garbage Collection Denial",
+      "originTextEn": "A ghost who refused his fate to be deleted as 'unused data', squatting illegally in a corner of the world's memory. No annihilation magic can even target him.",
+      "priestMemoEn": "\"He's just trash acting high and mighty inside the recycle bin. Though, if you can't be swept away, I suppose that makes you invincible.\""
+    },
+    {
+      "rarity": "Rare",
+      "cost": 3,
+      "itemName": "デッドロックの皮膚",
+      "originText": "自らの肉体と敵の武器、両者の処理プロセスが互いにリソースの解放を待ち続ける状態を引き起こす。攻撃を受けた瞬間、世界がフリーズする。",
+      "priestMemo": "「お互いに手を出せず、ただ睨み合ったまま時間が止まる。究極の平和主義だな、クソったれ。」",
+      "itemNameEn": "Deadlock Skin",
+      "originTextEn": "Causes the processing threads of his own flesh and the enemy's weapon to indefinitely wait for each other to release resources. The moment he is struck, the world freezes.",
+      "priestMemoEn": "\"Unable to strike, just glaring at each other as time stops. The ultimate form of pacifism, damn it all.\""
+    },
+    {
+      "rarity": "Rare",
+      "cost": 3,
+      "itemName": "キャスト例外の肋骨",
+      "originText": "骨の材質データを「鋼鉄」に無理やり型変換しようとして失敗し、バグの塊として固定化された肋骨。触れた武器のプログラムそのものを狂わせる。",
+      "priestMemo": "「無理な変換はエラーの元だ。だが、そのエラーが刃をへし折るなら上出来だな。」",
+      "itemNameEn": "Cast Exception Ribs",
+      "originTextEn": "Ribs that solidified into a cluster of bugs when someone forcefully tried to typecast their material data to 'Steel'. They corrupt the very programming of any weapon that touches them.",
+      "priestMemoEn": "\"Forced conversions always cause errors. But if those errors snap blades in half, I'd say it's a success.\""
+    },
+    {
+      "rarity": "Rare",
+      "cost": 3,
+      "itemName": "テスト用ダミー肉体",
+      "originText": "開発環境でサンドバッグとして配置されていたテスト用エンティティの残骸。あらゆる攻撃を受けて「計算を終える」ためだけに存在し、絶対に死なないようにロックされている。",
+      "priestMemo": "「死ねないサンドバッグとはな。世界の創造主ってのは、とことんサディストらしい。」",
+      "itemNameEn": "Test-Dummy Flesh",
+      "originTextEn": "The remnants of a test entity placed as a punching bag in the development environment. It exists solely to take every attack and 'finish the calculation', locked so it can never die.",
+      "priestMemoEn": "\"An unkillable punching bag. The creator of this world must be a thorough sadist.\""
+    },
+    {
+      "rarity": "Rare",
+      "cost": 3,
+      "itemName": "デバッグモードの盾",
+      "originText": "裏技的なコマンド入力によってのみ呼び出せる、不可視の防御壁。本来は神（管理者）しか使えないはずのものだが、何かの手違いで一般の兵士に流出した。",
+      "priestMemo": "「神様の落とし物で命拾いしたか。だが、そんなものを拾った奴が無事で済むとは思えねぇな。」",
+      "itemNameEn": "Debug Mode Shield",
+      "originTextEn": "An invisible bulwark that can only be summoned via a cheat command. Originally intended solely for God—the administrator—it somehow leaked to an ordinary soldier.",
+      "priestMemoEn": "\"Saved your life with something God dropped, eh? But I highly doubt anyone who picks up such a thing gets away scot-free.\""
+    },
+    {
+      "rarity": "Rare",
+      "cost": 3,
+      "itemName": "初期化されない痛覚",
+      "originText": "一生を終えても、セーブデータをロードしても、「痛み」の変数だけがリセットされないまま蓄積し続けた狂人。その苦痛の質量は、すでに物理的な壁を形成している。",
+      "priestMemo": "「何度やり直しても痛いままってのは悲惨だな。その痛みが身を守る盾になってるのも皮肉な話だ。」",
+      "itemNameEn": "Unreset Pain",
+      "originTextEn": "A madman whose 'pain' variable kept accumulating without ever resetting, persisting through lifetimes and loaded save files. The sheer mass of his agony has formed a physical wall.",
+      "priestMemoEn": "\"Remaining in pain no matter how many times you restart is tragic. It's ironic that very same pain is now a shield protecting him.\""
     }
   ]
 }
