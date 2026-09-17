@@ -192,6 +192,7 @@ export const en = {
   gl_mob_mid: "Maddened Seeker",
   gl_mob_shallow: "Wandering Soul",
   gl_explore_more: "Explored deeper. (Depth: {depth})",
+  gl_max_depth_reached: "You have reached the bottom of the abyss. There is no path further.",
   gl_flee_fail_boss: "You cannot flee from this almighty presence...!",
   gl_boss_defeat: "[AFTERMATH] Defeated the Shadow of My Lost Self! (Dmg Taken: {dmg})",
   gl_boss_item: "Memory I Lost",

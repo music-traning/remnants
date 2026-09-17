@@ -192,6 +192,7 @@ export const ja = {
   gl_mob_mid: "狂える探求者",
   gl_mob_shallow: "彷徨う亡者",
   gl_explore_more: "探索を進めた。（深度: {depth}）",
+  gl_max_depth_reached: "深淵の最奥に到達した。これ以上進む道はない。",
   gl_flee_fail_boss: "この強大な存在からは逃げられない……！",
   gl_boss_defeat: "【死闘の果てに】失われた『俺』の影を打ち破った！（受けたダメージ: {dmg}）",
   gl_boss_item: "『俺が失った記憶』",

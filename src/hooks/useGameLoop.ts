@@ -41,7 +41,7 @@ export const useGameLoop = (initialPlayer: Player) => {
 
   const triggerShake = useCallback(() => setShakeTrigger(prev => prev + 1), []);
 
-  const depth = Math.floor(steps / 5);
+  const depth = Math.min(Math.floor(steps / 5), 30);
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -152,15 +152,20 @@ export const useGameLoop = (initialPlayer: Player) => {
 
   const explore = useCallback(() => {
     if (gameState !== GameState.TOWN && gameState !== GameState.EXPLORING) return;
+    if (steps >= 150) {
+      addLog({ key: 'gl_max_depth_reached' });
+      return; // Prevent advancing past depth 30
+    }
+    
     setGameState(GameState.EXPLORING);
     
     setSteps(s => {
       const newSteps = s + 1;
-      const currentDepth = Math.floor(newSteps / 5);
+      const currentDepth = Math.min(Math.floor(newSteps / 5), 30);
       
       setPlayer(p => ({ ...p, maxReachedDepth: Math.max(p.maxReachedDepth || 0, currentDepth) }));
       
-      if (currentDepth === 30 && newSteps % 5 === 0) {
+      if (newSteps === 150) {
         setGameState(GameState.ENCOUNTER);
         setCurrentEnemy({
           id: `boss_final`,
@@ -171,8 +176,8 @@ export const useGameLoop = (initialPlayer: Player) => {
           defense: 90,
           isBoss: true
         });
-        addLog({ key: 'gl_boss_warn', params: { depth: currentDepth } });
-        return newSteps;
+        addLog({ key: 'gl_boss_warn', params: { depth: 30 } });
+        return 150;
       }
 
       if (Math.random() < 0.3) {
@@ -197,7 +202,7 @@ export const useGameLoop = (initialPlayer: Player) => {
       }
       return newSteps;
     });
-  }, [gameState, addLog]);
+  }, [gameState, steps, addLog, t]);
 
   const run = useCallback(() => {
     if (gameState !== GameState.ENCOUNTER || !currentEnemy) return;
