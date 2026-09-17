@@ -2367,6 +2367,206 @@
       "itemNameEn": "Unreset Pain",
       "originTextEn": "A madman whose 'pain' variable kept accumulating without ever resetting, persisting through lifetimes and loaded save files. The sheer mass of his agony has formed a physical wall.",
       "priestMemoEn": "\"Remaining in pain no matter how many times you restart is tragic. It's ironic that very same pain is now a shield protecting him.\""
+    },
+    {
+      "rarity": "Uncommon",
+      "cost": 2,
+      "itemName": "未定義変数の皮膚",
+      "originText": "彼の皮膚の強度は定義されていなかったため、システムのデフォルト値である「無限大」として一時的に処理された。数秒後に修正され、彼は挽肉になった。",
+      "priestMemo": "「数秒だけ無敵になれる皮膚か。挽肉になる前に逃げ切れれば世話ねぇがな。」",
+      "itemNameEn": "Undefined Variable Skin",
+      "originTextEn": "Because his skin's durability was never defined, the system temporarily processed it as the default value: 'infinity'. A few seconds later it was patched, and he became minced meat.",
+      "priestMemoEn": "\"Skin that makes you invincible for a few seconds. Would be great if you could run away before turning into mince.\""
+    },
+    {
+      "rarity": "Uncommon",
+      "cost": 2,
+      "itemName": "メモリリークの古盾",
+      "originText": "攻撃を防ぐたびに周囲の記憶（メモリ）を食いつぶし、相手の動きをカクつかせる古びた盾。最後には盾を持つ者自身の認識も途切れる。",
+      "priestMemo": "「敵も味方も等しく頭が鈍くなる盾だ。バカ同士の殴り合いには最適だな。」",
+      "itemNameEn": "Leaking Memory Shield",
+      "originTextEn": "An old shield that consumes surrounding memory with every blocked attack, making the enemy's movements stutter. Eventually, the wielder's own cognition drops out too.",
+      "priestMemoEn": "\"A shield that makes both friend and foe equally stupid. Perfect for a brawl between idiots.\""
+    },
+    {
+      "rarity": "Uncommon",
+      "cost": 2,
+      "itemName": "強制終了の籠手",
+      "originText": "耐えきれない苦痛を受けたとき、自らの意識のプロセスを強制終了させる籠手。防御というより、単に痛みから逃げるための電源落としである。",
+      "priestMemo": "「気絶するのを『強制終了』ってカッコつけてるだけだろ。まあ、楽な死に方だ。」",
+      "itemNameEn": "Force Quit Gauntlets",
+      "originTextEn": "Gauntlets that force-quit the user's conscious processes when subjected to unbearable pain. Rather than defense, it is simply pulling the plug to escape agony.",
+      "priestMemoEn": "\"Calling 'fainting' a 'force quit' is just trying to sound cool. Still, an easy way to die.\""
+    },
+    {
+      "rarity": "Uncommon",
+      "cost": 2,
+      "itemName": "不正なポインタの兜",
+      "originText": "頭部への致命傷の矛先（ポインタ）を、無関係な第三者にすり替える狂気の兜。彼の周囲では、無傷のまま突然頭が吹き飛ぶ者が続出した。",
+      "priestMemo": "「隣の奴の頭を身代わりにできるってわけだ。最悪のクソ野郎にふさわしい兜だな。」",
+      "itemNameEn": "Invalid Pointer Helm",
+      "originTextEn": "A helm of madness that redirects the pointer of fatal head wounds to an unrelated third party. Around him, uninjured bystanders kept having their heads suddenly blown off.",
+      "priestMemoEn": "\"So you can use the guy next to you as a human shield. A helm fitting for the absolute worst kind of scumbag.\""
+    },
+    {
+      "rarity": "Uncommon",
+      "cost": 2,
+      "itemName": "テクスチャ剥がれの肉",
+      "originText": "肉体のテクスチャデータが剥がれ落ち、紫と黒の市松模様になった男。視覚的なバグが敵の認識を阻害し、恐ろしいほどの生存率を誇った。",
+      "priestMemo": "「あの紫と黒の模様、見てるだけで目がチカチカするぜ。そりゃ敵も狙いを外すさ。」",
+      "itemNameEn": "Missing Texture Flesh",
+      "originTextEn": "A man whose flesh's texture data peeled off, replacing it with a purple and black checkerboard pattern. This visual bug hindered enemy recognition, granting him an appalling survival rate.",
+      "priestMemoEn": "\"Just looking at that purple and black pattern makes my eyes hurt. No wonder the enemies keep missing.\""
+    },
+    {
+      "rarity": "Uncommon",
+      "cost": 2,
+      "itemName": "バージョン違いの骨",
+      "originText": "過去のバージョンで作られた骨格を、最新の肉体に無理やり組み込んだキメラ。仕様の不一致により、攻撃を受けるたびに骨が奇妙な方向に曲がる。",
+      "priestMemo": "「関節が逆方向に曲がっても折れねぇ。キモい生存本能だが、防御力は本物だ。」",
+      "itemNameEn": "Mismatched Version Bones",
+      "originTextEn": "A chimera made by forcefully embedding a skeleton from a previous version into a modern body. Due to specification mismatches, the bones bend in bizarre directions when struck.",
+      "priestMemoEn": "\"His joints bend backwards but never break. It's a gross survival instinct, but the defense is real.\""
+    },
+    {
+      "rarity": "Uncommon",
+      "cost": 2,
+      "itemName": "読み取り専用の血",
+      "originText": "一度流れた血が床に落ちた状態のまま「読み取り専用」として固定され、誰も拭き取れなくなった。滑る血溜まりが敵の進軍を防いだという。",
+      "priestMemo": "「死んだ後も誰かの迷惑になり続ける。ある意味、見上げた根性だぜ。」",
+      "itemNameEn": "Read-Only Blood",
+      "originTextEn": "Blood that spilled onto the floor was locked as 'read-only', making it impossible for anyone to wipe away. It is said the slippery puddle halted an enemy advance.",
+      "priestMemoEn": "\"Continuing to be a nuisance even after death. In a way, you have to admire the sheer spite.\""
+    },
+    {
+      "rarity": "Uncommon",
+      "cost": 2,
+      "itemName": "ゴーストピクセルの盾",
+      "originText": "存在しないはずの残像（ゴーストピクセル）が実体を持ったもの。視界の端にチラつくそれは、敵の刃をわずかに逸らすだけの物理力を持っていた。",
+      "priestMemo": "「目の錯覚が物理的に弾くってどういう理屈だ？ まあ、深淵じゃよくあることか。」",
+      "itemNameEn": "Ghost Pixel Shield",
+      "originTextEn": "An afterimage (ghost pixel) that shouldn't exist, which somehow gained physical form. Flickering at the edge of vision, it holds just enough physical force to slightly deflect enemy blades.",
+      "priestMemoEn": "\"An optical illusion that physically deflects things? Well, that's just a regular Tuesday in the abyss.\""
+    },
+    {
+      "rarity": "Uncommon",
+      "cost": 2,
+      "itemName": "エラーログの壁",
+      "originText": "彼が受けた無数の苦痛のログが、物理的な文字列の壁となって具現化したもの。夥しい悲鳴の文字が、次の攻撃を分厚く阻む。",
+      "priestMemo": "「痛い、苦しいって文字が積み上がって壁になる。文学解釈すぎて吐きそうだ。」",
+      "itemNameEn": "Error Log Wall",
+      "originTextEn": "The logs of his countless agonies materialized into a physical wall of text. A massive accumulation of screaming characters thickly blocks the next attack.",
+      "priestMemoEn": "\"Words of pain and suffering piling up to form a wall. It's so overly literary it makes me want to puke.\""
+    },
+    {
+      "rarity": "Uncommon",
+      "cost": 2,
+      "itemName": "未実装の回避行動",
+      "originText": "「敵の攻撃を避ける」というモーションが未実装だったため、棒立ちのまま無敵フレームだけが発生する奇妙な戦士。ただ突っ立って生き延びた。",
+      "priestMemo": "「何もしてねぇのに攻撃がすり抜ける。怠け者の極致みたいな能力だな。」",
+      "itemNameEn": "Unimplemented Dodge",
+      "originTextEn": "Because the animation for 'dodging' was never implemented, this bizarre warrior simply generated invincibility frames while standing completely still. He survived by doing absolutely nothing.",
+      "priestMemoEn": "\"Attacks phase right through him while he does nothing. It's the ultimate ability for a lazy bastard.\""
+    },
+    {
+      "rarity": "Common",
+      "cost": 1,
+      "itemName": "壊れたセーブデータ",
+      "originText": "いくら傷を負っても「再開」すれば少し前の状態に戻る兵士。だが、ロードを繰り返すうちにデータが欠損し、最後は名前のない肉の塊になった。",
+      "priestMemo": "「やり直しには代償が伴う。記憶が擦り切れるより前に、肉体が腐ったか。」",
+      "itemNameEn": "Corrupt Save File",
+      "originTextEn": "A soldier who, no matter the wounds, could return to a slightly earlier state by 'resuming'. But through repeated loading, his data corrupted, ultimately reducing him to a nameless lump of flesh.",
+      "priestMemoEn": "\"Starting over comes with a price. Looks like his body rotted away before his memories wore thin.\""
+    },
+    {
+      "rarity": "Common",
+      "cost": 1,
+      "itemName": "重複した肉体",
+      "originText": "生成時のバグで、同じ座標に二つの肉体が重なってスポーンしてしまった男。HPが2倍あるように見えたが、感じる苦痛も常に2倍だった。",
+      "priestMemo": "「命が二つあるんじゃねぇ。一つの痛みを二人分味わうだけの地獄だ。」",
+      "itemNameEn": "Duplicated Flesh",
+      "originTextEn": "A man spawned with two bodies overlapping in the exact same coordinates due to a generation bug. He appeared to have double the HP, but the pain he felt was also always doubled.",
+      "priestMemoEn": "\"He doesn't have two lives. It's just a hell of experiencing a single pain for two people.\""
+    },
+    {
+      "rarity": "Common",
+      "cost": 1,
+      "itemName": "テクスチャ無しの盾",
+      "originText": "表面のテクスチャが貼られておらず、真っ白な虚無として存在する盾。材質が不明なため、どんな刃も「斬った気にならない」という。",
+      "priestMemo": "「手抜き工事の産物か。まあ、見えない分だけ軽いからヨシとするか。」",
+      "itemNameEn": "Untextured Shield",
+      "originTextEn": "A shield existing as a pure white void, lacking any surface texture mapping. Because its material is undefined, no blade ever feels like it 'cut' anything.",
+      "priestMemoEn": "\"A product of corner-cutting during development. Well, it's probably lighter without the graphics, so whatever.\""
+    },
+    {
+      "rarity": "Common",
+      "cost": 1,
+      "itemName": "同期ズレの死体",
+      "originText": "クライアント側では死んでいるが、サーバー側では生きていると判定され続けた兵士。半分透けたまま、数日間も戦場を彷徨い続けた。",
+      "priestMemo": "「自分が死んだことに気づいてない幽霊ってのは、こういう仕組みだったのかね。」",
+      "itemNameEn": "Desynced Corpse",
+      "originTextEn": "A soldier whose client-side state registered as dead, but the server continued to judge him alive. Half-transparent, he wandered the battlefield for days.",
+      "priestMemoEn": "\"So this is how ghosts who don't realize they're dead actually work.\""
+    },
+    {
+      "rarity": "Common",
+      "cost": 1,
+      "itemName": "パッチノートの切れ端",
+      "originText": "「次回のアップデートで防御力が上昇します」と書かれた紙切れ。それを信じて前線に立った若者は、アップデートが来る前に無惨に散った。",
+      "priestMemo": "「神様の約束なんて、紙切れ以下の価値しかねぇってこった。」",
+      "itemNameEn": "Patch Note Fragment",
+      "originTextEn": "A scrap of paper that read, 'Defense will be buffed in the next update.' The youth who stood on the frontline believing those words was brutally scattered before the update ever arrived.",
+      "priestMemoEn": "\"Promises from God are worth less than the scrap of paper they're written on.\""
+    },
+    {
+      "rarity": "Common",
+      "cost": 1,
+      "itemName": "プレースホルダーの兜",
+      "originText": "仮のデザインとして被せられたまま、忘れ去られた兜。「TBD（後で決める）」と書かれた箱を被った男は、視界を塞がれて呆気なく死んだ。",
+      "priestMemo": "「とりあえず被せとけ、で放置された哀れな男。顔を見られずに済んだのが救いか。」",
+      "itemNameEn": "Placeholder Helm",
+      "originTextEn": "A helm left as a temporary design and promptly forgotten. The man wearing a box labeled 'TBD' had his vision blocked and died in short order.",
+      "priestMemoEn": "\"A pitiful man, abandoned with a 'slap this on for now'. I suppose not having his face seen was his only salvation.\""
+    },
+    {
+      "rarity": "Common",
+      "cost": 1,
+      "itemName": "固定化されたＨＰ",
+      "originText": "彼の体力を管理する変数が、何かの拍子に「テキスト」として固定化されてしまった。ダメージを与えても文字なので減らず、彼は不死身を錯覚した。",
+      "priestMemo": "「数字じゃねぇから減らねぇ。だが、出血は止まらない。最高にアホな死に方だ。」",
+      "itemNameEn": "Hardcoded HP",
+      "originTextEn": "The variable managing his health was somehow hardcoded as 'Text'. Because it was text, taking damage didn't decrease it, giving him the illusion of immortality.",
+      "priestMemoEn": "\"It doesn't decrease because it's not a number. But the bleeding didn't stop either. The most idiotic way to die.\""
+    },
+    {
+      "rarity": "Common",
+      "cost": 1,
+      "itemName": "ローポリゴンの肉体",
+      "originText": "処理を軽くするために極限まで頂点数を減らされた兵士。カクカクの身体は丸みを帯びた刃を滑らせるが、本人は常に自身の醜さに絶望していた。",
+      "priestMemo": "「見た目を犠牲にして手に入れた硬さだ。女にはモテねぇだろうがな。」",
+      "itemNameEn": "Low-Poly Body",
+      "originTextEn": "A soldier whose vertex count was reduced to the absolute limit to save processing power. His blocky body deflected curved blades, but he constantly despaired at his own ugliness.",
+      "priestMemoEn": "\"Toughness obtained by sacrificing appearance. Won't be popular with the ladies, though.\""
+    },
+    {
+      "rarity": "Common",
+      "cost": 1,
+      "itemName": "ゴミ箱から拾った盾",
+      "originText": "削除されたはずの没データの中から拾い上げられた盾。使えなくはないが、構えるたびに前の持ち主の「消されたくない」という怨念が鳴り響く。",
+      "priestMemo": "「エコなのはいい事だが、いちいち泣き声がうるせぇ盾だな。」",
+      "itemNameEn": "Recycle Bin Shield",
+      "originTextEn": "A shield fished out of the scrapped data that should have been deleted. It functions, but every time it is raised, the previous owner's grudge of 'I don't want to be erased' echoes out.",
+      "priestMemoEn": "\"Being eco-friendly is nice and all, but a shield that cries every time is just annoying.\""
+    },
+    {
+      "rarity": "Common",
+      "cost": 1,
+      "itemName": "最低設定の影",
+      "originText": "描画設定を最低にされた男の影。ペラペラの黒い平面に過ぎないが、敵の攻撃を運良く吸い込むデコイとして一度だけ役立った。",
+      "priestMemo": "「薄っぺらい人生の、薄っぺらい影。それでも一度は身代わりになったんだ、褒めてやれ。」",
+      "itemNameEn": "Low-Settings Shadow",
+      "originTextEn": "The shadow of a man whose graphics settings were set to minimum. Nothing more than a flimsy black plane, but it luckily absorbed an enemy attack, serving as a decoy exactly once.",
+      "priestMemoEn": "\"A flimsy shadow for a flimsy life. Still, it acted as a meat shield once. Give it some praise.\""
     }
   ]
 }
