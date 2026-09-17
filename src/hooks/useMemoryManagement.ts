@@ -53,6 +53,12 @@ export const useMemoryManagement = (
         stats.defense = c;
         stats.speed = c;
         break;
+      case 'Defense':
+        stats.defense = Math.floor(Math.random() * 8 * c) + c * 4;
+        stats.maxHP = Math.floor(Math.random() * 8 * c) + c * 2;
+        stats.attack = -(Math.floor(Math.random() * 4 * c) + c);
+        stats.speed = -(Math.floor(Math.random() * 4 * c) + c);
+        break;
       default:
         stats.maxHP = c * 3;
         break;
